@@ -1,0 +1,4 @@
+[ link ]
+resname "MMA"
+[ bonds ]
++C08 C07  1    0.15290   224262.4 ;   from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
