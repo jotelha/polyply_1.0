@@ -1,4 +1,133 @@
+; EH-headed links
 [ link ]
-resname "MMA"
+; EH-EH C^beta - C^alpha link
 [ bonds ]
-+C08 C07  1    0.15290   224262.4 ;   from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C05 {"resname": "EH"} C04 {"resname": "EH"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; EH-LA C^beta - C^alpha link
+[ bonds ]
++C05 {"resname": "EH"} C04 {"resname": "LA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; EH-MMA C^beta - C^alpha link 
+[ bonds ]
++C05 {"resname": "EH"} C07 {"resname": "MMA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; EH-OC C^beta - C^alpha link
+[ bonds ]
++C05 {"resname": "EH"} C03 {"resname": "OC"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; EH-ST C^beta - C^alpha link
+[ bonds ]
++C05 {"resname": "EH"} C04 {"resname": "ST"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+
+; LA-headed links
+[ link ]
+; LA-EH C^beta - C^alpha link
+[ bonds ]
++C05 {"resname": "LA"} C04 {"resname": "EH"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; LA-LA C^beta - C^alpha link
+[ bonds ]
++C05 {"resname": "LA"} C04 {"resname": "LA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; LA-MMA C^beta - C^alpha link 
+[ bonds ]
++C05 {"resname": "LA"} C07 {"resname": "MMA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; LA-OC C^beta - C^alpha link
+[ bonds ]
++C05 {"resname": "LA"} C03 {"resname": "OC"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; LA-ST C^beta - C^alpha link
+[ bonds ]
++C05 {"resname": "LA"} C04 {"resname": "ST"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+
+; MMA-headed links
+[ link ]
+; MMA-EH C^beta - C^alpha link
+[ bonds ]
++C08 {"resname": "MMA"} C04 {"resname": "EH"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; MMA-LA C^beta - C^alpha link
+[ bonds ]
++C08 {"resname": "MMA"} C04 {"resname": "LA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; MMA-MMA C^beta - C^alpha link 
+[ bonds ]
++C08 {"resname": "MMA"} C07 {"resname": "MMA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; MMA-OC C^beta - C^alpha link
+[ bonds ]
++C08 {"resname": "MMA"} C03 {"resname": "OC"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; MMA-ST C^beta - C^alpha link
+[ bonds ]
++C08 {"resname": "MMA"} C04 {"resname": "ST"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+
+; OC-headed links
+[ link ]
+; OC-EH C^beta - C^alpha link
+[ bonds ]
++C01 {"resname": "OC"} C04 {"resname": "EH"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; OC-LA C^beta - C^alpha link
+[ bonds ]
++C01 {"resname": "OC"} C04 {"resname": "LA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; OC-MMA C^beta - C^alpha link 
+[ bonds ]
++C01 {"resname": "OC"} C07 {"resname": "MMA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; OC-OC C^beta - C^alpha link
+[ bonds ]
++C01 {"resname": "OC"} C03 {"resname": "OC"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; OC-ST C^beta - C^alpha link
+[ bonds ]
++C01 {"resname": "OC"} C04 {"resname": "ST"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+
+; ST-headed links
+[ link ]
+; ST-EH C^beta - C^alpha link 
+[ bonds ]
++C05 {"resname": "ST"} C04 {"resname": "EH"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; ST-LA C^beta - C^alpha link 
+[ bonds ]
++C05 {"resname": "ST"} C04 {"resname": "LA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; ST-MMA C^beta - C^alpha link 
+[ bonds ]
++C05 {"resname": "ST"} C07 {"resname": "MMA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; ST-OC C^beta - C^alpha link 
+[ bonds ]
++C05 {"resname": "ST"} C03 {"resname": "OC"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+
+[ link ]
+; ST-ST C^beta - C^alpha link 
+[ bonds ]
++C05 {"resname": "ST"} C04 {"resname": "ST"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
