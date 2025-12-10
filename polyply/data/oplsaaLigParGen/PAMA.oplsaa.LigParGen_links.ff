@@ -1,133 +1,1132 @@
-; EH-headed links
-[ link ]
-; EH-EH C^beta - C^alpha link
-[ bonds ]
-+C05 {"resname": "EH"} C04 {"resname": "EH"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
+; default CT-CT bond from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; EH-LA C^beta - C^alpha link
+; EH-EH (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "EH"} C04 {"resname": "LA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C05 {"resname": "EH"} C04 {"resname": "EH"} 1 0.152900 224262.400000
 
 [ link ]
-; EH-MMA C^beta - C^alpha link 
+; LA-EH (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "EH"} C07 {"resname": "MMA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C05 {"resname": "LA"} C04 {"resname": "EH"} 1 0.152900 224262.400000
 
 [ link ]
-; EH-OC C^beta - C^alpha link
+; MMA-EH (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "EH"} C03 {"resname": "OC"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C08 {"resname": "MMA"} C04 {"resname": "EH"} 1 0.152900 224262.400000
 
 [ link ]
-; EH-ST C^beta - C^alpha link
+; OC-EH (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "EH"} C04 {"resname": "ST"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
-
-
-; LA-headed links
-[ link ]
-; LA-EH C^beta - C^alpha link
-[ bonds ]
-+C05 {"resname": "LA"} C04 {"resname": "EH"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C01 {"resname": "OC"} C04 {"resname": "EH"} 1 0.152900 224262.400000
 
 [ link ]
-; LA-LA C^beta - C^alpha link
+; ST-EH (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "LA"} C04 {"resname": "LA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C05 {"resname": "ST"} C04 {"resname": "EH"} 1 0.152900 224262.400000
 
 [ link ]
-; LA-MMA C^beta - C^alpha link 
+; EH-LA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "LA"} C07 {"resname": "MMA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C05 {"resname": "EH"} C04 {"resname": "LA"} 1 0.152900 224262.400000
 
 [ link ]
-; LA-OC C^beta - C^alpha link
+; LA-LA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "LA"} C03 {"resname": "OC"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C05 {"resname": "LA"} C04 {"resname": "LA"} 1 0.152900 224262.400000
 
 [ link ]
-; LA-ST C^beta - C^alpha link
+; MMA-LA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "LA"} C04 {"resname": "ST"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
-
-
-; MMA-headed links
-[ link ]
-; MMA-EH C^beta - C^alpha link
-[ bonds ]
-+C08 {"resname": "MMA"} C04 {"resname": "EH"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C08 {"resname": "MMA"} C04 {"resname": "LA"} 1 0.152900 224262.400000
 
 [ link ]
-; MMA-LA C^beta - C^alpha link
+; OC-LA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C08 {"resname": "MMA"} C04 {"resname": "LA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C01 {"resname": "OC"} C04 {"resname": "LA"} 1 0.152900 224262.400000
 
 [ link ]
-; MMA-MMA C^beta - C^alpha link 
+; ST-LA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C08 {"resname": "MMA"} C07 {"resname": "MMA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C05 {"resname": "ST"} C04 {"resname": "LA"} 1 0.152900 224262.400000
 
 [ link ]
-; MMA-OC C^beta - C^alpha link
+; EH-MMA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C08 {"resname": "MMA"} C03 {"resname": "OC"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C05 {"resname": "EH"} C07 {"resname": "MMA"} 1 0.152900 224262.400000
 
 [ link ]
-; MMA-ST C^beta - C^alpha link
+; LA-MMA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C08 {"resname": "MMA"} C04 {"resname": "ST"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
-
-
-; OC-headed links
-[ link ]
-; OC-EH C^beta - C^alpha link
-[ bonds ]
-+C01 {"resname": "OC"} C04 {"resname": "EH"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C05 {"resname": "LA"} C07 {"resname": "MMA"} 1 0.152900 224262.400000
 
 [ link ]
-; OC-LA C^beta - C^alpha link
+; MMA-MMA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C01 {"resname": "OC"} C04 {"resname": "LA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C08 {"resname": "MMA"} C07 {"resname": "MMA"} 1 0.152900 224262.400000
 
 [ link ]
-; OC-MMA C^beta - C^alpha link 
+; OC-MMA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C01 {"resname": "OC"} C07 {"resname": "MMA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C01 {"resname": "OC"} C07 {"resname": "MMA"} 1 0.152900 224262.400000
 
 [ link ]
-; OC-OC C^beta - C^alpha link
+; ST-MMA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C01 {"resname": "OC"} C03 {"resname": "OC"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C05 {"resname": "ST"} C07 {"resname": "MMA"} 1 0.152900 224262.400000
 
 [ link ]
-; OC-ST C^beta - C^alpha link
+; EH-OC (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C01 {"resname": "OC"} C04 {"resname": "ST"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
-
-
-; ST-headed links
-[ link ]
-; ST-EH C^beta - C^alpha link 
-[ bonds ]
-+C05 {"resname": "ST"} C04 {"resname": "EH"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C05 {"resname": "EH"} C03 {"resname": "OC"} 1 0.152900 224262.400000
 
 [ link ]
-; ST-LA C^beta - C^alpha link 
+; LA-OC (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "ST"} C04 {"resname": "LA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C05 {"resname": "LA"} C03 {"resname": "OC"} 1 0.152900 224262.400000
 
 [ link ]
-; ST-MMA C^beta - C^alpha link 
+; MMA-OC (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "ST"} C07 {"resname": "MMA"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C08 {"resname": "MMA"} C03 {"resname": "OC"} 1 0.152900 224262.400000
 
 [ link ]
-; ST-OC C^beta - C^alpha link 
+; OC-OC (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "ST"} C03 {"resname": "OC"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C01 {"resname": "OC"} C03 {"resname": "OC"} 1 0.152900 224262.400000
 
 [ link ]
-; ST-ST C^beta - C^alpha link 
+; ST-OC (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "ST"} C04 {"resname": "ST"} 1 0.15290 224262.4 ; from line 'CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file' in 'oplsaa.ff/ffbonded.itp'
++C05 {"resname": "ST"} C03 {"resname": "OC"} 1 0.152900 224262.400000
+
+[ link ]
+; EH-ST (C^beta)_i+1 - (C^alpha)_i link
+[ bonds ]
++C05 {"resname": "EH"} C04 {"resname": "ST"} 1 0.152900 224262.400000
+
+[ link ]
+; LA-ST (C^beta)_i+1 - (C^alpha)_i link
+[ bonds ]
++C05 {"resname": "LA"} C04 {"resname": "ST"} 1 0.152900 224262.400000
+
+[ link ]
+; MMA-ST (C^beta)_i+1 - (C^alpha)_i link
+[ bonds ]
++C08 {"resname": "MMA"} C04 {"resname": "ST"} 1 0.152900 224262.400000
+
+[ link ]
+; OC-ST (C^beta)_i+1 - (C^alpha)_i link
+[ bonds ]
++C01 {"resname": "OC"} C04 {"resname": "ST"} 1 0.152900 224262.400000
+
+[ link ]
+; ST-ST (C^beta)_i+1 - (C^alpha)_i link
+[ bonds ]
++C05 {"resname": "ST"} C04 {"resname": "ST"} 1 0.152900 224262.400000
+
+
+; default CT-CT-CT angle from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 873
+
+[ link ]
+; EH-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "EH"} C05 {"resname": "EH"} C04 {"resname": "EH"} 1 112.700000 488.273000
+
+[ link ]
+; LA-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "LA"} C05 {"resname": "EH"} C04 {"resname": "EH"} 1 112.700000 488.273000
+
+[ link ]
+; MMA-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C07 {"resname": "MMA"} C05 {"resname": "EH"} C04 {"resname": "EH"} 1 112.700000 488.273000
+
+[ link ]
+; OC-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C03 {"resname": "OC"} C05 {"resname": "EH"} C04 {"resname": "EH"} 1 112.700000 488.273000
+
+[ link ]
+; ST-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "ST"} C05 {"resname": "EH"} C04 {"resname": "EH"} 1 112.700000 488.273000
+
+[ link ]
+; EH-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "EH"} C05 {"resname": "LA"} C04 {"resname": "LA"} 1 112.700000 488.273000
+
+[ link ]
+; LA-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "LA"} C05 {"resname": "LA"} C04 {"resname": "LA"} 1 112.700000 488.273000
+
+[ link ]
+; MMA-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C07 {"resname": "MMA"} C05 {"resname": "LA"} C04 {"resname": "LA"} 1 112.700000 488.273000
+
+[ link ]
+; OC-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C03 {"resname": "OC"} C05 {"resname": "LA"} C04 {"resname": "LA"} 1 112.700000 488.273000
+
+[ link ]
+; ST-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "ST"} C05 {"resname": "LA"} C04 {"resname": "LA"} 1 112.700000 488.273000
+
+[ link ]
+; EH-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "EH"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 1 112.700000 488.273000
+
+[ link ]
+; LA-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "LA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 1 112.700000 488.273000
+
+[ link ]
+; MMA-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C07 {"resname": "MMA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 1 112.700000 488.273000
+
+[ link ]
+; OC-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C03 {"resname": "OC"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 1 112.700000 488.273000
+
+[ link ]
+; ST-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "ST"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 1 112.700000 488.273000
+
+[ link ]
+; EH-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "EH"} C01 {"resname": "OC"} C03 {"resname": "OC"} 1 112.700000 488.273000
+
+[ link ]
+; LA-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "LA"} C01 {"resname": "OC"} C03 {"resname": "OC"} 1 112.700000 488.273000
+
+[ link ]
+; MMA-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C07 {"resname": "MMA"} C01 {"resname": "OC"} C03 {"resname": "OC"} 1 112.700000 488.273000
+
+[ link ]
+; OC-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C03 {"resname": "OC"} C01 {"resname": "OC"} C03 {"resname": "OC"} 1 112.700000 488.273000
+
+[ link ]
+; ST-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "ST"} C01 {"resname": "OC"} C03 {"resname": "OC"} 1 112.700000 488.273000
+
+[ link ]
+; EH-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "EH"} C05 {"resname": "ST"} C04 {"resname": "ST"} 1 112.700000 488.273000
+
+[ link ]
+; LA-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "LA"} C05 {"resname": "ST"} C04 {"resname": "ST"} 1 112.700000 488.273000
+
+[ link ]
+; MMA-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C07 {"resname": "MMA"} C05 {"resname": "ST"} C04 {"resname": "ST"} 1 112.700000 488.273000
+
+[ link ]
+; OC-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C03 {"resname": "OC"} C05 {"resname": "ST"} C04 {"resname": "ST"} 1 112.700000 488.273000
+
+[ link ]
+; ST-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ angles ]
++C04 {"resname": "ST"} C05 {"resname": "ST"} C04 {"resname": "ST"} 1 112.700000 488.273000
+
+[ link ]
+; EH-EH (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "EH"} 1 112.700000 488.273000
+
+[ link ]
+; LA-EH (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} 1 112.700000 488.273000
+
+[ link ]
+; MMA-EH (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} 1 112.700000 488.273000
+
+[ link ]
+; OC-EH (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C01 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} 1 112.700000 488.273000
+
+[ link ]
+; ST-EH (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} 1 112.700000 488.273000
+
+[ link ]
+; EH-LA (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} 1 112.700000 488.273000
+
+[ link ]
+; LA-LA (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} 1 112.700000 488.273000
+
+[ link ]
+; MMA-LA (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} 1 112.700000 488.273000
+
+[ link ]
+; OC-LA (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C01 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} 1 112.700000 488.273000
+
+[ link ]
+; ST-LA (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} 1 112.700000 488.273000
+
+[ link ]
+; EH-MMA (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} 1 112.700000 488.273000
+
+[ link ]
+; LA-MMA (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} 1 112.700000 488.273000
+
+[ link ]
+; MMA-MMA (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} 1 112.700000 488.273000
+
+[ link ]
+; OC-MMA (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C01 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} 1 112.700000 488.273000
+
+[ link ]
+; ST-MMA (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} 1 112.700000 488.273000
+
+[ link ]
+; EH-OC (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} 1 112.700000 488.273000
+
+[ link ]
+; LA-OC (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} 1 112.700000 488.273000
+
+[ link ]
+; MMA-OC (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} 1 112.700000 488.273000
+
+[ link ]
+; OC-OC (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C01 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} 1 112.700000 488.273000
+
+[ link ]
+; ST-OC (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} 1 112.700000 488.273000
+
+[ link ]
+; EH-ST (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} 1 112.700000 488.273000
+
+[ link ]
+; LA-ST (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} 1 112.700000 488.273000
+
+[ link ]
+; MMA-ST (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} 1 112.700000 488.273000
+
+[ link ]
+; OC-ST (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C01 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} 1 112.700000 488.273000
+
+[ link ]
+; ST-ST (C^beta - C^alpha)_i+1 - (C^beta)_i link
+[ angles ]
++C05 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} 1 112.700000 488.273000
+
+
+; default CT-CT-CT-CT dihedral from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 1596
+
+[ link ]
+; EH-EH (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "EH"} +C04 {"resname": "EH"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-EH (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "LA"} +C04 {"resname": "LA"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-EH (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-EH (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C01 {"resname": "OC"} +C03 {"resname": "OC"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-EH (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "ST"} +C04 {"resname": "ST"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-LA (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "EH"} +C04 {"resname": "EH"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-LA (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "LA"} +C04 {"resname": "LA"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-LA (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-LA (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C01 {"resname": "OC"} +C03 {"resname": "OC"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-LA (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "ST"} +C04 {"resname": "ST"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-MMA (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "EH"} +C04 {"resname": "EH"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-MMA (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "LA"} +C04 {"resname": "LA"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-MMA (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-MMA (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C01 {"resname": "OC"} +C03 {"resname": "OC"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-MMA (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "ST"} +C04 {"resname": "ST"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-OC (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "EH"} +C04 {"resname": "EH"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-OC (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "LA"} +C04 {"resname": "LA"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-OC (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-OC (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C01 {"resname": "OC"} +C03 {"resname": "OC"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-OC (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "ST"} +C04 {"resname": "ST"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-ST (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "EH"} +C04 {"resname": "EH"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-ST (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "LA"} +C04 {"resname": "LA"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-ST (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-ST (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C01 {"resname": "OC"} +C03 {"resname": "OC"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-ST (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link
+[ dihedrals ]
++C05 {"resname": "ST"} +C04 {"resname": "ST"} C04 {"resname": "ST"} C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-EH-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-EH-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-EH-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-EH-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-EH-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-LA-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-LA-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-LA-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-LA-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-LA-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-MMA-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-MMA-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-MMA-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-MMA-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-MMA-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-OC-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-OC-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-OC-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-OC-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-OC-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-ST-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-ST-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-ST-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-ST-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-ST-EH (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "EH"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-EH-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-EH-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-EH-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-EH-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-EH-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-LA-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-LA-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-LA-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-LA-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-LA-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-MMA-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-MMA-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-MMA-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-MMA-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-MMA-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-OC-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-OC-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-OC-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-OC-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-OC-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-ST-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-ST-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-ST-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-ST-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-ST-LA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "LA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-EH-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-EH-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-EH-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-EH-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-EH-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-LA-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-LA-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-LA-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-LA-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-LA-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-MMA-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-MMA-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-MMA-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-MMA-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-MMA-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-OC-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-OC-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-OC-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-OC-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-OC-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-ST-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-ST-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-ST-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-ST-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-ST-MMA (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C08 {"resname": "MMA"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-EH-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-EH-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-EH-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-EH-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-EH-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-LA-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-LA-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-LA-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-LA-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-LA-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-MMA-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-MMA-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-MMA-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-MMA-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-MMA-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-OC-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-OC-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-OC-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-OC-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-OC-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-ST-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-ST-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-ST-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-ST-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-ST-OC (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C01 {"resname": "OC"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-EH-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-EH-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-EH-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-EH-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-EH-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "EH"} C04 {"resname": "EH"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-LA-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-LA-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-LA-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-LA-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-LA-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "LA"} C04 {"resname": "LA"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-MMA-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-MMA-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-MMA-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-MMA-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-MMA-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-OC-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-OC-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-OC-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-OC-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-OC-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C01 {"resname": "OC"} C03 {"resname": "OC"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; EH-ST-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "EH"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; LA-ST-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "LA"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; MMA-ST-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C07 {"resname": "MMA"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; OC-ST-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C03 {"resname": "OC"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
+
+[ link ]
+; ST-ST-ST (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link
+[ dihedrals ]
++C04 {"resname": "ST"} C05 {"resname": "ST"} C04 {"resname": "ST"} -C05 {"resname": "ST"} 3 12.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000
