@@ -1,129 +1,105 @@
-; default CT-CT bond from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 192
+
+; backbone bonds
 
 [ link ]
-; EH-EH (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "EH"} C04 {"resname": "EH"} 1 0.152900 224262.400000
++C04 {"resname": "EH"} C05 {"resname": "EH"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; LA-EH (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "LA"} C04 {"resname": "EH"} 1 0.152900 224262.400000
++C04 {"resname": "LA"} C05 {"resname": "EH"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; MMA-EH (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C08 {"resname": "MMA"} C04 {"resname": "EH"} 1 0.152900 224262.400000
++C07 {"resname": "MMA"} C05 {"resname": "EH"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; OC-EH (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C01 {"resname": "OC"} C04 {"resname": "EH"} 1 0.152900 224262.400000
++C03 {"resname": "OC"} C05 {"resname": "EH"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; ST-EH (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "ST"} C04 {"resname": "EH"} 1 0.152900 224262.400000
++C04 {"resname": "ST"} C05 {"resname": "EH"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; EH-LA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "EH"} C04 {"resname": "LA"} 1 0.152900 224262.400000
++C04 {"resname": "EH"} C05 {"resname": "LA"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; LA-LA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "LA"} C04 {"resname": "LA"} 1 0.152900 224262.400000
++C04 {"resname": "LA"} C05 {"resname": "LA"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; MMA-LA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C08 {"resname": "MMA"} C04 {"resname": "LA"} 1 0.152900 224262.400000
++C07 {"resname": "MMA"} C05 {"resname": "LA"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; OC-LA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C01 {"resname": "OC"} C04 {"resname": "LA"} 1 0.152900 224262.400000
++C03 {"resname": "OC"} C05 {"resname": "LA"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; ST-LA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "ST"} C04 {"resname": "LA"} 1 0.152900 224262.400000
++C04 {"resname": "ST"} C05 {"resname": "LA"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; EH-MMA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "EH"} C07 {"resname": "MMA"} 1 0.152900 224262.400000
++C04 {"resname": "EH"} C08 {"resname": "MMA"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; LA-MMA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "LA"} C07 {"resname": "MMA"} 1 0.152900 224262.400000
++C04 {"resname": "LA"} C08 {"resname": "MMA"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; MMA-MMA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C08 {"resname": "MMA"} C07 {"resname": "MMA"} 1 0.152900 224262.400000
++C07 {"resname": "MMA"} C08 {"resname": "MMA"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; OC-MMA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C01 {"resname": "OC"} C07 {"resname": "MMA"} 1 0.152900 224262.400000
++C03 {"resname": "OC"} C08 {"resname": "MMA"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; ST-MMA (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "ST"} C07 {"resname": "MMA"} 1 0.152900 224262.400000
++C04 {"resname": "ST"} C08 {"resname": "MMA"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; EH-OC (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "EH"} C03 {"resname": "OC"} 1 0.152900 224262.400000
++C04 {"resname": "EH"} C01 {"resname": "OC"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; LA-OC (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "LA"} C03 {"resname": "OC"} 1 0.152900 224262.400000
++C04 {"resname": "LA"} C01 {"resname": "OC"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; MMA-OC (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C08 {"resname": "MMA"} C03 {"resname": "OC"} 1 0.152900 224262.400000
++C07 {"resname": "MMA"} C01 {"resname": "OC"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; OC-OC (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C01 {"resname": "OC"} C03 {"resname": "OC"} 1 0.152900 224262.400000
++C03 {"resname": "OC"} C01 {"resname": "OC"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; ST-OC (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "ST"} C03 {"resname": "OC"} 1 0.152900 224262.400000
++C04 {"resname": "ST"} C01 {"resname": "OC"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; EH-ST (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "EH"} C04 {"resname": "ST"} 1 0.152900 224262.400000
++C04 {"resname": "EH"} C05 {"resname": "ST"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; LA-ST (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "LA"} C04 {"resname": "ST"} 1 0.152900 224262.400000
++C04 {"resname": "LA"} C05 {"resname": "ST"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; MMA-ST (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C08 {"resname": "MMA"} C04 {"resname": "ST"} 1 0.152900 224262.400000
++C07 {"resname": "MMA"} C05 {"resname": "ST"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; OC-ST (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C01 {"resname": "OC"} C04 {"resname": "ST"} 1 0.152900 224262.400000
++C03 {"resname": "OC"} C05 {"resname": "ST"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 [ link ]
-; ST-ST (C^beta)_i+1 - (C^alpha)_i link
 [ bonds ]
-+C05 {"resname": "ST"} C04 {"resname": "ST"} 1 0.152900 224262.400000
++C04 {"resname": "ST"} C05 {"resname": "ST"} 1 0.152900 224262.400000 ; CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192
 
 
 ; backbone angles
