@@ -89,11 +89,21 @@ output_ff = 'PAMA.oplsaa.LigParGen_links.ff'
 # $V_a(\theta) = \frac{1}{2} k_{\theta}(\theta-\theta_0)^2$
 
 # %%
+bond_type_parameter_dict = {}
+
+# %%
 # harmonic bond potential: V_b(r) = 1/2*k_b(r-b_0)^2
 # default CT-CT bond from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 192
 default_bond_func_type = 1  # harmonic bond
 default_bond_b_0 = 0.15290  # b_0 (nm)
 default_bond_k_b = 224262.4 # k_b (kJ mol^-1 nm^-2)
+
+bond_type_parameter_dict[('C','C')] = {
+    'func_type': default_bond_func_type,
+    'b_0': default_bond_b_0,
+    'k_0': default_bond_k_b,
+    'comment': "CT-CT bond from 'oplsaa.ff/ffbonded.itp', line 192"
+}
 
 # %% [markdown]
 # ### Harmonic angle potential:
@@ -281,11 +291,17 @@ for backbone_hydrocarbon_type, backbone_hydrocarbon_dict in backbone_hydrocarbon
 # %%
 connectivity_dict
 
+# %%
+monomer_2_tuples = list(itertools.product(monomer_set, repeat=2))
+
+# %%
+monomer_3_tuples = list(itertools.product(monomer_set, repeat=3))
+
 # %% [markdown]
 # ## bonds between residues $i$ and $i+1$
 
 # %% [markdown]
-# ### $(C^\beta)_{i+1} - (C^\alpha)_{i}$
+# ### $(C^\alpha)_{i+1} - (C^\beta)_{i}$
 
 # %% [markdown]
 # For bonds, we write entries like this:
@@ -299,30 +315,78 @@ connectivity_dict
 # ```
 
 # %%
-backbone_bond_tuples = []
-for tail_monomer, tail_backbone_atom in Calpha.items():
-    for head_monomer, head_backbone_atom in Cbeta.items():
-        backbone_bond_tuples.append(((tail_monomer, tail_backbone_atom), (head_monomer, head_backbone_atom)))
+bond_tuple_list = []
 
 # %%
-len(backbone_bond_tuples)
+for tail_monomer, head_monomer in monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    left_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
+    left_atom_tuple = (left_atom_name, head_monomer, 1)
+    
+    right_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
+    right_atom_tuple = (right_atom_name, tail_monomer, 0)
+    
+    bond_tuple_list.append((left_atom_tuple, right_atom_tuple))
 
 # %%
-backbone_bond_parameter_dict = {
-    backbone_bond_tuple: {
-        "func_type": default_bond_func_type,
-        "b_0": default_bond_b_0,
-        "k_b": default_bond_k_b
-    } for backbone_bond_tuple in backbone_bond_tuples}
+len(bond_tuple_list)
+
+# %% [markdown]
+# ### Map bond types
 
 # %%
-lines.append("; default CT-CT bond from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 192")
-for backbone_bond_tuple, parameter_dict in backbone_bond_parameter_dict.items():
+bond_type_dict = {}
+bond_type_set = set()
+bond_type_count = {}
+
+for bond_tuple in bond_tuple_list:
+    bond_type = (bond_tuple[0][0][0], bond_tuple[1][0][0])
+    
+    # canonical ordering, reverse if necessary
+    if bond_type[0] > bond_type[1]:
+        bond_type = (bond_type[1], bond_type[0])
+
+    bond_type_dict[bond_tuple] = bond_type
+
+    if bond_type not in bond_type_count:
+        bond_type_count[bond_type] = 1
+    else:
+        bond_type_count[bond_type] += 1
+
+# %%
+bond_type_count
+
+# %%
+bond_parameter_dict = {bond_tuple: bond_type_parameter_dict[bond_type] for bond_tuple, bond_type in bond_type_dict.items()}
+
+# %% [markdown]
+# ### Generate bond links
+
+# %%
+lines.append('')
+lines.append("; backbone bonds")
+for bond_tuple, parameter_dict in bond_parameter_dict.items():
+    atom_tokens = []
+    for atom_tuple in bond_tuple:
+        if atom_tuple[2] > 0:
+            prefix = '+'
+        elif atom_tuple[2] < 0:
+            prefix = '-'
+        else:
+            prefix = ''
+            
+        atom_tokens.append(f'{prefix}{atom_tuple[0]} {{"resname": "{atom_tuple[1]}"}}')
+    atoms_token = ' '.join(atom_tokens)
+    
+    parameter_token = f'{parameter_dict["func_type"]:d} {parameter_dict["b_0"]:f} {parameter_dict["k_0"]:f}'
+
+    comment_token = ' ; {}'.format(parameter_dict["comment"]) if 'comment' in parameter_dict else ''
+
     lines.append('')
     lines.append('[ link ]')
-    lines.append(f'; {backbone_bond_tuple[1][0]}-{backbone_bond_tuple[0][0]} (C^beta)_i+1 - (C^alpha)_i link')
     lines.append('[ bonds ]')
-    lines.append(f'+{backbone_bond_tuple[1][1]} {{"resname": "{backbone_bond_tuple[1][0]}"}} {backbone_bond_tuple[0][1]} {{"resname": "{backbone_bond_tuple[0][0]}"}} {parameter_dict["func_type"]:d} {parameter_dict["b_0"]:f} {parameter_dict["k_b"]:f}')
+    lines.append(f'{atoms_token} {parameter_token}{comment_token}')
 
 # %% [markdown]
 # ## angles between residues $i$ and $i+1$
@@ -332,9 +396,6 @@ for backbone_bond_tuple, parameter_dict in backbone_bond_parameter_dict.items():
 
 # %% [markdown]
 # A is any neighbor of $C^\beta$ in residue i
-
-# %%
-monomer_2_tuples = list(itertools.product(monomer_set, repeat=2))
 
 # %%
 angle_tuple_list = []
@@ -444,9 +505,6 @@ for angle_tuple, parameter_dict in angle_parameter_dict.items():
 # A is any neighbor of $C^\alpha$ in residue i+1, B is any neighbor of $C^\beta$ in residue i
 
 # %%
-monomer_2_tuples = list(itertools.product(monomer_set, repeat=2))
-
-# %%
 dihedral_tuple_list = []
 
 # %%
@@ -532,9 +590,6 @@ len(set(dihedral_tuple_list))
 
 # %% [markdown]
 # ### $(C^\alpha)_{i+1} - (C^\beta - C^\alpha)_{i} - (C^\beta)_{i-1}$
-
-# %%
-monomer_3_tuples = list(itertools.product(monomer_set, repeat=3))
 
 # %%
 len(monomer_3_tuples)
