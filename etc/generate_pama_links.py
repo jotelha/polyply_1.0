@@ -54,14 +54,6 @@ monomer_pdb_dict = {
 monomer_molecule_dict = {monomer: read_pdb(filename)[0] for monomer, filename in monomer_pdb_dict.items()}
 
 # %%
-mol = monomer_molecule_dict['MMA']
-
-for idx, atom in mol.nodes(data=True):
-    print(f"{idx:5d}  {atom['atomname']:>4s}  "
-          f"{atom['resname']:>3s} {atom['resid']:<4d}  "
-          f"chain {atom['chain']}")
-
-# %%
 Calpha = {
     'EH': 'C04',
     'LA': 'C04',
@@ -174,7 +166,7 @@ dihedral_type_parameter_dict[('C','C','C','O')] = {
 dihedral_type_parameter_dict[('C','C','C','H')] = {
     'func_type': 3,
     'C': [0.62760, 1.88280, 0.00000, -2.51040, 0.00000, 0.00000],
-    'comment': "CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1599"
+    'comment': "CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599"
 }
 
 # %% [markdown]
