@@ -1637,675 +1637,675 @@
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H03 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H03 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "LA"} +C05 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "LA"} +C05 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "LA"} +C05 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "LA"} +C05 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "LA"} +C08 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "LA"} +C08 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H09 {"resname": "MMA"} +C08 {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H09 {"resname": "MMA"} +C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0A {"resname": "MMA"} +C08 {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0A {"resname": "MMA"} +C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0C {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0C {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0D {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0D {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0E {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0E {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "OC"} +C01 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "OC"} +C01 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "OC"} +C01 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "OC"} +C01 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H05 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H05 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "OC"} +C08 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "OC"} +C08 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H03 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H03 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "ST"} +C05 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "ST"} +C05 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "ST"} +C05 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "ST"} +C05 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "ST"} +C08 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "ST"} +C08 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "EH"} +C01 {"resname": "EH"} +C08 {"resname": "EH"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "EH"} +C01 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "EH"} +C01 {"resname": "EH"} +C08 {"resname": "EH"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "EH"} +C01 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H03 {"resname": "EH"} +C01 {"resname": "EH"} +C08 {"resname": "EH"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H03 {"resname": "EH"} +C01 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "EH"} +C05 {"resname": "EH"} +C08 {"resname": "EH"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "EH"} +C05 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "EH"} +C05 {"resname": "EH"} +C08 {"resname": "EH"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "EH"} +C05 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "EH"} +C08 {"resname": "EH"} +C08 {"resname": "EH"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "EH"} +C08 {"resname": "EH"} +C08 {"resname": "EH"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H03 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H03 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "LA"} +C05 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "LA"} +C05 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "LA"} +C05 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "LA"} +C05 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "LA"} +C08 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "LA"} +C08 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H09 {"resname": "MMA"} +C08 {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H09 {"resname": "MMA"} +C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0A {"resname": "MMA"} +C08 {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0A {"resname": "MMA"} +C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0C {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0C {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0D {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0D {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0E {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0E {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "OC"} +C01 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "OC"} +C01 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "OC"} +C01 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "OC"} +C01 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H05 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H05 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "OC"} +C08 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "OC"} +C08 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H03 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H03 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "ST"} +C05 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "ST"} +C05 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "ST"} +C05 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "ST"} +C05 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "ST"} +C08 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "ST"} +C08 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "EH"} +C01 {"resname": "EH"} +C08 {"resname": "EH"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "EH"} +C01 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "EH"} +C01 {"resname": "EH"} +C08 {"resname": "EH"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "EH"} +C01 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H03 {"resname": "EH"} +C01 {"resname": "EH"} +C08 {"resname": "EH"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H03 {"resname": "EH"} +C01 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "EH"} +C05 {"resname": "EH"} +C08 {"resname": "EH"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "EH"} +C05 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "EH"} +C05 {"resname": "EH"} +C08 {"resname": "EH"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "EH"} +C05 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "EH"} +C08 {"resname": "EH"} +C08 {"resname": "EH"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "EH"} +C08 {"resname": "EH"} +C08 {"resname": "EH"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H03 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H03 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "LA"} +C05 {"resname": "LA"} +C08 {"resname": "LA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "LA"} +C05 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "LA"} +C05 {"resname": "LA"} +C08 {"resname": "LA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "LA"} +C05 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "LA"} +C08 {"resname": "LA"} +C08 {"resname": "LA"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "LA"} +C08 {"resname": "LA"} +C08 {"resname": "LA"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C08 {"resname": "MMA"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C08 {"resname": "MMA"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H09 {"resname": "MMA"} +C08 {"resname": "MMA"} +C08 {"resname": "MMA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H09 {"resname": "MMA"} +C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0A {"resname": "MMA"} +C08 {"resname": "MMA"} +C08 {"resname": "MMA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0A {"resname": "MMA"} +C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0C {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0C {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0D {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0D {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0E {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0E {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "OC"} +C01 {"resname": "OC"} +C0B {"resname": "OC"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "OC"} +C01 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "OC"} +C01 {"resname": "OC"} +C0B {"resname": "OC"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "OC"} +C01 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H05 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H05 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "OC"} +C08 {"resname": "OC"} +C0B {"resname": "OC"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "OC"} +C08 {"resname": "OC"} +C0B {"resname": "OC"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H03 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H03 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "ST"} +C05 {"resname": "ST"} +C08 {"resname": "ST"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "ST"} +C05 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "ST"} +C05 {"resname": "ST"} +C08 {"resname": "ST"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "ST"} +C05 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "ST"} +C08 {"resname": "ST"} +C08 {"resname": "ST"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "ST"} +C08 {"resname": "ST"} +C08 {"resname": "ST"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "EH"} +C01 {"resname": "EH"} +C08 {"resname": "EH"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "EH"} +C01 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "EH"} +C01 {"resname": "EH"} +C08 {"resname": "EH"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "EH"} +C01 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H03 {"resname": "EH"} +C01 {"resname": "EH"} +C08 {"resname": "EH"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H03 {"resname": "EH"} +C01 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "EH"} +C05 {"resname": "EH"} +C08 {"resname": "EH"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "EH"} +C05 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "EH"} +C05 {"resname": "EH"} +C08 {"resname": "EH"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "EH"} +C05 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "EH"} +C08 {"resname": "EH"} +C08 {"resname": "EH"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "EH"} +C08 {"resname": "EH"} +C08 {"resname": "EH"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H03 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H03 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "LA"} +C05 {"resname": "LA"} +C08 {"resname": "LA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "LA"} +C05 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "LA"} +C05 {"resname": "LA"} +C08 {"resname": "LA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "LA"} +C05 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "LA"} +C08 {"resname": "LA"} +C08 {"resname": "LA"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "LA"} +C08 {"resname": "LA"} +C08 {"resname": "LA"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C08 {"resname": "MMA"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C08 {"resname": "MMA"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H09 {"resname": "MMA"} +C08 {"resname": "MMA"} +C08 {"resname": "MMA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H09 {"resname": "MMA"} +C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0A {"resname": "MMA"} +C08 {"resname": "MMA"} +C08 {"resname": "MMA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0A {"resname": "MMA"} +C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0C {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0C {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0D {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0D {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0E {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0E {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "OC"} +C01 {"resname": "OC"} +C0B {"resname": "OC"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "OC"} +C01 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "OC"} +C01 {"resname": "OC"} +C0B {"resname": "OC"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "OC"} +C01 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H05 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H05 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "OC"} +C08 {"resname": "OC"} +C0B {"resname": "OC"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "OC"} +C08 {"resname": "OC"} +C0B {"resname": "OC"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H03 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H03 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "ST"} +C05 {"resname": "ST"} +C08 {"resname": "ST"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "ST"} +C05 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "ST"} +C05 {"resname": "ST"} +C08 {"resname": "ST"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "ST"} +C05 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "ST"} +C08 {"resname": "ST"} +C08 {"resname": "ST"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "ST"} +C08 {"resname": "ST"} +C08 {"resname": "ST"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "EH"} +C01 {"resname": "EH"} +C08 {"resname": "EH"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "EH"} +C01 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "EH"} +C01 {"resname": "EH"} +C08 {"resname": "EH"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "EH"} +C01 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H03 {"resname": "EH"} +C01 {"resname": "EH"} +C08 {"resname": "EH"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H03 {"resname": "EH"} +C01 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "EH"} +C05 {"resname": "EH"} +C08 {"resname": "EH"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "EH"} +C05 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "EH"} +C05 {"resname": "EH"} +C08 {"resname": "EH"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "EH"} +C05 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "EH"} +C08 {"resname": "EH"} +C08 {"resname": "EH"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "EH"} +C08 {"resname": "EH"} +C08 {"resname": "EH"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H03 {"resname": "LA"} +C01 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H03 {"resname": "LA"} +C01 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "LA"} +C05 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "LA"} +C05 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "LA"} +C05 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "LA"} +C05 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "LA"} +C08 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "LA"} +C08 {"resname": "LA"} +C08 {"resname": "LA"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H09 {"resname": "MMA"} +C08 {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H09 {"resname": "MMA"} +C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0A {"resname": "MMA"} +C08 {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0A {"resname": "MMA"} +C08 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0C {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0C {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0D {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0D {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H0E {"resname": "MMA"} +C0B {"resname": "MMA"} +C08 {"resname": "MMA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H0E {"resname": "MMA"} +C0B {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "OC"} +C01 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "OC"} +C01 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "OC"} +C01 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "OC"} +C01 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H05 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H05 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "OC"} +C04 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "OC"} +C04 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "OC"} +C08 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "OC"} +C08 {"resname": "OC"} +C0B {"resname": "OC"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+H00 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H00 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H02 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H02 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H03 {"resname": "ST"} +C01 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H03 {"resname": "ST"} +C01 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H06 {"resname": "ST"} +C05 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H06 {"resname": "ST"} +C05 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+H07 {"resname": "ST"} +C05 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++H07 {"resname": "ST"} +C05 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "ST"} +C08 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "ST"} +C08 {"resname": "ST"} +C08 {"resname": "ST"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
 
 [ link ]
 [ dihedrals ]
