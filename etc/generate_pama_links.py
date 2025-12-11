@@ -541,7 +541,7 @@ for tail_monomer, head_monomer in monomer_2_tuples:
     
     # atom name, res name, res increment:
     center_right_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
-    center_right_atom_tuple = (center_left_atom_name, head_monomer, 1)
+    center_right_atom_tuple = (center_right_atom_name, head_monomer, 1)
     
     right_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
     right_atom_tuple = (right_atom_name, tail_monomer, 0)
