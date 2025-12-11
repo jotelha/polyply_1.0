@@ -20,6 +20,48 @@
 # We generate links along the polymer backbone.
 
 # %%
+from vermouth.pdb.pdb import read_pdb
+import networkx as nx
+import matplotlib.pyplot as plt
+
+import itertools
+
+
+# %%
+# --- 1. Find the atom index by atom name (optionally with residue filter) ---
+def find_atom_index(mol, atomname, resname=None, resid=None):
+    for idx, atom in mol.nodes(data=True):
+        if atom['atomname'] == atomname:
+            if (resname is None or atom['resname'] == resname) and \
+               (resid   is None or atom['resid'] == resid):
+                return idx
+    raise ValueError("Atom not found.")
+
+
+# %%
+monomer_set = ('EH', 'LA', 'MMA', 'OC', 'ST')   # fixed the unmatched quote
+
+# %%
+monomer_pdb_dict = {
+    'EH': './PAMA-monomers/eh.pdb',
+    'LA': './PAMA-monomers/la.pdb',
+    'MMA': './PAMA-monomers/mma.pdb',
+    'OC': './PAMA-monomers/oc.pdb',
+    'ST': './PAMA-monomers/st.pdb'
+}
+
+# %%
+monomer_molecule_dict = {monomer: read_pdb(filename)[0] for monomer, filename in monomer_pdb_dict.items()}
+
+# %%
+mol = monomer_molecule_dict['MMA']
+
+for idx, atom in mol.nodes(data=True):
+    print(f"{idx:5d}  {atom['atomname']:>4s}  "
+          f"{atom['resname']:>3s} {atom['resid']:<4d}  "
+          f"chain {atom['chain']}")
+
+# %%
 Calpha = {
     'EH': 'C04',
     'LA': 'C04',
@@ -50,7 +92,7 @@ lines = []
 output_ff = 'PAMA.oplsaa.LigParGen_links.ff'
 
 # %% [markdown]
-# Harmonic bond potential:
+# ### Harmonic bond potential:
 #
 # $V_a(\theta) = \frac{1}{2} k_{\theta}(\theta-\theta_0)^2$
 
@@ -62,9 +104,12 @@ default_bond_b_0 = 0.15290  # b_0 (nm)
 default_bond_k_b = 224262.4 # k_b (kJ mol^-1 nm^-2)
 
 # %% [markdown]
-# Harmonic angle potential:
+# ### Harmonic angle potential:
 #
 # $V_b(r) = \frac{1}{2} k_{b}(r-b_0)^2$
+
+# %%
+angle_type_parameter_dict = {}
 
 # %%
 # default CT-CT-CT angle from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 873
@@ -74,12 +119,32 @@ default_angle_func_type = 1  # harmonic angle
 default_angle_theta_0 = 112.700 # theta_0 (deg)
 default_angle_k_theta = 488.273 # k_theta (kJ mol^-1 rad^-2)
 
+angle_type_parameter_dict[('C','C','C')] = {
+    'func_type': default_angle_func_type,
+    'theta_0': default_angle_theta_0,
+    'k_theta': default_angle_k_theta,
+    'comment': "CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873"
+}
+
+# %%
+# default CT-CT-HC angle from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 881
+#    881	  CT     CT     HC      1   110.700    313.800   ; CHARMM 22 parameter file
+angle_type_parameter_dict[('C','C','H')] = {
+    'func_type': 1,
+    'theta_0': 110.700,
+    'k_theta': 313.800,
+    'comment': "CT-CT-HC angle from 'oplsaa.ff/ffbonded.itp', line 881"
+}
+
 # %% [markdown]
-# Ryckaert-Bellmans dihedral potential:
+# ### Ryckaert-Bellmans dihedral potential:
 #
 # $ V_{rb}(\phi) = \sum_{n=0}^5 C_n (\cos(\psi))^n$ with $\psi = \phi - 180\degree$
 #
 # OPLS-AA uses only four coefficients $n=0\dots3$
+
+# %%
+dihedral_type_parameter_dict = {}
 
 # %%
 # default CT-CT-CT-CT dihedral from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 1596
@@ -87,6 +152,142 @@ default_angle_k_theta = 488.273 # k_theta (kJ mol^-1 rad^-2)
 #    cat -n ffbonded.itp | grep -E 'CT[[:space:]]+CT[[:space:]]+CT[[:space:]]+CT'
 default_dihedral_func_type = 3  # Ryckaert-Bellemans dihedral
 default_dihedral_C = [12.92880, -1.46440, 0.20920, -1.67360, 0.00000, 0.00000] # C_n (kJ mol^-1)
+
+dihedral_type_parameter_dict[('C','C','C','C')] = {
+    'func_type': default_dihedral_func_type,
+    'C': default_dihedral_C,
+    'comment': "CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596"
+}
+
+# %%
+# CT-CT-CT-OS dihedral from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 1608
+#  1608	  CT     CT     CT     OS      3      2.87441   0.58158   2.09200  -5.54799   0.00000   0.00000 ; alcohols, ethers AA
+dihedral_type_parameter_dict[('C','C','C','O')] = {
+    'func_type': 3,
+    'C': [2.87441, 0.58158, 2.09200, -5.54799, 0.00000, 0.00000],
+    'comment': "CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608"
+}
+
+# %%
+# CT-CT-CT-HC dihedral from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 1599
+#  1599	  CT     CT     CT     HC      3      0.62760   1.88280   0.00000  -2.51040   0.00000   0.00000 ; hydrocarbon all-atom
+dihedral_type_parameter_dict[('C','C','C','H')] = {
+    'func_type': 3,
+    'C': [0.62760, 1.88280, 0.00000, -2.51040, 0.00000, 0.00000],
+    'comment': "CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1599"
+}
+
+# %% [markdown]
+# ### visualize connectivity graphs
+
+# %%
+for monomer_name, mol in monomer_molecule_dict.items():
+    # ---------------------------------------------------------
+    # CONFIG: atom names you want to emphasize
+    # ---------------------------------------------------------
+    highlight_atomnames = {Calpha[monomer_name], Cbeta[monomer_name]}
+    
+    # ---------------------------------------------------------
+    # 1. Create node labels (atom name or atomname+resid)
+    # ---------------------------------------------------------
+    labels = {
+        idx: atom["atomname"]
+        for idx, atom in mol.nodes(data=True)
+    }
+    
+    # ---------------------------------------------------------
+    # 2. Determine which nodes should be emphasized
+    # ---------------------------------------------------------
+    highlight_nodes = [
+        idx for idx, atom in mol.nodes(data=True)
+        if atom["atomname"] in highlight_atomnames
+    ]
+    
+    # ---------------------------------------------------------
+    # 3. Visual styling
+    # ---------------------------------------------------------
+    node_colors = [
+        "red" if idx in highlight_nodes else "lightgray"
+        for idx in mol.nodes()
+    ]
+    
+    node_sizes = [
+        500 if idx in highlight_nodes else 200
+        for idx in mol.nodes()
+    ]
+    
+    # ---------------------------------------------------------
+    # 4. Layout (graphviz-like spring layout)
+    # ---------------------------------------------------------
+    pos = nx.spring_layout(mol, seed=42)   # deterministic layout
+    
+    # ---------------------------------------------------------
+    # 5. Draw the graph
+    # ---------------------------------------------------------
+    plt.figure(figsize=(10, 10))
+    
+    nx.draw_networkx_edges(mol, pos, alpha=0.4)
+    
+    nx.draw_networkx_nodes(
+        mol, pos,
+        node_color=node_colors,
+        node_size=node_sizes,
+        edgecolors="black"
+    )
+    
+    nx.draw_networkx_labels(
+        mol, pos,
+        labels=labels,
+        font_size=8,
+        font_color="black"
+    )
+
+    plt.title(monomer_name)
+    plt.axis("off")
+    plt.tight_layout()
+    plt.show()
+
+
+# %% [markdown]
+# ### evaluate first and second neighbors of backbone hydrocarbons
+
+# %%
+# iterate over Calpha and Cbeta
+connectivity_dict = {}
+for backbone_hydrocarbon_type, backbone_hydrocarbon_dict in backbone_hydrocarbons.items():
+    print(f"Treating C{backbone_hydrocarbon_type}...")
+
+    connectivity_dict[backbone_hydrocarbon_type] = {}
+    
+    #iterate over all monomers
+    for monomer_name, backbone_hydrocarbon_name in backbone_hydrocarbon_dict.items():
+        print(f"    Treating {monomer_name}:{backbone_hydrocarbon_name}...")
+
+        connectivity_dict[backbone_hydrocarbon_type][monomer_name] = {}
+
+        mol = monomer_molecule_dict[monomer_name]
+
+        start = find_atom_index(mol, atomname=backbone_hydrocarbon_name)
+        
+        first_neighbors = list(mol.neighbors(start))
+        
+        neighbor_index_map = {}
+
+        for nbr in first_neighbors:
+            # Second neighbors: neighbors of this first neighbor,
+            # excluding the start atom (so only true 2-step nodes)
+            second = [x for x in mol.neighbors(nbr) if x != start]
+            neighbor_index_map[nbr] = second
+
+        neighbor_name_map = {mol.nodes[idx1]['atomname']: [mol.nodes[idx2]['atomname'] for idx2 in second_neighbors] for idx1, second_neighbors in neighbor_index_map.items()}
+
+        print(f"        Identified first and second neighbors of {monomer_name}:{backbone_hydrocarbon_name}:{neighbor_name_map}.")
+
+        connectivity_dict[backbone_hydrocarbon_type][monomer_name] = neighbor_name_map
+        
+
+# %%
+connectivity_dict
 
 # %% [markdown]
 # ## bonds between residues $i$ and $i+1$
@@ -131,141 +332,297 @@ for backbone_bond_tuple, parameter_dict in backbone_bond_parameter_dict.items():
     lines.append('[ bonds ]')
     lines.append(f'+{backbone_bond_tuple[1][1]} {{"resname": "{backbone_bond_tuple[1][0]}"}} {backbone_bond_tuple[0][1]} {{"resname": "{backbone_bond_tuple[0][0]}"}} {parameter_dict["func_type"]:d} {parameter_dict["b_0"]:f} {parameter_dict["k_b"]:f}')
 
-
 # %% [markdown]
 # ## angles between residues $i$ and $i+1$
 
 # %% [markdown]
-# ### $(C^\alpha)_{i+1} - (C^\beta - C^\alpha)_{i}$
+# ### $(C^\alpha)_{i+1} - (C^\beta - A)_{i}$
+
+# %% [markdown]
+# A is any neighbor of $C^\beta$ in residue i
 
 # %%
-backbone_angle_tuples = []
-
-# alpha-beta-alpha
-for (tail_monomer, tail_backbone_atom), (center_monomer, center_backbone_atom) in zip(Calpha.items(), Cbeta.items()):
-    for head_monomer, head_backbone_atom in Calpha.items():
-        backbone_angle_tuples.append(((tail_monomer, tail_backbone_atom), (center_monomer, center_backbone_atom), (head_monomer, head_backbone_atom)))
+monomer_2_tuples = list(itertools.product(monomer_set, repeat=2))
 
 # %%
-len(backbone_angle_tuples)
+angle_tuple_list = []
 
 # %%
-backbone_angle_parameter_dict = {
-    backbone_angle_tuple: {
-        "func_type": default_angle_func_type,
-        "theta_0": default_angle_theta_0,
-        "k_theta": default_angle_k_theta
-    } for backbone_angle_tuple in backbone_angle_tuples}
+for tail_monomer, head_monomer in monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    left_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
+    left_atom_tuple = (left_atom_name, head_monomer, 1)
+    
+    center_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
+    center_atom_tuple = (center_atom_name, tail_monomer, 0)
+    
+    for right_atom_name in connectivity_dict["beta"][tail_monomer].keys():
+        right_atom_tuple = (right_atom_name, tail_monomer, 0)
+        
+        angle_tuple_list.append((left_atom_tuple, center_atom_tuple, right_atom_tuple))
+
+# %% [markdown]
+# ### $ (A - C^\alpha)_{i+1} - (C_\beta)_i $
+
+# %% [markdown]
+# A is any neighbor of $C^\alpha$ in residue $i+1$
+
+# %%
+for tail_monomer, head_monomer in monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    right_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
+    right_atom_tuple = (right_atom_name, tail_monomer, 0)
+    
+    center_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
+    center_atom_tuple = (center_atom_name, head_monomer, 1)
+    
+    for left_atom_name in connectivity_dict["alpha"][head_monomer].keys():
+        left_atom_tuple = (left_atom_name, head_monomer, 1)
+        angle_tuple_list.append((left_atom_tuple, center_atom_tuple, right_atom_tuple))
+
+# %%
+len(angle_tuple_list)
+
+# %% [markdown]
+# ### Map angle types
+
+# %%
+angle_type_dict = {}
+angle_type_set = set()
+angle_type_count = {}
+
+for angle_tuple in angle_tuple_list:
+    angle_type = (angle_tuple[0][0][0], angle_tuple[1][0][0], angle_tuple[2][0][0])
+    
+    # canonical ordering, reverse if necessary
+    if angle_type[0] > angle_type[2]:
+        angle_type = (angle_type[2], angle_type[1], angle_type[0])
+
+    angle_type_dict[angle_tuple] = angle_type
+
+    if angle_type not in angle_type_count:
+        angle_type_count[angle_type] = 1
+    else:
+        angle_type_count[angle_type] += 1
+
+# %%
+angle_type_count
+
+# %%
+angle_parameter_dict = {angle_tuple: angle_type_parameter_dict[angle_type] for angle_tuple, angle_type in angle_type_dict.items()}
+
+# %% [markdown]
+# ### Generate angle links
 
 # %%
 lines.append('')
 lines.append('')
-lines.append("; default CT-CT-CT angle from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 873")
-for backbone_angle_tuple, parameter_dict in backbone_angle_parameter_dict.items():
+lines.append("; backbone angles")
+for angle_tuple, parameter_dict in angle_parameter_dict.items():
+    atom_tokens = []
+    for atom_tuple in angle_tuple:
+        if atom_tuple[2] > 0:
+            prefix = '+'
+        elif atom_tuple[2] < 0:
+            prefix = '-'
+        else:
+            prefix = ''
+            
+        atom_tokens.append(f'{prefix}{atom_tuple[0]} {{"resname": "{atom_tuple[1]}"}}')
+    atoms_token = ' '.join(atom_tokens)
+    
+    parameter_token = f'{parameter_dict["func_type"]:d} {parameter_dict["theta_0"]:f} {parameter_dict["k_theta"]:f}'
+
+    comment_token = ' ; {}'.format(parameter_dict["comment"]) if 'comment' in parameter_dict else ''
+
     lines.append('')
     lines.append('[ link ]')
-    lines.append(f'; {backbone_angle_tuple[2][0]}-{backbone_angle_tuple[0][0]} (C^alpha)_i+1 - (C^beta - C^alpha)_i link')
     lines.append('[ angles ]')
-    lines.append(f'+{backbone_angle_tuple[2][1]} {{"resname": "{backbone_angle_tuple[2][0]}"}} {backbone_angle_tuple[1][1]} {{"resname": "{backbone_angle_tuple[1][0]}"}} {backbone_angle_tuple[0][1]} {{"resname": "{backbone_angle_tuple[0][0]}"}} {parameter_dict["func_type"]:d} {parameter_dict["theta_0"]:f} {parameter_dict["k_theta"]:f}')
+    lines.append(f'{atoms_token} {parameter_token}{comment_token}')
 
 # %% [markdown]
-# ### $ (C^\beta - C^\alpha)_{i+1} - (C_\beta)_i $
-
-# %%
-backbone_angle_tuples = []
-
-# beta-alpha-beta
-for tail_monomer, tail_backbone_atom in Cbeta.items():
-    for (center_monomer, center_backbone_atom), (head_monomer, head_backbone_atom) in zip(Calpha.items(), Cbeta.items()) :
-        backbone_angle_tuples.append(((tail_monomer, tail_backbone_atom), (center_monomer, center_backbone_atom), (head_monomer, head_backbone_atom)))
-
-# %%
-len(backbone_angle_tuples)
-
-# %%
-backbone_angle_parameter_dict = {
-    backbone_angle_tuple: {
-        "func_type": default_angle_func_type,
-        "theta_0": default_angle_theta_0,
-        "k_theta": default_angle_k_theta
-    } for backbone_angle_tuple in backbone_angle_tuples}
-
-# %%
-for backbone_angle_tuple, parameter_dict in backbone_angle_parameter_dict.items():
-    lines.append('')
-    lines.append('[ link ]')
-    lines.append(f'; {backbone_angle_tuple[2][0]}-{backbone_angle_tuple[0][0]} (C^beta - C^alpha)_i+1 - (C^beta)_i link')
-    lines.append('[ angles ]')
-    lines.append(f'+{backbone_angle_tuple[2][1]} {{"resname": "{backbone_angle_tuple[2][0]}"}} +{backbone_angle_tuple[1][1]} {{"resname": "{backbone_angle_tuple[1][0]}"}} {backbone_angle_tuple[0][1]} {{"resname": "{backbone_angle_tuple[0][0]}"}} {parameter_dict["func_type"]:d} {parameter_dict["theta_0"]:f} {parameter_dict["k_theta"]:f}')
+# ## dihedrals between residues $i$ and $i+1$
 
 # %% [markdown]
-# ## dihedrals
+# ### $(A - C^\alpha)_{i+1} - (C^\beta - B)_{i}$
 
 # %% [markdown]
-# ### $(C^\beta - C^\alpha)_{i+1} - (C^\beta - C^\alpha)_{i}$
+# A is any neighbor of $C^\alpha$ in residue i+1, B is any neighbor of $C^\beta$ in residue i
 
 # %%
-backbone_dihedral_tuples = []
-
-# alpha-beta-alpha-alpha
-for (tail_monomer, tail_backbone_atom), (center_left_monomer, center_left_backbone_atom) in zip(Calpha.items(), Cbeta.items()):
-    for (center_right_monomer, center_right_backbone_atom), (head_monomer, head_backbone_atom) in zip(Calpha.items(), Cbeta.items()) :
-        backbone_dihedral_tuples.append(((tail_monomer, tail_backbone_atom), (center_left_monomer, center_left_backbone_atom), (center_right_monomer, center_right_backbone_atom), (head_monomer, head_backbone_atom)))
-
+monomer_2_tuples = list(itertools.product(monomer_set, repeat=2))
 
 # %%
-len(backbone_dihedral_tuples)
+dihedral_tuple_list = []
 
 # %%
-backbone_dihedral_parameter_dict = {
-    backbone_dihedral_tuple: {
-        "func_type": default_dihedral_func_type,
-        "C": default_dihedral_C,
-    } for backbone_dihedral_tuple in backbone_dihedral_tuples}
+for tail_monomer, head_monomer in monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    center_left_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
+    center_left_atom_tuple = (center_left_atom_name, head_monomer, 1)
+    
+    center_right_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
+    center_right_atom_tuple = (center_right_atom_name, tail_monomer, 0)
+
+    for left_atom_name in connectivity_dict["alpha"][head_monomer].keys():
+        left_atom_tuple = (left_atom_name, head_monomer, 1)
+        
+        for right_atom_name in connectivity_dict["beta"][tail_monomer].keys():
+            right_atom_tuple = (right_atom_name, tail_monomer, 0)
+            dihedral_tuple_list.append((left_atom_tuple, center_left_atom_tuple, center_right_atom_tuple, right_atom_tuple))
 
 # %%
-lines.append('')
-lines.append('')
-lines.append("; default CT-CT-CT-CT dihedral from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 1596")
-for backbone_dihedral_tuple, parameter_dict in backbone_dihedral_parameter_dict.items():
-    lines.append('')
-    lines.append('[ link ]')
-    lines.append(f'; {backbone_dihedral_tuple[3][0]}-{backbone_dihedral_tuple[0][0]} (C^beta - C^alpha)_i+1 - (C^beta - C^alpha)_i link')
-    lines.append('[ dihedrals ]')
-    lines.append(f'+{backbone_dihedral_tuple[3][1]} {{"resname": "{backbone_dihedral_tuple[3][0]}"}} +{backbone_dihedral_tuple[2][1]} {{"resname": "{backbone_dihedral_tuple[2][0]}"}} {backbone_angle_tuple[1][1]} {{"resname": "{backbone_angle_tuple[1][0]}"}} {backbone_angle_tuple[0][1]} {{"resname": "{backbone_angle_tuple[0][0]}"}} {parameter_dict["func_type"]:d} {parameter_dict["C"][0]:f} {parameter_dict["C"][1]:f} {parameter_dict["C"][2]:f} {parameter_dict["C"][3]:f} {parameter_dict["C"][4]:f} {parameter_dict["C"][5]:f}')
+len(dihedral_tuple_list)
+
+# %%
+len(set(dihedral_tuple_list))
+
+# %% [markdown]
+# ### $(B - A - C^\alpha)_{i+1} - (C^\beta)_{i}$
+
+# %% [markdown]
+# A is any neighbor of $C^\alpha$ in residue i+1, B is any neighbor of A in residue i+1
+
+# %%
+for tail_monomer, head_monomer in monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    center_right_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
+    center_right_atom_tuple = (center_left_atom_name, head_monomer, 1)
+    
+    right_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
+    right_atom_tuple = (right_atom_name, tail_monomer, 0)
+
+    for center_left_atom_name, left_atom_names in connectivity_dict["alpha"][head_monomer].items():
+        center_left_atom_tuple = (center_left_atom_name, head_monomer, 1)
+        
+        for left_atom_name in left_atom_names:
+            left_atom_tuple = (left_atom_name, head_monomer, 1)
+            dihedral_tuple_list.append((left_atom_tuple, center_left_atom_tuple, center_right_atom_tuple, right_atom_tuple))
+
+# %%
+len(dihedral_tuple_list)
+
+# %%
+len(set(dihedral_tuple_list))
+
+# %% [markdown]
+# ### $(C^\alpha)_{i+1} - (C^\beta - A - B)_{i}$
+
+# %% [markdown]
+# A is any neighbor of $C^\beta$ in residue i, B is any neighbor of A in residue i
+
+# %%
+for tail_monomer, head_monomer in monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    center_left_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
+    center_left_atom_tuple = (center_left_atom_name, tail_monomer, 0)
+    
+    left_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
+    left_atom_tuple = (left_atom_name, head_monomer, 1)
+
+    for center_right_atom_name, right_atom_names in connectivity_dict["beta"][tail_monomer].items():
+        center_right_atom_tuple = (center_right_atom_name, tail_monomer, 0)
+        
+        for right_atom_name in right_atom_names:
+            right_atom_tuple = (right_atom_name, tail_monomer, 0)
+            dihedral_tuple_list.append((left_atom_tuple, center_left_atom_tuple, center_right_atom_tuple, right_atom_tuple))
+
+# %%
+len(dihedral_tuple_list)
+
+# %%
+len(set(dihedral_tuple_list))
 
 # %% [markdown]
 # ### $(C^\alpha)_{i+1} - (C^\beta - C^\alpha)_{i} - (C^\beta)_{i-1}$
 
 # %%
-backbone_dihedral_tuples = []
-
-# beta-alpha-beta-alpha
-for tail_monomer, tail_backbone_atom in Cbeta.items():
-    for (center_left_monomer, center_left_backbone_atom), (center_right_monomer, center_right_backbone_atom) in zip(Calpha.items(), Cbeta.items()):
-        for head_monomer, head_backbone_atom in Calpha.items() :
-            backbone_dihedral_tuples.append(((tail_monomer, tail_backbone_atom), (center_left_monomer, center_left_backbone_atom), (center_right_monomer, center_right_backbone_atom), (head_monomer, head_backbone_atom)))
+monomer_3_tuples = list(itertools.product(monomer_set, repeat=3))
 
 # %%
-backbone_dihedral_tuples
+len(monomer_3_tuples)
 
 # %%
-len(backbone_dihedral_tuples)
+for tail_monomer, center_monomer, head_monomer in monomer_3_tuples:
+    
+    left_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
+    left_atom_tuple = (left_atom_name, head_monomer, 1)
+    
+    center_left_atom_name = backbone_hydrocarbons["beta"][center_monomer]
+    center_left_atom_tuple = (center_left_atom_name, center_monomer, 0)
+    
+    center_right_atom_name = backbone_hydrocarbons["alpha"][center_monomer]
+    center_right_atom_tuple = (center_right_atom_name, center_monomer, 0)
+
+    right_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
+    right_atom_tuple = (right_atom_name, tail_monomer, -1)
+    
+    dihedral_tuple_list.append((left_atom_tuple, center_left_atom_tuple, center_right_atom_tuple, right_atom_tuple))
+
+# %% [markdown]
+# ### Map dihedral types
 
 # %%
-backbone_dihedral_parameter_dict = {
-    backbone_dihedral_tuple: {
-        "func_type": default_dihedral_func_type,
-        "C": default_dihedral_C,
-    } for backbone_dihedral_tuple in backbone_dihedral_tuples}
+dihedral_type_dict = {}
+dihedral_type_set = set()
+dihedral_type_count = {}
+
+for dihedral_tuple in dihedral_tuple_list:
+    dihedral_type = (dihedral_tuple[0][0][0], dihedral_tuple[1][0][0], dihedral_tuple[2][0][0], dihedral_tuple[3][0][0])
+    
+    # canonical ordering, reverse if necessary
+    if dihedral_type[0] > dihedral_type[3]:
+        dihedral_type = (dihedral_type[3], dihedral_type[2], dihedral_type[1], dihedral_type[0])
+
+    dihedral_type_dict[dihedral_tuple] = dihedral_type
+
+    if dihedral_type not in dihedral_type_count:
+        dihedral_type_count[dihedral_type] = 1
+    else:
+        dihedral_type_count[dihedral_type] += 1
 
 # %%
-for backbone_dihedral_tuple, parameter_dict in backbone_dihedral_parameter_dict.items():
+dihedral_type_count
+
+# %%
+dihedral_parameter_dict = {dihedral_tuple: dihedral_type_parameter_dict[dihedral_type] for dihedral_tuple, dihedral_type in dihedral_type_dict.items()}
+
+# %% [markdown]
+# ### Generate dihedral links
+
+# %%
+lines.append('')
+lines.append('')
+lines.append("; backbone dihedrals")
+for dihedral_tuple, parameter_dict in dihedral_parameter_dict.items():
+    atom_tokens = []
+    for atom_tuple in dihedral_tuple:
+        if atom_tuple[2] > 0:
+            prefix = '+'
+        elif atom_tuple[2] < 0:
+            prefix = '-'
+        else:
+            prefix = ''
+            
+        atom_tokens.append(f'{prefix}{atom_tuple[0]} {{"resname": "{atom_tuple[1]}"}}')
+    atoms_token = ' '.join(atom_tokens)
+    
+    parameter_token = f'{parameter_dict["func_type"]:d} {parameter_dict["C"][0]:f} {parameter_dict["C"][1]:f} {parameter_dict["C"][2]:f} {parameter_dict["C"][3]:f} {parameter_dict["C"][4]:f} {parameter_dict["C"][5]:f}'
+
+    comment_token = ' ; {}'.format(parameter_dict["comment"]) if 'comment' in parameter_dict else ''
+
     lines.append('')
     lines.append('[ link ]')
-    lines.append(f'; {backbone_dihedral_tuple[3][0]}-{backbone_dihedral_tuple[2][0]}-{backbone_dihedral_tuple[0][0]} (C^alpha)_i+1 - (C^beta - C^alpha)_i (C^beta)_i-1 link')
     lines.append('[ dihedrals ]')
-    lines.append(f'+{backbone_dihedral_tuple[3][1]} {{"resname": "{backbone_dihedral_tuple[3][0]}"}} {backbone_dihedral_tuple[2][1]} {{"resname": "{backbone_dihedral_tuple[2][0]}"}} {backbone_dihedral_tuple[1][1]} {{"resname": "{backbone_dihedral_tuple[1][0]}"}} -{backbone_dihedral_tuple[0][1]} {{"resname": "{backbone_dihedral_tuple[0][0]}"}} {parameter_dict["func_type"]:d} {parameter_dict["C"][0]:f} {parameter_dict["C"][1]:f} {parameter_dict["C"][2]:f} {parameter_dict["C"][3]:f} {parameter_dict["C"][4]:f} {parameter_dict["C"][5]:f}')
+    lines.append(f'{atoms_token} {parameter_token}{comment_token}')
+
+# %%
+lines[-1]
 
 # %% [markdown]
 # ## write links file
