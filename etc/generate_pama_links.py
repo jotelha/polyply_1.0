@@ -152,8 +152,9 @@ dihedral_type_parameter_dict = {}
 # default CT-CT-CT-CT dihedral from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 1596
 # extracted with
 #    cat -n ffbonded.itp | grep -E 'CT[[:space:]]+CT[[:space:]]+CT[[:space:]]+CT'
+# 1596	  CT     CT     CT     CT      3      2.92880  -1.46440   0.20920  -1.67360   0.00000   0.00000 ; hydrocarbon all-atom
 default_dihedral_func_type = 3  # Ryckaert-Bellemans dihedral
-default_dihedral_C = [12.92880, -1.46440, 0.20920, -1.67360, 0.00000, 0.00000] # C_n (kJ mol^-1)
+default_dihedral_C = [2.92880, -1.46440, 0.20920, -1.67360, 0.00000, 0.00000] # C_n (kJ mol^-1)
 
 dihedral_type_parameter_dict[('C','C','C','C')] = {
     'func_type': default_dihedral_func_type,
@@ -178,6 +179,10 @@ dihedral_type_parameter_dict[('C','C','C','H')] = {
     'C': [0.62760, 1.88280, 0.00000, -2.51040, 0.00000, 0.00000],
     'comment': "CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599"
 }
+
+# %%
+for dihedral_type, parameter_dict in dihedral_type_parameter_dict.items():
+    print("{}: {}".format(dihedral_type, sum(parameter_dict["C"])))
 
 # %% [markdown]
 # ### visualize connectivity graphs
