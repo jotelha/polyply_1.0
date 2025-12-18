@@ -78,11 +78,12 @@ backbone_hydrocarbons = {
 }
 
 # %%
-terminal_set = ('CH3',)   # fixed the unmatched quote
+terminal_set = ('CH3','CH3n')
 
 # %%
 terminal_pdb_dict = {
-    'CH3': './terminals/CH3.pdb'
+    'CH3': './terminals/CH3.pdb',
+    'CH3n': './terminals/CH3.pdb'
 }
 
 # %%
@@ -91,6 +92,7 @@ terminal_molecule_dict = {terminal: read_pdb(filename)[0] for terminal, filename
 # %%
 Cterminal = {
     'CH3': 'C1',
+    'CH3n': 'C1',
 }
 
 # %%
