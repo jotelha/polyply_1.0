@@ -78,6 +78,22 @@ backbone_hydrocarbons = {
 }
 
 # %%
+terminal_set = ('CH3',)   # fixed the unmatched quote
+
+# %%
+terminal_pdb_dict = {
+    'CH3': './terminals/CH3.pdb'
+}
+
+# %%
+terminal_molecule_dict = {terminal: read_pdb(filename)[0] for terminal, filename in terminal_pdb_dict.items()}
+
+# %%
+Cterminal = {
+    'CH3': 'C1',
+}
+
+# %%
 lines = []
 
 # %%
@@ -178,6 +194,15 @@ dihedral_type_parameter_dict[('C','C','C','H')] = {
     'func_type': 3,
     'C': [0.62760, 1.88280, 0.00000, -2.51040, 0.00000, 0.00000],
     'comment': "CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599"
+}
+
+# %%
+# HC-CT-CT-HC dihedral from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 1824
+#  1824	  HC     CT     CT     HC      3      0.62760   1.88280   0.00000  -2.51040   0.00000   0.00000 ; hydrocarbon *new* 11/99
+dihedral_type_parameter_dict[('H','C','C','H')] = {
+    'func_type': 3,
+    'C': [0.62760, 1.88280, 0.00000, -2.51040, 0.00000, 0.00000],
+    'comment': "HC-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1824"
 }
 
 # %%
@@ -291,16 +316,62 @@ for backbone_hydrocarbon_type, backbone_hydrocarbon_dict in backbone_hydrocarbon
         print(f"        Identified first and second neighbors of {monomer_name}:{backbone_hydrocarbon_name}:{neighbor_name_map}.")
 
         connectivity_dict[backbone_hydrocarbon_type][monomer_name] = neighbor_name_map
-        
+
 
 # %%
 connectivity_dict
+
+# %%
+# iterate over Cterminal
+terminal_connectivity_dict = {}
+
+#iterate over all monomers
+for terminal_name, backbone_hydrocarbon_name in Cterminal.items():
+    print(f"    Treating {terminal_name}:{backbone_hydrocarbon_name}...")
+
+    terminal_connectivity_dict[terminal_name] = {}
+
+    mol = terminal_molecule_dict[terminal_name]
+
+    start = find_atom_index(mol, atomname=backbone_hydrocarbon_name)
+    
+    first_neighbors = list(mol.neighbors(start))
+    
+    neighbor_index_map = {}
+
+    for nbr in first_neighbors:
+        # Second neighbors: neighbors of this first neighbor,
+        # excluding the start atom (so only true 2-step nodes)
+        second = [x for x in mol.neighbors(nbr) if x != start]
+        neighbor_index_map[nbr] = second
+
+    neighbor_name_map = {mol.nodes[idx1]['atomname']: [mol.nodes[idx2]['atomname'] for idx2 in second_neighbors] for idx1, second_neighbors in neighbor_index_map.items()}
+
+    print(f"        Identified first and second neighbors of {terminal_name}:{backbone_hydrocarbon_name}:{neighbor_name_map}.")
+
+    terminal_connectivity_dict[terminal_name] = neighbor_name_map
+
+
+# %%
+terminal_connectivity_dict
 
 # %%
 monomer_2_tuples = list(itertools.product(monomer_set, repeat=2))
 
 # %%
 monomer_3_tuples = list(itertools.product(monomer_set, repeat=3))
+
+# %%
+terminal_monomer_2_tuples = list(itertools.product(terminal_set, monomer_set))
+
+# %%
+monomer_3_tuples = list(itertools.product(monomer_set, repeat=3))
+
+# %%
+terminal_monomer_monomer_3_tuples = list(itertools.product(terminal_set, monomer_set, monomer_set))
+
+# %% [markdown]
+# # Bonds
 
 # %% [markdown]
 # ## bonds between residues $i$ and $i+1$
@@ -338,7 +409,49 @@ for tail_monomer, head_monomer in monomer_2_tuples:
 len(bond_tuple_list)
 
 # %% [markdown]
-# ### Map bond types
+# ## bonds between residue $i$ and terminal $i+1$
+
+# %% [markdown]
+# ### $(T)_{i+1} - (C^\beta)_{i}$
+
+# %%
+for terminal, tail_monomer in terminal_monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    left_atom_name = Cterminal[terminal]
+    left_atom_tuple = (left_atom_name, terminal, 1)
+    
+    right_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
+    right_atom_tuple = (right_atom_name, tail_monomer, 0)
+    
+    bond_tuple_list.append((left_atom_tuple, right_atom_tuple))
+
+# %%
+len(bond_tuple_list)
+
+# %% [markdown]
+# ## bonds between terminal $i$ and residue $i+1$
+
+# %% [markdown]
+# ### $(C^\alpha)_{i+1} - (T)_{i}$
+
+# %%
+for terminal, head_monomer in terminal_monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    left_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
+    left_atom_tuple = (left_atom_name, head_monomer, 1)
+    
+    right_atom_name = Cterminal[terminal]
+    right_atom_tuple = (right_atom_name, terminal, 0)
+    
+    bond_tuple_list.append((left_atom_tuple, right_atom_tuple))
+
+# %%
+len(bond_tuple_list)
+
+# %% [markdown]
+# ## Map bond types
 
 # %%
 bond_type_dict = {}
@@ -366,7 +479,7 @@ bond_type_count
 bond_parameter_dict = {bond_tuple: bond_type_parameter_dict[bond_type] for bond_tuple, bond_type in bond_type_dict.items()}
 
 # %% [markdown]
-# ### Generate bond links
+# ## Generate bond links
 
 # %%
 lines.append('')
@@ -392,6 +505,9 @@ for bond_tuple, parameter_dict in bond_parameter_dict.items():
     lines.append('[ link ]')
     lines.append('[ bonds ]')
     lines.append(f'{atoms_token} {parameter_token}{comment_token}')
+
+# %% [markdown]
+# # Angles
 
 # %% [markdown]
 # ## angles between residues $i$ and $i+1$
@@ -444,7 +560,107 @@ for tail_monomer, head_monomer in monomer_2_tuples:
 len(angle_tuple_list)
 
 # %% [markdown]
-# ### Map angle types
+# ## angles between terminal $i$ and residue $i+1$
+
+# %% [markdown]
+# ### $(C^\alpha)_{i+1} - (T - A)_{i}$
+
+# %% [markdown]
+# A is any neighbor of $T$ in terminal i
+
+# %%
+for terminal, head_monomer in terminal_monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    left_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
+    left_atom_tuple = (left_atom_name, head_monomer, 1)
+    
+    center_atom_name = Cterminal[terminal]
+    center_atom_tuple = (center_atom_name, terminal, 0)
+    
+    for right_atom_name in terminal_connectivity_dict[terminal].keys():
+        right_atom_tuple = (right_atom_name, terminal, 0)
+        
+        angle_tuple_list.append((left_atom_tuple, center_atom_tuple, right_atom_tuple))
+
+# %%
+len(angle_tuple_list)
+
+# %% [markdown]
+# ### $ (A - C^\alpha)_{i+1} - (T)_i $
+
+# %% [markdown]
+# A is any neighbor of $C^\alpha$ in residue $i+1$
+
+# %%
+for terminal, head_monomer in terminal_monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    right_atom_name = Cterminal[terminal]
+    right_atom_tuple = (right_atom_name, terminal, 0)
+    
+    center_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
+    center_atom_tuple = (center_atom_name, head_monomer, 1)
+    
+    for left_atom_name in connectivity_dict["alpha"][head_monomer].keys():
+        left_atom_tuple = (left_atom_name, head_monomer, 1)
+        angle_tuple_list.append((left_atom_tuple, center_atom_tuple, right_atom_tuple))
+
+# %%
+len(angle_tuple_list)
+
+# %% [markdown]
+# ## angles between residue $i$ and terminal $i+1$
+
+# %% [markdown]
+# ### $(T)_{i+1} - (C^\beta - A)_{i}$
+
+# %% [markdown]
+# A is any neighbor of $C^\beta$ in residue i
+
+# %%
+for terminal, tail_monomer in terminal_monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    left_atom_name = Cterminal[terminal]
+    left_atom_tuple = (left_atom_name, terminal, 1)
+    
+    center_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
+    center_atom_tuple = (center_atom_name, tail_monomer, 0)
+    
+    for right_atom_name in connectivity_dict["beta"][tail_monomer].keys():
+        right_atom_tuple = (right_atom_name, tail_monomer, 0)
+        
+        angle_tuple_list.append((left_atom_tuple, center_atom_tuple, right_atom_tuple))
+
+# %%
+len(angle_tuple_list)
+
+# %% [markdown]
+# ### $ (A - T)_{i+1} - (C_\beta)_i $
+
+# %% [markdown]
+# A is any neighbor of $T$ in terminal $i+1$
+
+# %%
+for terminal, tail_monomer in terminal_monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    right_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
+    right_atom_tuple = (right_atom_name, tail_monomer, 0)
+    
+    center_atom_name = Cterminal[terminal]
+    center_atom_tuple = (center_atom_name, terminal, 1)
+    
+    for left_atom_name in terminal_connectivity_dict[terminal].keys():
+        left_atom_tuple = (left_atom_name, terminal, 1)
+        angle_tuple_list.append((left_atom_tuple, center_atom_tuple, right_atom_tuple))
+
+# %%
+len(angle_tuple_list)
+
+# %% [markdown]
+# ## Map angle types
 
 # %%
 angle_type_dict = {}
@@ -472,7 +688,7 @@ angle_type_count
 angle_parameter_dict = {angle_tuple: angle_type_parameter_dict[angle_type] for angle_tuple, angle_type in angle_type_dict.items()}
 
 # %% [markdown]
-# ### Generate angle links
+# ## Generate angle links
 
 # %%
 lines.append('')
@@ -499,6 +715,9 @@ for angle_tuple, parameter_dict in angle_parameter_dict.items():
     lines.append('[ link ]')
     lines.append('[ angles ]')
     lines.append(f'{atoms_token} {parameter_token}{comment_token}')
+
+# %% [markdown]
+# # Dihedrals
 
 # %% [markdown]
 # ## dihedrals between residues $i$ and $i+1$
@@ -616,8 +835,252 @@ for tail_monomer, center_monomer, head_monomer in monomer_3_tuples:
     
     dihedral_tuple_list.append((left_atom_tuple, center_left_atom_tuple, center_right_atom_tuple, right_atom_tuple))
 
+# %%
+len(dihedral_tuple_list)
+
+# %%
+len(set(dihedral_tuple_list))
+
 # %% [markdown]
-# ### Map dihedral types
+# ## dihedrals between terminal $i$ and residue $i+1$
+
+# %% [markdown]
+# ### $(A - C^\alpha)_{i+1} - (T - B)_{i}$
+
+# %% [markdown]
+# A is any neighbor of $C^\alpha$ in residue i+1, B is any neighbor of $T$ in terminal i
+
+# %%
+for terminal, head_monomer in terminal_monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    center_left_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
+    center_left_atom_tuple = (center_left_atom_name, head_monomer, 1)
+    
+    center_right_atom_name = Cterminal[terminal]
+    center_right_atom_tuple = (center_right_atom_name, terminal, 0)
+
+    for left_atom_name in connectivity_dict["alpha"][head_monomer].keys():
+        left_atom_tuple = (left_atom_name, head_monomer, 1)
+        
+        for right_atom_name in terminal_connectivity_dict[terminal].keys():
+            right_atom_tuple = (right_atom_name, terminal, 0)
+            dihedral_tuple_list.append((left_atom_tuple, center_left_atom_tuple, center_right_atom_tuple, right_atom_tuple))
+
+# %%
+len(dihedral_tuple_list)
+
+# %%
+len(set(dihedral_tuple_list))
+
+# %% [markdown]
+# ### $(B - A - C^\alpha)_{i+1} - (T)_{i}$
+
+# %% [markdown]
+# A is any neighbor of $C^\alpha$ in residue i+1, B is any neighbor of A in residue i+1
+
+# %%
+for terminal, head_monomer in terminal_monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    center_right_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
+    center_right_atom_tuple = (center_right_atom_name, head_monomer, 1)
+    
+    right_atom_name = Cterminal[terminal]
+    right_atom_tuple = (right_atom_name, terminal, 0)
+
+    for center_left_atom_name, left_atom_names in connectivity_dict["alpha"][head_monomer].items():
+        center_left_atom_tuple = (center_left_atom_name, head_monomer, 1)
+        
+        for left_atom_name in left_atom_names:
+            left_atom_tuple = (left_atom_name, head_monomer, 1)
+            dihedral_tuple_list.append((left_atom_tuple, center_left_atom_tuple, center_right_atom_tuple, right_atom_tuple))
+
+# %%
+len(dihedral_tuple_list)
+
+# %%
+len(set(dihedral_tuple_list))
+
+# %% [markdown]
+# ### $(C^\alpha)_{i+1} - (T - A - B)_{i}$
+
+# %% [markdown]
+# A is any neighbor of $T$ in terminal i, B is any neighbor of A in terminal i
+
+# %%
+for terminal, head_monomer in terminal_monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    center_left_atom_name = Cterminal[terminal]
+    center_left_atom_tuple = (center_left_atom_name, terminal, 0)
+    
+    left_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
+    left_atom_tuple = (left_atom_name, head_monomer, 1)
+
+    for center_right_atom_name, right_atom_names in terminal_connectivity_dict[terminal].items():
+        center_right_atom_tuple = (center_right_atom_name, terminal, 0)
+        
+        for right_atom_name in right_atom_names:
+            right_atom_tuple = (right_atom_name, terminal, 0)
+            dihedral_tuple_list.append((left_atom_tuple, center_left_atom_tuple, center_right_atom_tuple, right_atom_tuple))
+
+# %%
+len(dihedral_tuple_list)
+
+# %%
+len(set(dihedral_tuple_list))
+
+# %% [markdown]
+# ### $(C^\alpha)_{i+1} - (C^\beta - C^\alpha)_{i} - (T)_{i-1}$
+
+# %%
+len(terminal_monomer_monomer_3_tuples)
+
+# %%
+for terminal, center_monomer, head_monomer in terminal_monomer_monomer_3_tuples:
+    
+    left_atom_name = backbone_hydrocarbons["alpha"][head_monomer]
+    left_atom_tuple = (left_atom_name, head_monomer, 1)
+    
+    center_left_atom_name = backbone_hydrocarbons["beta"][center_monomer]
+    center_left_atom_tuple = (center_left_atom_name, center_monomer, 0)
+    
+    center_right_atom_name = backbone_hydrocarbons["alpha"][center_monomer]
+    center_right_atom_tuple = (center_right_atom_name, center_monomer, 0)
+
+    right_atom_name = Cterminal[terminal]
+    right_atom_tuple = (right_atom_name, terminal, -1)
+    
+    dihedral_tuple_list.append((left_atom_tuple, center_left_atom_tuple, center_right_atom_tuple, right_atom_tuple))
+
+# %%
+len(dihedral_tuple_list)
+
+# %%
+len(set(dihedral_tuple_list))
+
+# %% [markdown]
+# ## dihedrals between residue $i$ and terminal $i+1$
+
+# %% [markdown]
+# ### $(A - T)_{i+1} - (C^\beta - B)_{i}$
+
+# %% [markdown]
+# A is any neighbor of $T$ in terminal i+1, B is any neighbor of $C^\beta$ in residue i
+
+# %%
+for terminal, tail_monomer in terminal_monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    center_left_atom_name = Cterminal[terminal]
+    center_left_atom_tuple = (center_left_atom_name, terminal, 1)
+    
+    center_right_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
+    center_right_atom_tuple = (center_right_atom_name, tail_monomer, 0)
+
+    for left_atom_name in terminal_connectivity_dict[terminal].keys():
+        left_atom_tuple = (left_atom_name, terminal, 1)
+        
+        for right_atom_name in connectivity_dict["beta"][tail_monomer].keys():
+            right_atom_tuple = (right_atom_name, tail_monomer, 0)
+            dihedral_tuple_list.append((left_atom_tuple, center_left_atom_tuple, center_right_atom_tuple, right_atom_tuple))
+
+# %%
+len(dihedral_tuple_list)
+
+# %%
+len(set(dihedral_tuple_list))
+
+# %% [markdown]
+# ### $(B - A - T)_{i+1} - (C^\beta)_{i}$
+
+# %% [markdown]
+# A is any neighbor of $T$ in terminal i+1, B is any neighbor of A in residue i+1
+
+# %%
+for terminal, tail_monomer in terminal_monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    center_right_atom_name = Cterminal[terminal]
+    center_right_atom_tuple = (center_right_atom_name, terminal, 1)
+    
+    right_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
+    right_atom_tuple = (right_atom_name, tail_monomer, 0)
+
+    for center_left_atom_name, left_atom_names in terminal_connectivity_dict[terminal].items():
+        center_left_atom_tuple = (center_left_atom_name, terminal, 1)
+        
+        for left_atom_name in left_atom_names:
+            left_atom_tuple = (left_atom_name, terminal, 1)
+            dihedral_tuple_list.append((left_atom_tuple, center_left_atom_tuple, center_right_atom_tuple, right_atom_tuple))
+
+# %%
+len(dihedral_tuple_list)
+
+# %%
+len(set(dihedral_tuple_list))
+
+# %% [markdown]
+# ### $(T)_{i+1} - (C^\beta - A - B)_{i}$
+
+# %% [markdown]
+# A is any neighbor of $C^\beta$ in residue i, B is any neighbor of A in residue i
+
+# %%
+for terminal, tail_monomer in terminal_monomer_2_tuples:
+    
+    # atom name, res name, res increment:
+    center_left_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
+    center_left_atom_tuple = (center_left_atom_name, tail_monomer, 0)
+    
+    left_atom_name = Cterminal[terminal]
+    left_atom_tuple = (left_atom_name, terminal, 1)
+
+    for center_right_atom_name, right_atom_names in connectivity_dict["beta"][tail_monomer].items():
+        center_right_atom_tuple = (center_right_atom_name, tail_monomer, 0)
+        
+        for right_atom_name in right_atom_names:
+            right_atom_tuple = (right_atom_name, tail_monomer, 0)
+            dihedral_tuple_list.append((left_atom_tuple, center_left_atom_tuple, center_right_atom_tuple, right_atom_tuple))
+
+# %%
+len(dihedral_tuple_list)
+
+# %%
+len(set(dihedral_tuple_list))
+
+# %% [markdown]
+# ### $(T)_{i+1} - (C^\beta - C^\alpha)_{i} - (C^\beta)_{i-1}$
+
+# %%
+len(terminal_monomer_monomer_3_tuples)
+
+# %%
+for terminal, tail_monomer, center_monomer in terminal_monomer_monomer_3_tuples:
+    
+    left_atom_name = Cterminal[terminal]
+    left_atom_tuple = (left_atom_name, terminal, 1)
+    
+    center_left_atom_name = backbone_hydrocarbons["beta"][center_monomer]
+    center_left_atom_tuple = (center_left_atom_name, center_monomer, 0)
+    
+    center_right_atom_name = backbone_hydrocarbons["alpha"][center_monomer]
+    center_right_atom_tuple = (center_right_atom_name, center_monomer, 0)
+
+    right_atom_name = backbone_hydrocarbons["beta"][tail_monomer]
+    right_atom_tuple = (right_atom_name, tail_monomer, -1)
+    
+    dihedral_tuple_list.append((left_atom_tuple, center_left_atom_tuple, center_right_atom_tuple, right_atom_tuple))
+
+# %%
+len(dihedral_tuple_list)
+
+# %%
+len(set(dihedral_tuple_list))
+
+# %% [markdown]
+# ## Map dihedral types
 
 # %%
 dihedral_type_dict = {}
@@ -645,7 +1108,7 @@ dihedral_type_count
 dihedral_parameter_dict = {dihedral_tuple: dihedral_type_parameter_dict[dihedral_type] for dihedral_tuple, dihedral_type in dihedral_type_dict.items()}
 
 # %% [markdown]
-# ### Generate dihedral links
+# ## Generate dihedral links
 
 # %%
 lines.append('')
@@ -683,3 +1146,5 @@ lines[-1]
 with open(output_ff, "w") as f:
     for line in lines:
         f.write(line + "\n")
+
+# %%
