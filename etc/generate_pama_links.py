@@ -101,13 +101,13 @@ lines = []
 # %%
 output_ff = 'PAMA.oplsaa.LigParGen_links.ff'
 
+# %%
+bond_type_parameter_dict = {}
+
 # %% [markdown]
 # ### Harmonic bond potential:
 #
-# $V_a(\theta) = \frac{1}{2} k_{\theta}(\theta-\theta_0)^2$
-
-# %%
-bond_type_parameter_dict = {}
+# $V_b(r) = \frac{1}{2} k_{b}(r-b_0)^2$
 
 # %%
 # harmonic bond potential: V_b(r) = 1/2*k_b(r-b_0)^2
@@ -126,7 +126,7 @@ bond_type_parameter_dict[('C','C')] = {
 # %% [markdown]
 # ### Harmonic angle potential:
 #
-# $V_b(r) = \frac{1}{2} k_{b}(r-b_0)^2$
+# $V_a(\theta) = \frac{1}{2} k_{\theta}(\theta-\theta_0)^2$
 
 # %%
 angle_type_parameter_dict = {}
