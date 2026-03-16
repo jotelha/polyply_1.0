@@ -62,7 +62,7 @@ the terminal sp² vinyl carbon (=CH₂).
 | MMA     | C07    | C08   |
 | OC      | C03    | C01   |
 | ST      | C04    | C05   |
-| TD      | C01    | C02   |
+| TD      | C18    | C19   |
 
 ---
 

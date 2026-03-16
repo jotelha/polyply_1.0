@@ -2,10 +2,7 @@
 
 Analysis of the six OPLS-AA/LigParGen force-field entries for
 poly(alkyl methacrylate) (PAMA) monomers in
-`polyply/data/oplsaaLigParGen/`.  TD is assessed from
-`etc/PAMA-monomers/itp/td-normalized.itp` (library file not yet created)
-and cross-checked against an independent second LigParGen run
-`~/ws/2026-03-09-tdma-monomer/TD_999253/tmp/TD_999253.itp`.
+`polyply/data/oplsaaLigParGen/`.
 
 Date: 2026-03-16
 
@@ -22,12 +19,16 @@ monomers depending on the traversal order used by LigParGen.
 | EH, LA, ST | backbone methyl → Calpha → Cbeta | C04 | C05 |
 | OC | Cbeta (=CH₂) → Calpha → methyl | C03 | C01 |
 | MMA | **ester methyl** → O → ester C → Calpha → Cbeta → backbone methyl | C07 | C08 |
-| TD | backbone methyl → Calpha → Cbeta → ester C | C01 | C02 |
+| TD | alkyl chain terminus → alkyl chain → ester O → ester C → Calpha → Cbeta → backbone methyl | C18 | C19 |
 
-MMA is the structural outlier: the atom traversal starts from the **ester**
-methyl (COO–CH₃) rather than the backbone methyl, placing the ester-group
-atoms earlier in the numbering.  This is the expected consequence of methyl
-methacrylate having no alkyl tail.
+MMA is the structural outlier among the first five: the atom traversal starts
+from the **ester** methyl (COO–CH₃) rather than the backbone methyl, placing
+the ester-group atoms earlier in the numbering.  This is the expected
+consequence of methyl methacrylate having no alkyl tail.
+
+TD uses a reversed traversal order relative to the other long-chain monomers
+(EH, LA, ST): the alkyl chain terminus is numbered first and the
+vinyl/ester group last.
 
 ---
 
@@ -55,11 +56,6 @@ identical across all six monomers:**
 | Methyl–Calpha–EsterC | 119.7 | 585.760 |
 | Cbeta–Calpha–EsterC | 120.7 | 711.280 |
 
-The Cbeta–Calpha–EsterC value (120.7°, k = 711.280) was initially flagged
-as an OC anomaly in a draft of this report, but verification against all six
-files confirmed it is identical everywhere; the draft error arose from
-comparing it with the different Methyl–Calpha–EsterC angle (119.7°).
-
 Improper dihedral force constants are uniform across all monomers:
 10.460 kJ mol⁻¹ (vinyl sp² centres) and 43.932 kJ mol⁻¹ (carbonyl oxygen
 planarity).  All proper dihedrals use the same OPLS-AA Ryckaert–Bellemans
@@ -69,10 +65,7 @@ coefficients for each atom-type quartet.
 
 ## 3. Differences and anomalies
 
-### 3.1 TD — anomalously low ester carbon charge
-
-The partial charge on the ester carbonyl carbon differs significantly between
-TD and all other monomers:
+### 3.1 TD — ester oxygen charges slightly below the cluster
 
 | Monomer | Ester C (e) | Carbonyl O (e) | Ester O (e) | COO net (e) |
 |---------|-------------|----------------|-------------|-------------|
@@ -81,17 +74,15 @@ TD and all other monomers:
 | MMA     | +0.472      | −0.457         | −0.366      | −0.351      |
 | OC      | +0.480      | −0.463         | −0.368      | −0.351      |
 | ST      | +0.471      | −0.470         | −0.379      | −0.378      |
-| **TD**  | **+0.302**  | **−0.485**     | **−0.404**  | **−0.587**  |
+| TD      | +0.467      | −0.391         | −0.355      | −0.279      |
 
-EH, LA, MMA, OC, and ST cluster tightly (ester C +0.471–+0.480; COO net
-−0.351 to −0.378).  TD's ester C charge is **36 % lower** (+0.302) and its
-COO group carries nearly **60 % more net negative charge** (−0.587 vs.
-≈ −0.36).
+TD's ester carbonyl carbon (+0.467) falls within the EH–ST cluster
+(+0.471–+0.480).  However, both ester oxygens are approximately 15 % lower
+in magnitude than the cluster: carbonyl O (−0.391 vs −0.457 to −0.470) and
+ester O (−0.355 vs −0.366 to −0.379), resulting in a less-negative COO net
+charge (−0.279 vs −0.351 to −0.378).
 
-### 3.2 TD — anomalously low backbone vinyl carbon charges
-
-The Calpha and Cbeta charges in TD are nearly neutral compared to the other
-five monomers, correlated with the ester charge anomaly in §3.1:
+### 3.2 TD — backbone vinyl carbon charges
 
 | Monomer | Calpha (e) | Cbeta (e) |
 |---------|------------|-----------|
@@ -100,56 +91,31 @@ five monomers, correlated with the ester charge anomaly in §3.1:
 | MMA     | −0.155     | −0.167    |
 | OC      | −0.157     | −0.188    |
 | ST      | −0.143     | −0.165    |
-| **TD**  | **−0.031** | **−0.051**|
+| TD      | −0.160     | −0.200    |
 
-The five established monomers are tightly clustered (Calpha −0.143 to
-−0.157; Cbeta −0.165 to −0.188).  TD's backbone carbons are **≈5× less
-negative**, consistent with charge density being redistributed onto the ester
-oxygens.
+TD's Calpha (−0.160) is marginally outside the cluster (−0.143 to −0.157)
+and Cbeta (−0.200) is slightly more negative than the cluster
+(−0.165 to −0.188).  Both deviations are minor.
 
-The excess negative charge in TD's ester group and the near-neutral backbone
-carbons are compensated across the whole molecule (total charge is exactly
-zero in all cases), but the redistribution pattern is inconsistent with the
-other five monomers given that all share the same methacrylate functionality.
-
-### 3.3 TD charge anomaly confirmed by an independent LigParGen run
-
-The charges from a second, independently submitted LigParGen job
-(TD_999253, different job ID from the original TD_88E777) are:
-
-| Atom | TD_88E777 / td-normalized (e) | TD_999253 (e) | Δ (e) |
-|------|-------------------------------|---------------|-------|
-| C01 (Calpha) | −0.0306 | −0.0308 | −0.0002 |
-| C02 (Cbeta)  | −0.0508 | −0.0509 | −0.0001 |
-| C03 (ester C)| +0.3022 | +0.3018 | −0.0004 |
-| O04 (ester O)| −0.4043 | −0.4041 | +0.0002 |
-| O05 (C=O)    | −0.4849 | −0.4849 |  0.0000 |
-
-The differences are entirely within floating-point precision and the
-charge-normalisation correction applied to td-normalized.itp.  The anomalous
-charge distribution is **fully reproducible** and therefore reflects the
-OPLS-AA charge model as applied by LigParGen to this specific molecular
-structure, not a numerical artifact of any single submission.
-
-### 3.4 Minor vinyl-H charge scatter
+### 3.3 Minor vinyl-H charge scatter
 
 The hydrogens on Cbeta (the =CH₂ group) show small but consistent
 variation across monomers:
 
 | Monomer | H on Cbeta (e) |
-|---------|---------------|
-| EH      | +0.145        |
-| LA      | +0.145        |
-| MMA     | +0.145        |
-| ST      | +0.150        |
-| TD      | +0.135        |
+|---------|----------------|
+| EH      | +0.145         |
+| LA      | +0.145         |
+| MMA     | +0.145         |
+| ST      | +0.150         |
+| TD      | +0.144         |
 
-ST is marginally higher than the EH/LA/MMA cluster; TD is marginally lower.
-These differences (≤ 0.015 e) are small and likely reflect the different
-electronic environments of the alkyl tails propagating slightly through the
-conjugated vinyl system.  They do not represent a concern.
+ST is marginally higher than the EH/LA/MMA cluster; TD is within the
+cluster.  These differences (≤ 0.015 e) are small and likely reflect the
+different electronic environments of the alkyl tails propagating slightly
+through the conjugated vinyl system.  They do not represent a concern.
 
-### 3.5 MMA — expected differences
+### 3.4 MMA — expected differences
 
 The first alkyl carbon attached to the ester oxygen is the ester *methyl* in
 MMA (C0B = −0.192 e), compared to a CH₂ group in all other monomers
@@ -166,32 +132,21 @@ the longer-chain CH₂ is flanked by electron-donating methylenes.
 | Identical bond parameters for all equivalent chemical groups | All 6 | ✓ Yes |
 | Identical angles around Calpha (three distinct angles) | All 6 | ✓ Yes |
 | Identical improper/proper dihedral coefficients by atom-type quartet | All 6 | ✓ Yes |
-| Ester C charge ≈36 % lower; COO net charge ≈60 % more negative | **TD only** | ✗ Unexpected — confirmed by two independent LigParGen runs |
-| Backbone vinyl carbons ≈5× less negative | **TD only** | ✗ Correlated with ester charge anomaly |
+| TD ester oxygen charges ≈15 % lower magnitude; COO net less negative | **TD** | ✗ Minor deviation |
+| TD Calpha/Cbeta marginally outside cluster | **TD** | △ Within LigParGen normal variability |
 | Negative first alkyl C; ester methyl rather than alkyl chain | MMA | ✓ Chemically expected |
-| Minor vinyl-H charge scatter ±0.015 e | ST (high), TD (low) | ✓ Within normal LigParGen variability |
+| Minor vinyl-H charge scatter ±0.015 e | ST (high) | ✓ Within normal LigParGen variability |
 
 ---
 
 ## 5. Recommendations
 
-**TD charge anomaly (§3.1–3.3):**  The anomalous charge distribution is
-reproducible across two independent LigParGen submissions and therefore
-cannot be resolved by resubmitting.  The most likely cause is that LigParGen
-assigned a different OPLS atom type to the TD ester carbonyl carbon
-(opls_803, σ = 3.55 Å, ε = 0.293 kJ mol⁻¹) compared to the other monomers,
-resulting in a different charge template.  Recommended actions:
-
-1. Compare the OPLS atom type of the TD ester carbonyl carbon (opls_803 in
-   the raw itp, opls_1245 after library renumbering) with those of EH
-   (opls_1008), LA (opls_1044), MMA (opls_1089), OC (opls_1107), and ST
-   (opls_1143).  If the types differ, check whether the assigned type is
-   chemically appropriate for a methacrylate ester carbon.
-2. If the type assignment is incorrect, manually reassign the ester carbonyl
-   carbon to the same OPLS type used by the other five monomers, recompute
-   charges via a fresh QM/MM single point, and re-normalise.
-3. As a pragmatic interim measure, constrain the TD ester group charges to
-   the mean values from the other five monomers (+0.475, −0.463, −0.372 for
-   ester C, C=O, and ester O respectively) and distribute the charge
-   difference (≈ +0.46 e total) across the backbone and alkyl chain atoms
-   proportionally, then re-normalise.
+**TD ester oxygen charges (§3.1):**  The current library entry has ester
+oxygens approximately 15 % lower in magnitude than the EH–ST cluster.
+Given that the ester carbonyl carbon and backbone charges are within the
+expected range, this deviation is considered acceptable for the current
+library version.  If higher consistency is required in the future, constrain
+the two ester oxygens to the cluster means (−0.463 for C=O and −0.372 for
+ester O), distribute the charge difference (≈ +0.11 e total) across the
+alkyl chain atoms proportionally, and re-normalise with
+`renormalize-charges.py`.
