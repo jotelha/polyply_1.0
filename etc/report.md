@@ -107,19 +107,21 @@ variation across monomers:
 | EH      | +0.145         |
 | LA      | +0.145         |
 | MMA     | +0.145         |
+| OC      | +0.149         |
 | ST      | +0.150         |
 | TD      | +0.144         |
 
-ST is marginally higher than the EH/LA/MMA cluster; TD is within the
-cluster.  These differences (≤ 0.015 e) are small and likely reflect the
-different electronic environments of the alkyl tails propagating slightly
-through the conjugated vinyl system.  They do not represent a concern.
+EH, LA, and MMA cluster tightly at +0.145; OC and ST are marginally higher
+(+0.149, +0.150); TD is marginally lower (+0.144).  These differences
+(≤ 0.006 e) are small and likely reflect the different electronic environments
+of the alkyl tails propagating slightly through the conjugated vinyl system.
+They do not represent a concern.
 
 ### 3.4 MMA — expected differences
 
 The first alkyl carbon attached to the ester oxygen is the ester *methyl* in
 MMA (C0B = −0.192 e), compared to a CH₂ group in all other monomers
-(+0.014 to +0.023 e).  This is chemically expected: the methyl ester dead-end
+(+0.010 to +0.018 e).  This is chemically expected: the methyl ester dead-end
 CH₃ has three hydrogens drawing electron density back onto the carbon, while
 the longer-chain CH₂ is flanked by electron-donating methylenes.
 
