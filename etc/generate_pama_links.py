@@ -39,7 +39,7 @@ def find_atom_index(mol, atomname, resname=None, resid=None):
 
 
 # %%
-monomer_set = ('EH', 'LA', 'MMA', 'OC', 'ST')   # fixed the unmatched quote
+monomer_set = ('EH', 'LA', 'MMA', 'OC', 'ST', 'TD')
 
 # %%
 monomer_pdb_dict = {
@@ -47,7 +47,8 @@ monomer_pdb_dict = {
     'LA': './PAMA-monomers/la.pdb',
     'MMA': './PAMA-monomers/mma.pdb',
     'OC': './PAMA-monomers/oc.pdb',
-    'ST': './PAMA-monomers/st.pdb'
+    'ST': './PAMA-monomers/st.pdb',
+    'TD': './PAMA-monomers/td.pdb',
 }
 
 # %%
@@ -59,7 +60,8 @@ Calpha = {
     'LA': 'C04',
     'MMA': 'C07',
     'OC': 'C03',
-    'ST': 'C04'
+    'ST': 'C04',
+    'TD': 'C18',
 }
 
 # %%
@@ -68,7 +70,8 @@ Cbeta = {
     'LA': 'C05',
     'MMA': 'C08',
     'OC': 'C01',
-    'ST': 'C05'
+    'ST': 'C05',
+    'TD': 'C19',
 }
 
 # %%
