@@ -13,4 +13,6 @@ cp ~/ws/2025-12-01-pama-aa/monomers/ST/ST_C8C92E/tmp/ST_C8C92E.pdb st.pdb
 
 Source dtool dataset: 2026-03-09-tdma-monomer, 50f5252f-1b9c-49a2-8250-5d8fe7a19322
 
-cp ~/dtool/2026-03-12-pama/2026-03-09-tdma-monomer/data/ligpargen/TD_88E777.pdb td.pdb
+    cp ~/dtool/2026-03-12-pama/2026-03-09-tdma-monomer/data/ligpargen/TD_88E777.pdb td.pdb
+
+    cp ~/dtool/2026-03-12-pama/2026-03-09-tdma-monomer/data/ligpargen/TD_88E777.itp itp/td.itp
