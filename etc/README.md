@@ -119,9 +119,18 @@ python etc/renumber-opls-types.py \
     polyply/data/oplsaaLigParGen/PAMA_ST.oplsaa.LigParGen.ff
 ```
 
-Then strip the `[ atomtypes ]` section (GROMACS picks these up from the
-`.ff` file at simulation time, so they must not appear in the monomer
-topology block that polyply reads):
+Merge the new atom-type entries into the shared nonbonded parameter file,
+normalising the format and sorting by opls number:
+
+```bash
+python etc/update-ffnonbonded.py \
+    polyply/data/oplsaaLigParGen/PAMA_TD.oplsaa.LigParGen.ff \
+    etc/custom-ffnonbonded.itp
+```
+
+Then strip the `[ atomtypes ]` section from the library entry (GROMACS
+picks these up from the `.ff` file at simulation time, so they must not
+appear in the monomer topology block that polyply reads):
 
 ```bash
 sed -i '/^\[ atomtypes \]/,/^\[ /{ /^\[ /!d; /^\[ atomtypes \]/d }' \
@@ -221,7 +230,16 @@ python etc/renumber-opls-types.py \
     # ... add any further already-integrated files here
 ```
 
-Strip the `[ atomtypes ]` section:
+Merge the new atom-type entries into the shared nonbonded parameter file,
+normalising the format and sorting by opls number:
+
+```bash
+python etc/update-ffnonbonded.py \
+    polyply/data/oplsaaLigParGen/PAMA_NEWMON.oplsaa.LigParGen.ff \
+    etc/custom-ffnonbonded.itp
+```
+
+Strip the `[ atomtypes ]` section from the library entry:
 
 ```bash
 sed -i '/^\[ atomtypes \]/,/^\[ /{ /^\[ /!d; /^\[ atomtypes \]/d }' \
