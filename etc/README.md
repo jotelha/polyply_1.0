@@ -188,6 +188,34 @@ Cbeta = {
 
 ---
 
+## Backbone hybridization fix + OPLS-AA/L-OPLS re-parametrization
+
+Because every monomer is parametrized as the **free vinyl monomer**, each
+one's own Calpha-Cbeta bond is LigParGen's vinyl C=C double bond, which is
+wrong once polymerized (it becomes the backbone's single bond). This is
+fixed, and the backbone/ester region's charges are switched from LigParGen
+CM1A to standard OPLS-AA library values, and the alkyl tail is retyped to
+L-OPLS, by three scripts that must run in this order on **every** monomer
+(including a newly-added one, after step 5 below):
+
+```bash
+python etc/fix_backbone_hybridization.py      # sp2 -> sp3 backbone fix
+python etc/assign_library_charges.py          # OPLS-AA library charges, backbone/ester
+python etc/retype_alkyl_tail_lopls.py         # L-OPLS charges/LJ/dihedrals, alkyl tail
+```
+
+Each script auto-detects Calpha/Cbeta (from the table below) and the
+ester-oxygen/first-alkoxy-carbon boundary by walking each monomer's bond
+graph, so no per-monomer atom-name editing is needed beyond adding the new
+monomer's `(Calpha, Cbeta)` entry to each script's `MONOMERS` dict. See
+`etc/report.md` §6 for the full identification trail (which standard OPLS
+atom type each role maps to, and why) and
+`etc/lopls-reference/README.md` for the vendored reference data these
+scripts read from. After running all three, re-run `renormalize-charges.py`
+per monomer as the final safety net (residual is normally <0.1 e, from the
+one or two roles where no exactly-neutral tabulated charge was available),
+then regenerate the link file (step 6 below).
+
 ## Full workflow for adding a new monomer
 
 The steps below assume the new monomer is called `NEWMON` and the
@@ -262,21 +290,29 @@ Inspect the monomer PDB connectivity:
 Add both atom names to the `Calpha` and `Cbeta` dicts in
 `generate_pama_links.py`.
 
-### 5. Regenerate backbone links
+### 5. Fix hybridization and assign charges
+
+Add `NEWMON`'s `(Calpha, Cbeta)` to the `MONOMERS` dict in each of
+`fix_backbone_hybridization.py`, `assign_library_charges.py`, and
+`retype_alkyl_tail_lopls.py`, then run all three in that order (see
+"Backbone hybridization fix + OPLS-AA/L-OPLS re-parametrization" above),
+followed by `renormalize-charges.py` as the final safety net.
+
+### 6. Regenerate backbone links
 
 ```bash
 cd etc/
 python generate_pama_links.py
 ```
 
-### 6. Deploy the updated links file
+### 7. Deploy the updated links file
 
 ```bash
 cp etc/PAMA.oplsaa.LigParGen_links.ff \
    polyply/data/oplsaaLigParGen/PAMA.oplsaa.LigParGen_links.ff
 ```
 
-### 7. Update library documentation
+### 8. Update library documentation
 
 - `polyply/data/oplsaaLigParGen/README.md` — add `cp` / `sed` provenance
   commands for the new monomer.

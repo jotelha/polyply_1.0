@@ -170,6 +170,7 @@ def _interaction_equal(interaction1, interaction2, inter_type):
     return False
 
 @pytest.mark.parametrize("library, polymer", [
+     ['ol21', 'RNA'],
      ['2016H66', 'PP'],
      ['2016H66', 'C12E4'],
      ['2016H66', 'PE'],
@@ -188,9 +189,12 @@ def _interaction_equal(interaction1, interaction2, inter_type):
      ['martini3', 'P3HT'],
      ['martini3', 'PPE'],
      ['martini3', 'PTMA'],
+     ['martini3', '12BD_b_PEO'],
      ['martini3', 'PROT'],
+     ['martini3', 'modifProt'],
      ['martini3-go', 'PROT'],
      ['martini3-go', 'PROTMODS'],
+     ['martini3', 'PROT'],
      ['ibi_cgm3', 'PTMA'],
      ['ibi_gbcg', 'PTMA'],
      ['martini2', 'PEO'],
@@ -246,8 +250,8 @@ def test_integration_protein(tmp_path, monkeypatch, library, polymer):
                           universal_newlines=True)
     exit_code = proc.returncode
     if exit_code:
-        #print(proc.stdout)
-        #print(proc.stderr)
+        print(proc.stdout)
+        print(proc.stderr)
         assert not exit_code
 
     # check if strdout has citations in string
