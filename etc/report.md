@@ -257,3 +257,53 @@ unchanged (the inter-residue link never depended on the fixed intra-residue
 parameters). No QM dihedral scans or bulk density/viscosity MD validation
 were run in this pass (deferred, per
 `/home/jotelha/.claude/plans/golden-beaming-hickey.md`).
+
+## 7. Fix of the two remaining sp2(CM)-flavored bonds at Calpha (2026-11-12, ported)
+
+Ported from the sibling `2026-11-12-PAMA-parameters` branch (which
+subsequently reverted the alkyl tail from L-OPLS back to stock OPLS-AA;
+*this* branch keeps the tail on L-OPLS per §6.3, but the finding and fix
+below are entirely in the backbone region and apply identically either
+way).
+
+### 7.1 Finding
+
+`fix_backbone_hybridization.py` (§6.1) only rewrites bonded terms whose
+atom set is exactly `{Calpha, Cbeta}` (the vinyl double bond itself), plus
+angles/impropers/dihedrals centered on one of those two atoms. It does not
+touch the other two bonds radiating from Calpha: to the alpha-methyl
+carbon, and to the ester carbonyl carbon. Both were already single bonds
+in the free vinyl monomer (Calpha's only double bond was to Cbeta), so this
+is not a bond-order bug — but LigParGen parametrized their length/force
+constant against Calpha's then-sp2 (`CM`) atom type, and that choice is now
+wrong given Calpha is sp3 after polymerization:
+
+| Bond | As shipped (sp2-adjacent) | OPLS-AA bond type matched | Correct sp3 value | OPLS-AA bond type |
+|---|---|---|---|---|
+| Calpha-AlphaMethylC | 0.1510 nm / 265265.6 | `CM-CT` (`ffbonded.itp`, "; wlj") | 0.1529 nm / 224262.4 | `CT-CT`, same as the Calpha-Cbeta bond in §6.1 |
+| Calpha-CarbonylC | 0.1444 nm / 343088.0 | `C-CM` (conjugated-vinyl carbonyl, e.g. thymine) | 0.1522 nm / 265265.6 | `C-CT` |
+
+Both target values come from the generic (non-ifdef'd) entries of the
+vendored `etc/lopls-reference/oplsaa.ff/ffbonded.itp`, the same source used
+throughout §6-7. The alpha-methyl carbon and the Calpha-Cbeta neighbour are
+both plain `CT`; the ester carbonyl carbon is the standard ester `C` type —
+neither is `CM`, so the `CM`-flavored values LigParGen assigned are stale
+leftovers from the free-vinyl-monomer parametrization.
+
+### 7.2 Method
+
+Script `etc/fix_calpha_substituent_bonds.py` identifies the alpha-methyl
+carbon and carbonyl carbon among Calpha's two non-Cbeta heavy neighbours
+(same logic as `assign_library_charges.py`'s `identify_backbone_ester_roles`
+— the carbonyl carbon is the one bonded to two oxygens), then rewrites
+exactly those two bond lines per monomer, tagged `; sp3 backbone fix (was
+CM-CT vinyl-adjacent)` and `; sp3 backbone fix (was C-CM conjugated-vinyl)`
+respectively, matching the tagging style of `fix_backbone_hybridization.py`.
+No charges or atom types are touched.
+
+### 7.3 Verification
+
+All six monomers: exactly 2 bonds fixed each (12 total), matching the roles
+identified in §7.1. Net charge per monomer confirmed still exactly `0` after
+the fix. `polyply gen_params` assembles a trimer cleanly for all six
+monomers with no errors.
