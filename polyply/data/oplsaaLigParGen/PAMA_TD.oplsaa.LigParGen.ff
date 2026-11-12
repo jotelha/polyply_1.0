@@ -8,43 +8,43 @@
 TD                   3
 [ atoms ]
 ;   nr       type  resnr residue  atom   cgnr     charge       mass  
-     1  opls_1209      1     TD    H00      1   0.07282352     1.0080  ; L-OPLS
-     2  opls_1212      1     TD    C01      1  -0.22317648    12.0110  ; L-OPLS
-     3  opls_1225      1     TD    H02      1   0.07282352     1.0080  ; L-OPLS
-     4  opls_1229      1     TD    H03      1   0.07282353     1.0080  ; L-OPLS
-     5  opls_1204      1     TD    C04      1  -0.14917647    12.0110  ; L-OPLS
-     6  opls_1213      1     TD    H05      1   0.07282353     1.0080  ; L-OPLS
-     7  opls_1202      1     TD    H06      1   0.07282353     1.0080  ; L-OPLS
-     8  opls_1215      1     TD    C07      1  -0.14917647    12.0110  ; L-OPLS
-     9  opls_1214      1     TD    H08      1   0.07282353     1.0080  ; L-OPLS
-    10  opls_1250      1     TD    H09      1   0.07282353     1.0080  ; L-OPLS
-    11  opls_1222      1     TD    C0A      1  -0.14917647    12.0110  ; L-OPLS
-    12  opls_1227      1     TD    H0B      1   0.07282353     1.0080  ; L-OPLS
-    13  opls_1249      1     TD    H0C      1   0.07282353     1.0080  ; L-OPLS
-    14  opls_1240      1     TD    C0D      1  -0.14917647    12.0110  ; L-OPLS
-    15  opls_1219      1     TD    H0E      1   0.07282353     1.0080  ; L-OPLS
-    16  opls_1211      1     TD    H0F      1   0.07282353     1.0080  ; L-OPLS
-    17  opls_1241      1     TD    C0G      1  -0.14917647    12.0110  ; L-OPLS
-    18  opls_1246      1     TD    H0H      1   0.07282353     1.0080  ; L-OPLS
-    19  opls_1201      1     TD    H0I      1   0.07282353     1.0080  ; L-OPLS
-    20  opls_1237      1     TD    C0J      1  -0.14917647    12.0110  ; L-OPLS
-    21  opls_1239      1     TD    H0K      1   0.07282353     1.0080  ; L-OPLS
-    22  opls_1228      1     TD    H0M      1   0.07282353     1.0080  ; L-OPLS
-    23  opls_1230      1     TD    C0N      1  -0.14917647    12.0110  ; L-OPLS
-    24  opls_1235      1     TD    H0O      1   0.07282353     1.0080  ; L-OPLS
-    25  opls_1223      1     TD    H0P      1   0.07282353     1.0080  ; L-OPLS
-    26  opls_1210      1     TD    C0Q      1  -0.14917647    12.0110  ; L-OPLS
-    27  opls_1218      1     TD    H0R      1   0.07282353     1.0080  ; L-OPLS
-    28  opls_1242      1     TD    H0S      1   0.07282353     1.0080  ; L-OPLS
-    29  opls_1245      1     TD    C0T      1  -0.14917647    12.0110  ; L-OPLS
-    30  opls_1244      1     TD    H0U      1   0.07282353     1.0080  ; L-OPLS
-    31  opls_1203      1     TD    H0V      1   0.07282353     1.0080  ; L-OPLS
-    32  opls_1238      1     TD    C0W      1  -0.14917647    12.0110  ; L-OPLS
-    33  opls_1231      1     TD    H0X      2   0.07282353     1.0080  ; L-OPLS
-    34  opls_1236      1     TD    H0Y      2   0.07282353     1.0080  ; L-OPLS
-    35  opls_1217      1     TD    C0Z      2  -0.14917647    12.0110  ; L-OPLS
-    36  opls_1208      1     TD    H10      2   0.07282353     1.0080  ; L-OPLS
-    37  opls_1207      1     TD    H11      2   0.07282353     1.0080  ; L-OPLS
+     1  opls_1209      1     TD    H00      1   0.05882352     1.0080  ; OPLS-AA library charge
+     2  opls_1212      1     TD    C01      1  -0.18117648    12.0110  ; OPLS-AA library charge
+     3  opls_1225      1     TD    H02      1   0.05882352     1.0080  ; OPLS-AA library charge
+     4  opls_1229      1     TD    H03      1   0.05882353     1.0080  ; OPLS-AA library charge
+     5  opls_1204      1     TD    C04      1  -0.12117647    12.0110  ; OPLS-AA library charge
+     6  opls_1213      1     TD    H05      1   0.05882353     1.0080  ; OPLS-AA library charge
+     7  opls_1202      1     TD    H06      1   0.05882353     1.0080  ; OPLS-AA library charge
+     8  opls_1215      1     TD    C07      1  -0.12117647    12.0110  ; OPLS-AA library charge
+     9  opls_1214      1     TD    H08      1   0.05882353     1.0080  ; OPLS-AA library charge
+    10  opls_1250      1     TD    H09      1   0.05882353     1.0080  ; OPLS-AA library charge
+    11  opls_1222      1     TD    C0A      1  -0.12117647    12.0110  ; OPLS-AA library charge
+    12  opls_1227      1     TD    H0B      1   0.05882353     1.0080  ; OPLS-AA library charge
+    13  opls_1249      1     TD    H0C      1   0.05882353     1.0080  ; OPLS-AA library charge
+    14  opls_1240      1     TD    C0D      1  -0.12117647    12.0110  ; OPLS-AA library charge
+    15  opls_1219      1     TD    H0E      1   0.05882353     1.0080  ; OPLS-AA library charge
+    16  opls_1211      1     TD    H0F      1   0.05882353     1.0080  ; OPLS-AA library charge
+    17  opls_1241      1     TD    C0G      1  -0.12117647    12.0110  ; OPLS-AA library charge
+    18  opls_1246      1     TD    H0H      1   0.05882353     1.0080  ; OPLS-AA library charge
+    19  opls_1201      1     TD    H0I      1   0.05882353     1.0080  ; OPLS-AA library charge
+    20  opls_1237      1     TD    C0J      1  -0.12117647    12.0110  ; OPLS-AA library charge
+    21  opls_1239      1     TD    H0K      1   0.05882353     1.0080  ; OPLS-AA library charge
+    22  opls_1228      1     TD    H0M      1   0.05882353     1.0080  ; OPLS-AA library charge
+    23  opls_1230      1     TD    C0N      1  -0.12117647    12.0110  ; OPLS-AA library charge
+    24  opls_1235      1     TD    H0O      1   0.05882353     1.0080  ; OPLS-AA library charge
+    25  opls_1223      1     TD    H0P      1   0.05882353     1.0080  ; OPLS-AA library charge
+    26  opls_1210      1     TD    C0Q      1  -0.12117647    12.0110  ; OPLS-AA library charge
+    27  opls_1218      1     TD    H0R      1   0.05882353     1.0080  ; OPLS-AA library charge
+    28  opls_1242      1     TD    H0S      1   0.05882353     1.0080  ; OPLS-AA library charge
+    29  opls_1245      1     TD    C0T      1  -0.12117647    12.0110  ; OPLS-AA library charge
+    30  opls_1244      1     TD    H0U      1   0.05882353     1.0080  ; OPLS-AA library charge
+    31  opls_1203      1     TD    H0V      1   0.05882353     1.0080  ; OPLS-AA library charge
+    32  opls_1238      1     TD    C0W      1  -0.12117647    12.0110  ; OPLS-AA library charge
+    33  opls_1231      1     TD    H0X      2   0.05882353     1.0080  ; OPLS-AA library charge
+    34  opls_1236      1     TD    H0Y      2   0.05882353     1.0080  ; OPLS-AA library charge
+    35  opls_1217      1     TD    C0Z      2  -0.12117647    12.0110  ; OPLS-AA library charge
+    36  opls_1208      1     TD    H10      2   0.05882353     1.0080  ; OPLS-AA library charge
+    37  opls_1207      1     TD    H11      2   0.05882353     1.0080  ; OPLS-AA library charge
     38  opls_1232      1     TD    C12      2   0.18882353    12.0110  ; OPLS-AA library charge
     39  opls_1216      1     TD    H13      2   0.05882353     1.0080  ; OPLS-AA library charge
     40  opls_1243      1     TD    H14      2   0.05882353     1.0080  ; OPLS-AA library charge
@@ -226,16 +226,16 @@ TD                   3
    48   44   42   41        3       1.789  -5.052  -0.962   4.226  -0.000   0.000
     48    44    45    47     3      0.6276      1.8828      0.0000     -2.5104      0.0000      0.0000  ; sp3 backbone fix (was C=C no-rotation)
     48    44    45    46     3      0.6276      1.8828      0.0000     -2.5104      0.0000      0.0000  ; sp3 backbone fix (was C=C no-rotation)
-    32    29    26    23     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
-    20    17    14    11     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
-    35    32    29    26     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
-    17    14    11     8     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
-    26    23    20    17     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
-    29    26    23    20     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
-    38    35    32    29     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
-    23    20    17    14     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
-    14    11     8     5     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
-    11     8     5     2     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
+    32    29    26    23     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    20    17    14    11     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    35    32    29    26     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    17    14    11     8     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    26    23    20    17     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    29    26    23    20     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    38    35    32    29     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    23    20    17    14     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    14    11     8     5     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    11     8     5     2     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
    35   32   29   31        3       0.628   1.883   0.000  -2.510  -0.000   0.000
    32   29   26   27        3       0.628   1.883   0.000  -2.510  -0.000   0.000
    32   29   26   28        3       0.628   1.883   0.000  -2.510  -0.000   0.000

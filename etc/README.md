@@ -188,33 +188,43 @@ Cbeta = {
 
 ---
 
-## Backbone hybridization fix + OPLS-AA/L-OPLS re-parametrization
+## Backbone hybridization fix + OPLS-AA re-parametrization
 
 Because every monomer is parametrized as the **free vinyl monomer**, each
 one's own Calpha-Cbeta bond is LigParGen's vinyl C=C double bond, which is
 wrong once polymerized (it becomes the backbone's single bond). This is
-fixed, and the backbone/ester region's charges are switched from LigParGen
-CM1A to standard OPLS-AA library values, and the alkyl tail is retyped to
-L-OPLS, by three scripts that must run in this order on **every** monomer
-(including a newly-added one, after step 5 below):
+fixed, and the backbone/ester region's and the alkyl tail's charges are both
+switched from LigParGen CM1A to standard OPLS-AA library values, by three
+scripts that must run in this order on **every** monomer (including a
+newly-added one, after step 5 below):
 
 ```bash
 python etc/fix_backbone_hybridization.py      # sp2 -> sp3 backbone fix
 python etc/assign_library_charges.py          # OPLS-AA library charges, backbone/ester
-python etc/retype_alkyl_tail_lopls.py         # L-OPLS charges/LJ/dihedrals, alkyl tail
+python etc/revert_alkyl_tail_to_oplsaa.py     # OPLS-AA charges/LJ/dihedrals, alkyl tail
 ```
+
+(A 2026-10-28 pass retyped the alkyl tail to **L-OPLS-AA** instead, via
+`etc/retype_alkyl_tail_lopls.py`; this was reverted on 2026-11-12 back to
+plain OPLS-AA for consistency with the rest of the molecule.
+`retype_alkyl_tail_lopls.py` is kept for history but is not part of the
+current recipe — see `etc/report.md` §7. `revert_alkyl_tail_to_oplsaa.py`
+is named for that revert, but on a fresh monomer it is simply the normal
+alkyl-tail library-charge step, same role as `assign_library_charges.py`
+for the backbone/ester region.)
 
 Each script auto-detects Calpha/Cbeta (from the table below) and the
 ester-oxygen/first-alkoxy-carbon boundary by walking each monomer's bond
 graph, so no per-monomer atom-name editing is needed beyond adding the new
 monomer's `(Calpha, Cbeta)` entry to each script's `MONOMERS` dict. See
-`etc/report.md` §6 for the full identification trail (which standard OPLS
+`etc/report.md` §6-7 for the full identification trail (which standard OPLS
 atom type each role maps to, and why) and
-`etc/lopls-reference/README.md` for the vendored reference data these
-scripts read from. After running all three, re-run `renormalize-charges.py`
-per monomer as the final safety net (residual is normally <0.1 e, from the
-one or two roles where no exactly-neutral tabulated charge was available),
-then regenerate the link file (step 6 below).
+`etc/lopls-reference/README.md` for the vendored reference data
+`assign_library_charges.py` reads from (the stock, non-L-OPLS branch).
+After running all three, re-run `renormalize-charges.py` per monomer as the
+final safety net (residual is normally <0.1 e, from the one or two roles
+where no exactly-neutral tabulated charge was available), then regenerate
+the link file (step 6 below).
 
 ## Full workflow for adding a new monomer
 
@@ -294,8 +304,8 @@ Add both atom names to the `Calpha` and `Cbeta` dicts in
 
 Add `NEWMON`'s `(Calpha, Cbeta)` to the `MONOMERS` dict in each of
 `fix_backbone_hybridization.py`, `assign_library_charges.py`, and
-`retype_alkyl_tail_lopls.py`, then run all three in that order (see
-"Backbone hybridization fix + OPLS-AA/L-OPLS re-parametrization" above),
+`revert_alkyl_tail_to_oplsaa.py`, then run all three in that order (see
+"Backbone hybridization fix + OPLS-AA re-parametrization" above),
 followed by `renormalize-charges.py` as the final safety net.
 
 ### 6. Regenerate backbone links

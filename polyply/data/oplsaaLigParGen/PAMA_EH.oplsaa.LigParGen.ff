@@ -8,42 +8,42 @@
 EH                   3
 [ atoms ]
 ;   nr       type  resnr residue  atom   cgnr     charge       mass  
-     1  opls_1000      1     EH    H00      1   0.05847254     1.0080  ; OPLS-AA library charge
-     2  opls_1001      1     EH    C01      1  -0.18152746    12.0110  ; OPLS-AA library charge
-     3  opls_1002      1     EH    H02      1   0.05847253     1.0080  ; OPLS-AA library charge
-     4  opls_1003      1     EH    H03      1   0.05847253     1.0080  ; OPLS-AA library charge
-     5  opls_1004      1     EH    C04      1   -0.00152747    12.0110  ; OPLS-AA library charge
-     6  opls_1005      1     EH    C05      1  -0.12152747    12.0110  ; OPLS-AA library charge
-     7  opls_1006      1     EH    H06      1   0.05847253     1.0080  ; OPLS-AA library charge
-     8  opls_1007      1     EH    H07      1   0.05847253     1.0080  ; OPLS-AA library charge
-     9  opls_1008      1     EH    C08      1   0.50847253    12.0110  ; OPLS-AA library charge
-    10  opls_1009      1     EH    O09      1  -0.43152747    15.9990  ; OPLS-AA library charge
-    11  opls_1010      1     EH    O0A      1  -0.33152747    15.9990  ; OPLS-AA library charge
-    12  opls_1011      1     EH    C0B      1   0.18847253    12.0110  ; OPLS-AA library charge
-    13  opls_1012      1     EH    H0C      1   0.05847253     1.0080  ; OPLS-AA library charge
-    14  opls_1013      1     EH    H0D      1   0.05847253     1.0080  ; OPLS-AA library charge
-    15   opls_1014      1     EH   C0E      1    -0.11533302    12.0110 
-    16   opls_1015      1     EH   H0F      1     0.10726698     1.0080 
-    17  opls_1016      1     EH    C0G      1  -0.14952747    12.0110  ; L-OPLS
-    18  opls_1017      1     EH    H0H      1   0.07247253     1.0080  ; L-OPLS
-    19  opls_1018      1     EH    H0I      1   0.07247253     1.0080  ; L-OPLS
-    20  opls_1019      1     EH    C0J      1  -0.22352747    12.0110  ; L-OPLS
-    21  opls_1020      1     EH    H0K      1   0.07247253     1.0080  ; L-OPLS
-    22  opls_1021      1     EH    H0M      1   0.07247253     1.0080  ; L-OPLS
-    23  opls_1022      1     EH    H0N      1   0.07247253     1.0080  ; L-OPLS
-    24  opls_1023      1     EH    C0O      1  -0.14952747    12.0110  ; L-OPLS
-    25  opls_1024      1     EH    H0P      1   0.07247253     1.0080  ; L-OPLS
-    26  opls_1025      1     EH    H0Q      1   0.07247253     1.0080  ; L-OPLS
-    27  opls_1026      1     EH    C0R      1  -0.14952747    12.0110  ; L-OPLS
-    28  opls_1027      1     EH    H0S      1   0.07247253     1.0080  ; L-OPLS
-    29  opls_1028      1     EH    H0T      1   0.07247253     1.0080  ; L-OPLS
-    30  opls_1029      1     EH    C0U      1  -0.14952747    12.0110  ; L-OPLS
-    31  opls_1030      1     EH    H0V      1   0.07247253     1.0080  ; L-OPLS
-    32  opls_1031      1     EH    H0W      1   0.07247253     1.0080  ; L-OPLS
-    33  opls_1032      1     EH    C0X      2  -0.22352747    12.0110  ; L-OPLS
-    34  opls_1033      1     EH    H0Y      2   0.07247253     1.0080  ; L-OPLS
-    35  opls_1034      1     EH    H0Z      2   0.07247253     1.0080  ; L-OPLS
-    36  opls_1035      1     EH    H10      2   0.07247253     1.0080  ; L-OPLS
+     1  opls_1000      1     EH    H00      1   0.05860454     1.0080  ; OPLS-AA library charge
+     2  opls_1001      1     EH    C01      1  -0.18139546    12.0110  ; OPLS-AA library charge
+     3  opls_1002      1     EH    H02      1   0.05860454     1.0080  ; OPLS-AA library charge
+     4  opls_1003      1     EH    H03      1   0.05860454     1.0080  ; OPLS-AA library charge
+     5  opls_1004      1     EH    C04      1   -0.00139546    12.0110  ; OPLS-AA library charge
+     6  opls_1005      1     EH    C05      1  -0.12139546    12.0110  ; OPLS-AA library charge
+     7  opls_1006      1     EH    H06      1   0.05860454     1.0080  ; OPLS-AA library charge
+     8  opls_1007      1     EH    H07      1   0.05860454     1.0080  ; OPLS-AA library charge
+     9  opls_1008      1     EH    C08      1   0.50860454    12.0110  ; OPLS-AA library charge
+    10  opls_1009      1     EH    O09      1  -0.43139546    15.9990  ; OPLS-AA library charge
+    11  opls_1010      1     EH    O0A      1  -0.33139546    15.9990  ; OPLS-AA library charge
+    12  opls_1011      1     EH    C0B      1   0.18860454    12.0110  ; OPLS-AA library charge
+    13  opls_1012      1     EH    H0C      1   0.05860454     1.0080  ; OPLS-AA library charge
+    14  opls_1013      1     EH    H0D      1   0.05860454     1.0080  ; OPLS-AA library charge
+    15   opls_1014      1     EH   C0E      1    -0.11757708    12.0110 
+    16   opls_1015      1     EH   H0F      1     0.10502292     1.0080 
+    17  opls_1016      1     EH    C0G      1  -0.12139547    12.0110  ; OPLS-AA library charge
+    18  opls_1017      1     EH    H0H      1   0.05860453     1.0080  ; OPLS-AA library charge
+    19  opls_1018      1     EH    H0I      1   0.05860453     1.0080  ; OPLS-AA library charge
+    20  opls_1019      1     EH    C0J      1  -0.18139547    12.0110  ; OPLS-AA library charge
+    21  opls_1020      1     EH    H0K      1   0.05860453     1.0080  ; OPLS-AA library charge
+    22  opls_1021      1     EH    H0M      1   0.05860453     1.0080  ; OPLS-AA library charge
+    23  opls_1022      1     EH    H0N      1   0.05860453     1.0080  ; OPLS-AA library charge
+    24  opls_1023      1     EH    C0O      1  -0.12139547    12.0110  ; OPLS-AA library charge
+    25  opls_1024      1     EH    H0P      1   0.05860453     1.0080  ; OPLS-AA library charge
+    26  opls_1025      1     EH    H0Q      1   0.05860453     1.0080  ; OPLS-AA library charge
+    27  opls_1026      1     EH    C0R      1  -0.12139547    12.0110  ; OPLS-AA library charge
+    28  opls_1027      1     EH    H0S      1   0.05860453     1.0080  ; OPLS-AA library charge
+    29  opls_1028      1     EH    H0T      1   0.05860453     1.0080  ; OPLS-AA library charge
+    30  opls_1029      1     EH    C0U      1  -0.12139547    12.0110  ; OPLS-AA library charge
+    31  opls_1030      1     EH    H0V      1   0.05860453     1.0080  ; OPLS-AA library charge
+    32  opls_1031      1     EH    H0W      1   0.05860453     1.0080  ; OPLS-AA library charge
+    33  opls_1032      1     EH    C0X      2  -0.18139547    12.0110  ; OPLS-AA library charge
+    34  opls_1033      1     EH    H0Y      2   0.05860453     1.0080  ; OPLS-AA library charge
+    35  opls_1034      1     EH    H0Z      2   0.05860453     1.0080  ; OPLS-AA library charge
+    36  opls_1035      1     EH    H10      2   0.05860453     1.0080  ; OPLS-AA library charge
 [ bonds ]
     2     1     1      0.1090 284512.000
     3     2     1      0.1090 284512.000
@@ -164,12 +164,12 @@ EH                   3
     6    5    2    1        3      -0.778  -2.335   0.000   3.113  -0.000   0.000
     6    5    2    3        3      -0.778  -2.335   0.000   3.113  -0.000   0.000
     6    5    2    4        3      -0.778  -2.335   0.000   3.113  -0.000   0.000
-    24    15    17    20     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
-    27    24    15    17     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
-    30    27    24    15     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
-    27    24    15    12     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
-    20    17    15    12     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
-    33    30    27    24     3    0.518787   -0.230192    0.896807   -1.491340    0.000000    0.000000  ; L-OPLS CT-CT-CT-CT
+    24    15    17    20     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    27    24    15    17     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    30    27    24    15     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    27    24    15    12     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    20    17    15    12     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    33    30    27    24     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
    27   24   15   16        3       0.628   1.883   0.000  -2.510  -0.000   0.000
    33   30   27   28        3       0.628   1.883   0.000  -2.510  -0.000   0.000
    24   15   12   14        3       0.628   1.883   0.000  -2.510  -0.000   0.000

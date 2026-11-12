@@ -257,3 +257,55 @@ unchanged (the inter-residue link never depended on the fixed intra-residue
 parameters). No QM dihedral scans or bulk density/viscosity MD validation
 were run in this pass (deferred, per
 `/home/jotelha/.claude/plans/golden-beaming-hickey.md`).
+
+## 7. Revert of L-OPLS retyping on the alkyl tail (2026-11-12)
+
+### 7.1 Decision
+
+The sp2->sp3 backbone fix (§6.1) and the OPLS-AA library charges for the
+backbone/ester region (§6.2) are kept. The L-OPLS-AA retyping of the alkyl
+tail (§6.3) is reverted: the tail now uses plain OPLS-AA throughout, same as
+the rest of the molecule, so the full repeat unit is consistently standard
+OPLS-AA with library charges and no L-OPLS content anywhere.
+
+### 7.2 Method
+
+`etc/retype_alkyl_tail_lopls.py` stamped every line it touched with a
+distinctive comment (`; L-OPLS` on atom charge lines, `; L-OPLS CT-CT-CT-CT`
+on tail dihedrals, `; L-OPLS CH2-H epsilon` in `custom-ffnonbonded.itp`).
+`etc/revert_alkyl_tail_to_oplsaa.py` finds every line carrying one of these
+markers and overwrites it with the standard-OPLS-AA value, using constants
+already established and cited elsewhere in this library rather than
+re-deriving anything:
+
+| Quantity | L-OPLS value reverted | Standard OPLS-AA value | Same constant as |
+|---|---|---|---|
+| CH3 carbon charge | -0.222 | -0.180 (`opls_135`) | `assign_library_charges.py`'s `CHARGE_ALPHA_METHYL_C` |
+| CH2 carbon charge | -0.148 | -0.120 (`opls_136`) | `assign_library_charges.py`'s `CHARGE_CBETA` |
+| CH3-H / CH2-H charge | 0.074 | 0.060 (`opls_140`) | `assign_library_charges.py`'s `CHARGE_GENERIC_HC` |
+| CH2-H LJ epsilon | 0.11000 | 0.12552 (sigma unchanged, 0.250) | the pre-L-OPLS value documented in `retype_alkyl_tail_lopls.py` |
+| Tail `CT-CT-CT-CT` dihedral | `(0.518787, -0.230192, 0.896807, -1.49134, 0, 0)` | `(0.6276, 1.8828, 0.0, -2.5104, 0, 0)` | `fix_backbone_hybridization.py`'s `DIHEDRAL_CT_CT_CT_HC` |
+
+Reverted lines are re-tagged `; OPLS-AA library charge` (atoms, matching the
+style already used on the backbone/ester lines) or
+`; OPLS-AA (reverted from L-OPLS)` (dihedrals, nonbonded epsilon). Branch
+points (e.g. EH's 2-ethylhexyl branch carbon) were never touched by the
+L-OPLS pass and so are untouched here too.
+
+`retype_alkyl_tail_lopls.py` and `etc/lopls-reference/` are kept, not
+deleted: the former documents a real decision that was tried and reverted;
+the latter is still the provenance source for the backbone/ester library
+charges in §6.2 (its stock, `#ifndef LOPLS` branch), independent of whether
+the L-OPLS deltas themselves are used anywhere.
+
+### 7.3 Verification
+
+Re-running `renormalize-charges.py` on all five tail-bearing monomers (same
+convention as §6.4) restored exact per-repeat-unit neutrality (residuals
+were +0.031 to +0.047 e immediately after the revert, from the same
+branch-point/analogy effects as §6.4). Confirmed for all six monomers:
+`polyply gen_params` assembles a trimer cleanly with exact net-zero charge,
+`generate_pama_links.py`'s output is byte-for-byte unchanged, and no
+`; L-OPLS` markers or L-OPLS-specific numeric signatures (`0.11000`,
+`-0.222...`, `-0.148...`, `0.518787`, ...) remain anywhere in
+`polyply/data/oplsaaLigParGen/` or `etc/custom-ffnonbonded.itp`.

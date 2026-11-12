@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Retype the PAMA alkyl side chains beyond the first ester-adjacent carbon
+"""SUPERSEDED 2026-11-12 -- the L-OPLS retyping this script applies was
+reverted; see etc/revert_alkyl_tail_to_oplsaa.py and etc/report.md section 7.
+Kept for history (not run as part of the current recipe in etc/README.md).
+
+Retype the PAMA alkyl side chains beyond the first ester-adjacent carbon
 to L-OPLS-AA (Siu, Pluhackova & Boeckmann, JCTC 2012), per
 etc/lopls-reference/oplsaa.ff (the "#ifdef LOPLS" branches).
 
