@@ -194,15 +194,25 @@ Because every monomer is parametrized as the **free vinyl monomer**, each
 one's own Calpha-Cbeta bond is LigParGen's vinyl C=C double bond, which is
 wrong once polymerized (it becomes the backbone's single bond). This is
 fixed, and the backbone/ester region's and the alkyl tail's charges are both
-switched from LigParGen CM1A to standard OPLS-AA library values, by three
+switched from LigParGen CM1A to standard OPLS-AA library values, by four
 scripts that must run in this order on **every** monomer (including a
 newly-added one, after step 5 below):
 
 ```bash
-python etc/fix_backbone_hybridization.py      # sp2 -> sp3 backbone fix
+python etc/fix_backbone_hybridization.py      # sp2 -> sp3 backbone fix (Calpha-Cbeta bond/angles/dihedrals)
+python etc/fix_calpha_substituent_bonds.py    # sp2 -> sp3 fix for Calpha's other two bonds
 python etc/assign_library_charges.py          # OPLS-AA library charges, backbone/ester
 python etc/revert_alkyl_tail_to_oplsaa.py     # OPLS-AA charges/LJ/dihedrals, alkyl tail
 ```
+
+`fix_backbone_hybridization.py` only rewrites the bond/angle/dihedral/
+improper terms whose atom set is exactly `{Calpha, Cbeta}` (or centered on
+one of them). It leaves two other bonds radiating from Calpha untouched:
+to the alpha-methyl carbon and to the ester carbonyl carbon. Both were
+single bonds in the free vinyl monomer too, but LigParGen parametrized them
+against Calpha's then-sp2 (`CM`) identity (`CM-CT` and `C-CM` bond types).
+`fix_calpha_substituent_bonds.py` (added 2026-11-12, see `etc/report.md`
+§8) rewrites both to the sp3-appropriate `CT-CT` / `C-CT` values.
 
 (A 2026-10-28 pass retyped the alkyl tail to **L-OPLS-AA** instead, via
 `etc/retype_alkyl_tail_lopls.py`; this was reverted on 2026-11-12 back to
@@ -303,10 +313,11 @@ Add both atom names to the `Calpha` and `Cbeta` dicts in
 ### 5. Fix hybridization and assign charges
 
 Add `NEWMON`'s `(Calpha, Cbeta)` to the `MONOMERS` dict in each of
-`fix_backbone_hybridization.py`, `assign_library_charges.py`, and
-`revert_alkyl_tail_to_oplsaa.py`, then run all three in that order (see
-"Backbone hybridization fix + OPLS-AA re-parametrization" above),
-followed by `renormalize-charges.py` as the final safety net.
+`fix_backbone_hybridization.py`, `fix_calpha_substituent_bonds.py`,
+`assign_library_charges.py`, and `revert_alkyl_tail_to_oplsaa.py`, then run
+all four in that order (see "Backbone hybridization fix + OPLS-AA
+re-parametrization" above), followed by `renormalize-charges.py` as the
+final safety net.
 
 ### 6. Regenerate backbone links
 

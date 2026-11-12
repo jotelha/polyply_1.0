@@ -309,3 +309,49 @@ branch-point/analogy effects as §6.4). Confirmed for all six monomers:
 `; L-OPLS` markers or L-OPLS-specific numeric signatures (`0.11000`,
 `-0.222...`, `-0.148...`, `0.518787`, ...) remain anywhere in
 `polyply/data/oplsaaLigParGen/` or `etc/custom-ffnonbonded.itp`.
+
+## 8. Fix of the two remaining sp2(CM)-flavored bonds at Calpha (2026-11-12)
+
+### 8.1 Finding
+
+`fix_backbone_hybridization.py` (§6.1) only rewrites bonded terms whose atom
+set is exactly `{Calpha, Cbeta}` (the vinyl double bond itself), plus
+angles/impropers/dihedrals centered on one of those two atoms. It does not
+touch the other two bonds radiating from Calpha: to the alpha-methyl
+carbon, and to the ester carbonyl carbon. Both were already single bonds
+in the free vinyl monomer (Calpha's only double bond was to Cbeta), so this
+is not a bond-order bug — but LigParGen parametrized their length/force
+constant against Calpha's then-sp2 (`CM`) atom type, and that choice is now
+wrong given Calpha is sp3 after polymerization:
+
+| Bond | As shipped (sp2-adjacent) | OPLS-AA bond type matched | Correct sp3 value | OPLS-AA bond type |
+|---|---|---|---|---|
+| Calpha-AlphaMethylC | 0.1510 nm / 265265.6 | `CM-CT` (`ffbonded.itp`, "; wlj") | 0.1529 nm / 224262.4 | `CT-CT`, same as the Calpha-Cbeta bond in §6.1 |
+| Calpha-CarbonylC | 0.1444 nm / 343088.0 | `C-CM` (conjugated-vinyl carbonyl, e.g. thymine) | 0.1522 nm / 265265.6 | `C-CT` |
+
+Both target values come from the generic (non-ifdef'd) entries of the
+vendored `etc/lopls-reference/oplsaa.ff/ffbonded.itp`, the same source used
+throughout §6-7. The alpha-methyl carbon and the Calpha-Cbeta neighbour are
+both plain `CT`; the ester carbonyl carbon is the standard ester `C` type —
+neither is `CM`, so the `CM`-flavored values LigParGen assigned are stale
+leftovers from the free-vinyl-monomer parametrization.
+
+### 8.2 Method
+
+New script `etc/fix_calpha_substituent_bonds.py` identifies the alpha-methyl
+carbon and carbonyl carbon among Calpha's two non-Cbeta heavy neighbours
+(same logic as `assign_library_charges.py`'s `identify_backbone_ester_roles`
+— the carbonyl carbon is the one bonded to two oxygens), then rewrites
+exactly those two bond lines per monomer, tagged `; sp3 backbone fix (was
+CM-CT vinyl-adjacent)` and `; sp3 backbone fix (was C-CM conjugated-vinyl)`
+respectively, matching the tagging style of `fix_backbone_hybridization.py`.
+No charges or atom types are touched, so no re-run of
+`renormalize-charges.py` was needed.
+
+### 8.3 Verification
+
+All six monomers: exactly 2 bonds fixed each (12 total), matching the roles
+identified in §8.1. Net charge per monomer confirmed still exactly `0` after
+the fix (unaffected, since only bond length/force-constant columns
+changed). `polyply gen_params` assembles a trimer cleanly for all six
+monomers with no errors.
