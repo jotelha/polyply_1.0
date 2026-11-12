@@ -488,3 +488,41 @@ the full whole-molecule audit script (§10.1's method) afterward gives
 monomers. Net charge per monomer confirmed still exactly `0` (none of
 these fixes touch charges). `polyply gen_params` assembles a trimer
 cleanly for all six monomers with no new errors or warnings.
+
+### 10.4 One more LJ residual, found by a second, finer-grained pass (2026-11-12)
+
+The automated audit's LJ check (§10.1) only matches on the generic
+2-letter `bond_type` (`CT`/`HC`/`C`/`O`/`OS`), because that's all the
+bonded tables carry. But `ffnonbonded.itp` tabulates LJ **per specific
+named `opls_NNN` type**, and several distinct `opls_NNN` types share the
+same generic `bond_type` while having genuinely different σ/ε (e.g. `OS`
+has three different (σ,ε) pairs in stock OPLS-AA, depending on whether
+the oxygen is a generic ether, an ester, etc.). This makes the generic
+audit blind to a "right 2-letter type, wrong specific flavour" error: a
+wrong value can still slip through if it happens to equal some *other*
+legitimate `OS`-typed entry elsewhere in the table.
+
+Re-checking every role's *specific* current (σ,ε) against its
+report.md-§6.2-documented `opls_NNN` citation (rather than just "any
+same-bond_type candidate") turned up exactly one more case: the **ester
+ether oxygen** (role `OS`, documented as `opls_467`) had σ=0.29/ε=0.58576
+in all six monomers — the generic-ether `OS` value (shared by several
+unrelated `opls_NNN` types, e.g. `opls_179/180/186`) — instead of
+`opls_467`'s own ester-specific σ=0.30/ε=0.71128. Exactly the same root
+cause as the carbonyl-C and MMA-methoxy-H cases in §10.2: its *charge*
+was already switched to the `opls_467` value by `assign_library_charges.py`
+(`CHARGE_ESTER_O = -0.330`), but its LJ was never updated to match.
+
+Fixed directly in `etc/custom-ffnonbonded.itp` (tagged `; corrected to
+opls_467 LJ (was generic ether OS)`). The carbonyl oxygen (role `O`,
+`opls_466`) and the generic alkyl carbon/hydrogen (roles `CT`/`HC`) were
+also re-checked this way and found already correct (uniform across all
+six monomers, matching their documented `opls_NNN` citation exactly) — no
+further hidden LJ-flavour mismatches remain. Bonds, angles, and dihedrals
+don't have this blind spot (each generic type-tuple maps to exactly one
+value in the vendored bonded tables for every tuple actually present in
+these monomers, confirmed by direct inspection of each candidate list
+used in §10.2's fixes), so no equivalent follow-up was needed there.
+Re-verified: full audit still 0/0/0/0 mismatches, net charge still exactly
+`0` per monomer, `polyply gen_params` still assembles cleanly for all six
+monomers.
