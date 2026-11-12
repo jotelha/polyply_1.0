@@ -155,13 +155,13 @@ TD                   3
    38    41    42     1    116.900    694.544
    41    42    43     1    123.400    694.544
    41    42    44     1    111.400    677.808
-    42    44    45     1     112.700     488.273  ; sp3 backbone fix (was vinyl sp2)
+    42    44    45     1     111.100     527.184  ; corrected CT-CT-C (was blanket CT-CT-CT backbone fix)
     44    45    46     1     110.700     313.800  ; sp3 backbone fix (was vinyl sp2)
     44    45    47     1     110.700     313.800  ; sp3 backbone fix (was vinyl sp2)
-    42    44    48     1     112.700     488.273  ; sp3 backbone fix (was vinyl sp2)
-   44    48    49     1    109.500    292.880
-   44    48    50     1    109.500    292.880
-   44    48    51     1    109.500    292.880
+    42    44    48     1     111.100     527.184  ; corrected CT-CT-C (was blanket CT-CT-CT backbone fix)
+    44    48    49     1     110.700     313.800  ; corrected HC-CT-CT (was raw LigParGen fit)
+    44    48    50     1     110.700     313.800  ; corrected HC-CT-CT (was raw LigParGen fit)
+    44    48    51     1     110.700     313.800  ; corrected HC-CT-CT (was raw LigParGen fit)
    30    29    31     1    107.800    276.144
    50    48    51     1    107.800    276.144
    49    48    51     1    107.800    276.144
@@ -188,7 +188,7 @@ TD                   3
     9     8    10     1    107.800    276.144
    24    23    25     1    107.800    276.144
    31    29    32     1    110.700    313.800
-   43    42    44     1    125.300    669.440
+    43    42    44     1     120.400     669.440  ; corrected CT-C-O (was raw LigParGen fit)
     3     2     5     1    110.700    313.800
    49    48    50     1    107.800    276.144
    36    35    37     1    107.800    276.144
@@ -226,16 +226,16 @@ TD                   3
     48    44    42    41     3   -1.156880   -3.470630    0.000000    4.627500    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
     48    44    45    47     3      0.6276      1.8828      0.0000     -2.5104      0.0000      0.0000  ; sp3 backbone fix (was C=C no-rotation)
     48    44    45    46     3      0.6276      1.8828      0.0000     -2.5104      0.0000      0.0000  ; sp3 backbone fix (was C=C no-rotation)
-    32    29    26    23     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
-    20    17    14    11     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
-    35    32    29    26     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
-    17    14    11     8     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
-    26    23    20    17     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
-    29    26    23    20     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
-    38    35    32    29     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
-    23    20    17    14     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
-    14    11     8     5     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
-    11     8     5     2     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
+    32    29    26    23     3    2.928800   -1.464400    0.209200   -1.673600    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS, corrected CT-CT-CT-CT value)
+    20    17    14    11     3    2.928800   -1.464400    0.209200   -1.673600    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS, corrected CT-CT-CT-CT value)
+    35    32    29    26     3    2.928800   -1.464400    0.209200   -1.673600    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS, corrected CT-CT-CT-CT value)
+    17    14    11     8     3    2.928800   -1.464400    0.209200   -1.673600    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS, corrected CT-CT-CT-CT value)
+    26    23    20    17     3    2.928800   -1.464400    0.209200   -1.673600    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS, corrected CT-CT-CT-CT value)
+    29    26    23    20     3    2.928800   -1.464400    0.209200   -1.673600    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS, corrected CT-CT-CT-CT value)
+    38    35    32    29     3    2.928800   -1.464400    0.209200   -1.673600    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS, corrected CT-CT-CT-CT value)
+    23    20    17    14     3    2.928800   -1.464400    0.209200   -1.673600    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS, corrected CT-CT-CT-CT value)
+    14    11     8     5     3    2.928800   -1.464400    0.209200   -1.673600    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS, corrected CT-CT-CT-CT value)
+    11     8     5     2     3    2.928800   -1.464400    0.209200   -1.673600    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS, corrected CT-CT-CT-CT value)
    35   32   29   31        3       0.628   1.883   0.000  -2.510  -0.000   0.000
    32   29   26   27        3       0.628   1.883   0.000  -2.510  -0.000   0.000
    32   29   26   28        3       0.628   1.883   0.000  -2.510  -0.000   0.000
@@ -259,8 +259,8 @@ TD                   3
    29   26   23   24        3       0.628   1.883   0.000  -2.510  -0.000   0.000
    17   14   11   13        3       0.628   1.883   0.000  -2.510  -0.000   0.000
    11    8    5    7        3       0.628   1.883   0.000  -2.510  -0.000   0.000
-    46    45    44    42     3      0.6276      1.8828      0.0000     -2.5104      0.0000      0.0000  ; sp3 backbone fix (was C=C no-rotation)
-    47    45    44    42     3      0.6276      1.8828      0.0000     -2.5104      0.0000      0.0000  ; sp3 backbone fix (was C=C no-rotation)
+    46    45    44    42     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; corrected C-CT-CT-HC (was blanket CT-CT-CT-HC backbone fix)
+    47    45    44    42     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; corrected C-CT-CT-HC (was blanket CT-CT-CT-HC backbone fix)
     50    48    44    42     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
     49    48    44    42     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
     51    48    44    42     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
@@ -339,7 +339,7 @@ TD                   3
    10    8    5    7        3       0.628   1.883   0.000  -2.510  -0.000   0.000
    28   26   23   25        3       0.628   1.883   0.000  -2.510  -0.000   0.000
    22   20   17   19        3       0.628   1.883   0.000  -2.510  -0.000   0.000
-   43   42   41   38        3      21.439   0.000  -21.439  -0.000  -0.000   0.000
+    43    42    41    38     3   20.920000    0.000000  -20.920000    0.000000    0.000000    0.000000  ; corrected CT-OS-C-O (was raw LigParGen fit)
    41   38   35   32        3       2.874   0.582   2.092  -5.548  -0.000   0.000
    41   38   35   37        3       0.979   2.937   0.000  -3.916  -0.000   0.000
    41   38   35   36        3       0.979   2.937   0.000  -3.916  -0.000   0.000

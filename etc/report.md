@@ -429,3 +429,62 @@ carbonyl-side dihedrals fixed each (matching the counts predicted in
 §9.1). Net charge per monomer confirmed still exactly `0` (unaffected).
 `polyply gen_params` assembles a trimer cleanly for all six monomers with
 no errors or warnings.
+
+## 10. Full whole-molecule audit against stock OPLS-AA (2026-11-12)
+
+### 10.1 Method
+
+§6-9 only ever inspected the backbone/ester region. This pass audits
+*every* bond, angle, proper dihedral, and LJ (σ/ε) entry in all six
+monomers (the whole molecule, tail included) against the vendored stock
+`[ bondtypes ]`/`[ angletypes ]`/`[ dihedraltypes ]`/`[ atomtypes ]`
+tables in `etc/lopls-reference/oplsaa.ff/{ffbonded,ffnonbonded}.itp`.
+
+Every atom is classified into a generic OPLS-AA bond_type role from pure
+topology (the molecule is C/H/O only, so this is exhaustive): an O with
+one heavy neighbour is `O` (carbonyl); an O with two is `OS` (ester
+ether); a C bonded to one `O`-role and one `OS`-role oxygen is `C` (ester
+carbonyl carbon); every other C is `CT`; every H is `HC`. Every current
+bond/angle/dihedral/LJ value is then checked against every stock entry
+whose type-tuple matches that role-tuple (using any synonym of `C` —
+`C`/`C_2`/`C_3`, confirmed identical throughout the table), within a
+small numeric tolerance. Bonds: **0 mismatches** across all six monomers
+(the backbone/ester fixes in §6-9 already closed every bond-level gap).
+Angle, dihedral, and LJ mismatches are listed below.
+
+### 10.2 Findings
+
+**LJ (6 + 3 instances):**
+
+| Atom | Current σ/ε | Correct σ/ε (stock type) | Note |
+|---|---|---|---|
+| ester carbonyl C, all 6 monomers | 0.355 / 0.29288 (raw LigParGen) | **0.375 / 0.43932** (`opls_465`) | charge was already switched to the `opls_465` value by `assign_library_charges.py`; LJ was never touched |
+| MMA's 3 methoxy H's | 0.25 / 0.12552 (generic `HC`) | **0.242 / 0.06276** (`opls_469`) | same story — charge already switched, LJ not. The other 5 monomers' first-alkoxy-C is a CH2 (tail), not a methoxy CH3, and has no dedicated stock H LJ entry — generic HC there is correctly left alone (§6.2) |
+
+**Angles (2+2+1 = 5 raw/mis-fixed instances per monomer, ×6):**
+
+| Angle | Current | Correct | Cause |
+|---|---|---|---|
+| alphaMethylC-H – alphaMethylC – Calpha (`HC CT CT`) | 109.500 / 292.880 (raw LigParGen) | **110.700 / 313.800** | never touched by any prior fix |
+| {Cbeta, alphaMethylC} – Calpha – carbonylC (`CT CT C`) | 112.700 / 488.273 | **111.100 / 527.184** (`CT CT C`, "AA") | `fix_backbone_hybridization.py`'s *original* blanket angle fix applied the symmetric `CT CT CT` value to every angle centered on Calpha/Cbeta, without checking that the outer atom here is really the carbonyl carbon (`C`), not `CT` |
+| Calpha – carbonylC – carbonylO (`CT C O`) | 125.300 / 669.440 (raw LigParGen) | **120.400 / 669.440** | same k, stale θ₀ — a residual trace of the free monomer's acrylate conjugation on the carbonyl's own geometry |
+
+**Dihedrals (2+N+1 instances per monomer, ×6):**
+
+| Dihedral | Current | Correct | Cause |
+|---|---|---|---|
+| carbonylC-Calpha-Cbeta-H (`C CT CT HC`) | `(0.6276, 1.8828, 0, -2.5104, 0, 0)` | **`(-0.2092, -0.6276, 0, 0.8368, 0, 0)`** | same root cause as the angle fix above, one bond over: the original backbone dihedral fix applied the `CT CT CT HC` wildcard to all 4 dihedrals around the Calpha-Cbeta bond, including the 2 where the far atom is carbonylC |
+| tail `CT-CT-CT-CT` (4 consecutive backbone carbons, no H at either end; EH=6, LA=9, OC=5, ST=15, TD=10, MMA=0 instances) | `(0.6276, 1.8828, 0, -2.5104, 0, 0)` | **`(2.9288, -1.4644, 0.2092, -1.6736, 0, 0)`** | `revert_alkyl_tail_to_oplsaa.py`'s `DIHEDRAL_CT_CT_CT_CT_OPLS` constant was actually OPLS-AA's **`CT-CT-CT-HC`** torsion value (H at one end); the genuine `CT-CT-CT-CT` (no H) torsion is a distinct curve, not just different coefficients — a real bug in that script, now corrected |
+| first_alkoxy_C–esterO–carbonylC–carbonylO (`CT OS C O`) | `(21.439, 0, -21.439, 0, 0, 0)` (raw two-term LigParGen fit) | **`(20.92, 0, -20.92, 0, 0, 0)`** ("benzoic acids & esters") | close but not equal to the one stock entry for this exact role-tuple; included per explicit instruction even though borderline |
+
+### 10.3 Fix and verification
+
+New script `etc/fix_remaining_opls_residuals.py` applies all of the
+above, each tagged with a comment identifying what was corrected and why
+(e.g. `; corrected CT-CT-C (was blanket CT-CT-CT backbone fix)`, `;
+OPLS-AA (reverted from L-OPLS, corrected CT-CT-CT-CT value)`). Re-running
+the full whole-molecule audit script (§10.1's method) afterward gives
+**0 LJ / 0 bond / 0 angle / 0 dihedral mismatches** across all six
+monomers. Net charge per monomer confirmed still exactly `0` (none of
+these fixes touch charges). `polyply gen_params` assembles a trimer
+cleanly for all six monomers with no new errors or warnings.
