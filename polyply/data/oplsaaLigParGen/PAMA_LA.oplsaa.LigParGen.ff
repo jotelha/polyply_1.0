@@ -109,12 +109,12 @@ LA                   3
 ;  ai    aj    ak funct            c0            c1            c2            c3 
     1     2     3     1    107.800    276.144
     1     2     4     1    107.800    276.144
-    1     2     5     1    109.500    292.880
+     1     2     5     1     110.700     313.800  ; corrected HC-CT-CT (was raw LigParGen fit)
      2     5     6     1     112.700     488.273  ; sp3 backbone fix (was vinyl sp2)
      5     6     7     1     110.700     313.800  ; sp3 backbone fix (was vinyl sp2)
      5     6     8     1     110.700     313.800  ; sp3 backbone fix (was vinyl sp2)
-     2     5     9     1     112.700     488.273  ; sp3 backbone fix (was vinyl sp2)
-    5     9    10     1    125.300    669.440
+     2     5     9     1     111.100     527.184  ; corrected CT-CT-C (was blanket CT-CT-CT backbone fix)
+     5     9    10     1     120.400     669.440  ; corrected CT-C-O (was raw LigParGen fit)
     5     9    11     1    111.400    677.808
     9    11    12     1    116.900    694.544
    11    12    13     1    109.500    292.880
@@ -158,14 +158,14 @@ LA                   3
    31    30    33     1    110.700    313.800
    16    15    17     1    107.800    276.144
    37    36    39     1    110.700    313.800
-     6     5     9     1     112.700     488.273  ; sp3 backbone fix (was vinyl sp2)
+     6     5     9     1     111.100     527.184  ; corrected CT-CT-C (was blanket CT-CT-CT backbone fix)
    41    39    42     1    110.700    313.800
    19    18    21     1    110.700    313.800
    34    33    35     1    107.800    276.144
    22    21    23     1    107.800    276.144
    13    12    15     1    110.700    313.800
    37    36    38     1    107.800    276.144
-    4     2     5     1    109.500    292.880
+     4     2     5     1     110.700     313.800  ; corrected HC-CT-CT (was raw LigParGen fit)
    40    39    42     1    110.700    313.800
    29    27    30     1    110.700    313.800
    22    21    24     1    110.700    313.800
@@ -190,7 +190,7 @@ LA                   3
    34    33    36     1    110.700    313.800
      7     6     8     1     107.800     276.144  ; sp3 backbone fix (was vinyl sp2)
    46    45    47     1    107.800    276.144
-    3     2     5     1    109.500    292.880
+     3     2     5     1     110.700     313.800  ; corrected HC-CT-CT (was raw LigParGen fit)
    10     9    11     1    123.400    694.544
    25    24    27     1    110.700    313.800
    17    15    18     1    110.700    313.800
@@ -204,8 +204,8 @@ LA                   3
 [ dihedrals ]
 ; PROPER DIHEDRAL ANGLES
 ;  ai    aj    ak    al funct            c0            c1            c2            c3            c4            c5
-     9     5     6     7     3      0.6276      1.8828      0.0000     -2.5104      0.0000      0.0000  ; sp3 backbone fix (was C=C no-rotation)
-     9     5     6     8     3      0.6276      1.8828      0.0000     -2.5104      0.0000      0.0000  ; sp3 backbone fix (was C=C no-rotation)
+     9     5     6     7     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; corrected C-CT-CT-HC (was blanket CT-CT-CT-HC backbone fix)
+     9     5     6     8     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; corrected C-CT-CT-HC (was blanket CT-CT-CT-HC backbone fix)
      9     5     2     4     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
      9     5     2     3     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
      9     5     2     1     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
@@ -244,7 +244,7 @@ LA                   3
    18   15   12   11        3       2.874   0.582   2.092  -5.548  -0.000   0.000
    15   12   11    9        3      -2.197   5.201   0.527  -3.531  -0.000   0.000
    12   11    9    5        3      31.206  -9.768  -21.439  -0.000  -0.000   0.000
-   12   11    9   10        3      21.439   0.000  -21.439  -0.000  -0.000   0.000
+    12    11     9    10     3   20.920000    0.000000  -20.920000    0.000000    0.000000    0.000000  ; corrected CT-OS-C-O (was raw LigParGen fit)
      8     6     5     2     3      0.6276      1.8828      0.0000     -2.5104      0.0000      0.0000  ; sp3 backbone fix (was C=C no-rotation)
      7     6     5     2     3      0.6276      1.8828      0.0000     -2.5104      0.0000      0.0000  ; sp3 backbone fix (was C=C no-rotation)
    32   30   27   24        3       0.628   1.883   0.000  -2.510  -0.000   0.000
