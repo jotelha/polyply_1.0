@@ -355,3 +355,77 @@ identified in §8.1. Net charge per monomer confirmed still exactly `0` after
 the fix (unaffected, since only bond length/force-constant columns
 changed). `polyply gen_params` assembles a trimer cleanly for all six
 monomers with no errors.
+
+## 9. Three more residuals in the Calpha/Cbeta region (2026-11-12)
+
+### 9.1 Finding
+
+A systematic cross-check of every bond/angle/dihedral touching Calpha,
+Cbeta, the alpha-methyl carbon, and the ester carbonyl carbon against the
+vendored `etc/lopls-reference/oplsaa.ff/ffbonded.itp` turned up three more
+residuals from the same root cause as §6 and §8:
+`fix_backbone_hybridization.py` only rewrites terms whose relevant atom set
+is exactly `{Calpha, Cbeta}` (the bond itself, or angles/impropers/
+dihedrals centered on one of those two atoms specifically).
+
+1. **Cbeta-H bonds**: `0.1080 nm / 284512.0` in all six monomers, matching
+   OPLS-AA's `CM HC` (sp² vinyl C-H) exactly. Every other alkyl C-H bond in
+   the molecule — including the alpha-methyl C-H bonds right next to it —
+   is `CT HC`: `0.1090 nm / 284512.0` (identical force constant, only the
+   equilibrium length is stale). `fix_backbone_hybridization.py` rewrote
+   the Calpha=Cbeta bond and the angles/dihedrals centered on Cbeta, but
+   never Cbeta's own bonds to its two hydrogens.
+
+2. **Dihedrals centered on the Calpha-alphaMethylC bond** (6 per monomer):
+   raw per-molecule LigParGen values (e.g. `(-0.778, -2.335, 0, 3.113, 0,
+   0)`), not the generic OPLS-AA wildcard torsions matching their
+   atom-type quartet:
+
+   | Quartet pattern | Current (stale) | OPLS-AA generic match |
+   |---|---|---|
+   | Cbeta-Calpha-alphaMethylC-H (`CT CT CT HC`) | per-molecule fit | `(0.6276, 1.8828, 0, -2.5104, 0, 0)` — same constant already reused for the Calpha-Cbeta bond's own dihedrals |
+   | carbonylC-Calpha-alphaMethylC-H (`C CT CT HC`) | per-molecule fit | `(-0.2092, -0.6276, 0, 0.8368, 0, 0)` |
+
+3. **Dihedrals centered on the Calpha-carbonylC bond** (4 per monomer):
+   coefficients up to ~30 kJ/mol, uniform across all six monomers, and
+   internally inconsistent with each other (the Cbeta-side and
+   alpha-methyl-side quartets of the same type should be identical under
+   OPLS-AA's generic rule, but currently aren't — e.g. `(30.334, -5.23,
+   -25.104, 0, 0, 0)` vs. `(1.789, -5.052, -0.962, 4.226, 0, 0)` for the
+   two `CT CT C O` cases). This pattern — large, molecule-specific,
+   internally inconsistent — is consistent with leftover fitting against
+   the free monomer's Cbeta=Calpha-C(=O) acrylate conjugation, which no
+   longer exists once Calpha is sp3. Generic matches:
+
+   | Quartet pattern | OPLS-AA generic match |
+   |---|---|
+   | {Cbeta,alphaMethylC}-Calpha-carbonylC-carbonylO (`CT CT C O`, "propanamide") | `(4.87855, 0, -4.87855, 0, 0, 0)` |
+   | {Cbeta,alphaMethylC}-Calpha-carbonylC-esterO (`CT CT C OS`, "esters") | `(-1.15688, -3.47063, 0, 4.6275, 0, 0)` |
+
+All target values come from the generic (non-ifdef'd) `[ dihedraltypes ]`
+entries in the same vendored reference file already used throughout §6-8.
+
+### 9.2 Method
+
+New script `etc/fix_calpha_region_residual_terms.py` identifies Cbeta's
+hydrogens, the alpha-methyl carbon/hydrogens, and the carbonyl/ester
+oxygens (same role-identification logic as §6-8), then:
+- rewrites both Cbeta-H bond lines to `CT-HC`,
+- for each proper dihedral whose central bond is `{Calpha,
+  alphaMethylC}`, picks `CT CT CT HC` or `C CT CT HC` depending on whether
+  the far end (opposite the methyl's H) is Cbeta or the carbonyl carbon,
+- for each proper dihedral whose central bond is `{Calpha, carbonylC}`,
+  picks `CT CT C O` or `CT CT C OS` depending on whether the far end is the
+  carbonyl oxygen or the ester oxygen.
+
+All rewritten lines are tagged `; sp3 backbone fix (was CM-HC
+vinyl-adjacent)` (bond) or `; sp3 backbone fix (was LigParGen
+vinyl-conjugated fit)` (dihedrals). No charges or atom types are touched.
+
+### 9.3 Verification
+
+All six monomers: exactly 2 bonds, 6 alpha-methyl-side dihedrals, and 4
+carbonyl-side dihedrals fixed each (matching the counts predicted in
+§9.1). Net charge per monomer confirmed still exactly `0` (unaffected).
+`polyply gen_params` assembles a trimer cleanly for all six monomers with
+no errors or warnings.

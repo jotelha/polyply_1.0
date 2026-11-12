@@ -80,8 +80,8 @@ ST                   3
     4     2     1      0.1090 284512.000
      5     2     1      0.1529  224262.400  ; sp3 backbone fix (was CM-CT vinyl-adjacent)
      6     5     1      0.1529  224262.400  ; sp3 backbone fix (was vinyl C=C)
-    7     6     1      0.1080 284512.000
-    8     6     1      0.1080 284512.000
+     7     6     1      0.1090  284512.000  ; sp3 backbone fix (was CM-HC vinyl-adjacent)
+     8     6     1      0.1090  284512.000  ; sp3 backbone fix (was CM-HC vinyl-adjacent)
      9     5     1      0.1522  265265.600  ; sp3 backbone fix (was C-CM conjugated-vinyl)
    10     9     1      0.1229 476976.000
    11     9     1      0.1327 179075.200
@@ -278,12 +278,12 @@ ST                   3
 ;  ai    aj    ak    al funct            c0            c1            c2            c3            c4            c5
      9     5     6     7     3      0.6276      1.8828      0.0000     -2.5104      0.0000      0.0000  ; sp3 backbone fix (was C=C no-rotation)
      9     5     6     8     3      0.6276      1.8828      0.0000     -2.5104      0.0000      0.0000  ; sp3 backbone fix (was C=C no-rotation)
-    9    5    2    4        3      -0.778  -2.335   0.000   3.113  -0.000   0.000
-    9    5    2    1        3      -0.778  -2.335   0.000   3.113  -0.000   0.000
-    9    5    2    3        3      -0.778  -2.335   0.000   3.113  -0.000   0.000
-    6    5    2    1        3      -0.778  -2.335   0.000   3.113  -0.000   0.000
-    6    5    2    3        3      -0.778  -2.335   0.000   3.113  -0.000   0.000
-    6    5    2    4        3      -0.778  -2.335   0.000   3.113  -0.000   0.000
+     9     5     2     4     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
+     9     5     2     1     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
+     9     5     2     3     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
+     6     5     2     1     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
+     6     5     2     3     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
+     6     5     2     4     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
     54    51    48    45     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
     27    24    21    18     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
     24    21    18    15     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; OPLS-AA (reverted from L-OPLS)
@@ -444,10 +444,10 @@ ST                   3
    17   15   12   11        3       0.979   2.937   0.000  -3.916  -0.000   0.000
    14   12   11    9        3       0.414   1.243   0.000  -1.657  -0.000   0.000
    13   12   11    9        3       0.414   1.243   0.000  -1.657  -0.000   0.000
-   10    9    5    6        3      30.334  -5.230  -25.104  -0.000  -0.000   0.000
-   10    9    5    2        3       1.789  -5.052  -0.962   4.226  -0.000   0.000
-   11    9    5    6        3      -5.858  -6.694  12.552  -0.000  -0.000   0.000
-   11    9    5    2        3       1.789  -5.052  -0.962   4.226  -0.000   0.000
+    10     9     5     6     3    4.878550    0.000000   -4.878550    0.000000    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
+    10     9     5     2     3    4.878550    0.000000   -4.878550    0.000000    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
+    11     9     5     6     3   -1.156880   -3.470630    0.000000    4.627500    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
+    11     9     5     2     3   -1.156880   -3.470630    0.000000    4.627500    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
 
 [ pairs ]
      1     6    1
