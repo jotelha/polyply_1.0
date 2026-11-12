@@ -195,34 +195,37 @@ one's own Calpha-Cbeta bond is LigParGen's vinyl C=C double bond, which is
 wrong once polymerized (it becomes the backbone's single bond). This is
 fixed, and the backbone/ester region's charges are switched from LigParGen
 CM1A to standard OPLS-AA library values, and the alkyl tail is retyped to
-L-OPLS, by four scripts that must run in this order on **every** monomer
+L-OPLS, by five scripts that must run in this order on **every** monomer
 (including a newly-added one, after step 5 below):
 
 ```bash
 python etc/fix_backbone_hybridization.py        # sp2 -> sp3 backbone fix
 python etc/fix_calpha_substituent_bonds.py      # sp2 -> sp3 fix for Calpha's other two bonds
+python etc/fix_calpha_region_residual_terms.py  # sp2 -> sp3 fix for Cbeta-H bond + remaining Calpha dihedrals
 python etc/assign_library_charges.py            # OPLS-AA library charges, backbone/ester
 python etc/retype_alkyl_tail_lopls.py           # L-OPLS charges/LJ/dihedrals, alkyl tail
 ```
 
 `fix_calpha_substituent_bonds.py` (added 2026-11-12, see `etc/report.md`
-§7) was ported from the sibling `2026-11-12-PAMA-parameters` branch, which
-independently found that `fix_backbone_hybridization.py` only rewrites the
-bond/angle/dihedral/improper terms whose atom set is exactly {Calpha,
-Cbeta}, leaving two other bonds radiating from Calpha (to the alpha-methyl
-carbon and to the ester carbonyl carbon) on stale sp2(`CM`)-flavored
-values. This is purely a backbone fix and applies identically regardless
-of whether the alkyl tail is stock OPLS-AA or L-OPLS (as it is on this
-branch).
+§7) and `fix_calpha_region_residual_terms.py` (added 2026-11-12, see
+`etc/report.md` §8) were ported from the sibling
+`2026-11-12-PAMA-parameters` branch, which independently found that
+`fix_backbone_hybridization.py` only rewrites the bond/angle/dihedral/
+improper terms whose atom set is exactly {Calpha, Cbeta}, leaving several
+other terms touching Calpha/Cbeta (two bonds, the Cbeta-H bond length, and
+dihedrals centered on the Calpha-alphaMethylC and Calpha-carbonylC bonds)
+on stale sp2(`CM`)-flavored or raw-LigParGen values. Both are purely
+backbone fixes and apply identically regardless of whether the alkyl tail
+is stock OPLS-AA or L-OPLS (as it is on this branch).
 
 Each script auto-detects Calpha/Cbeta (from the table below) and the
 ester-oxygen/first-alkoxy-carbon boundary by walking each monomer's bond
 graph, so no per-monomer atom-name editing is needed beyond adding the new
 monomer's `(Calpha, Cbeta)` entry to each script's `MONOMERS` dict. See
-`etc/report.md` §6-7 for the full identification trail (which standard OPLS
+`etc/report.md` §6-8 for the full identification trail (which standard OPLS
 atom type each role maps to, and why) and
 `etc/lopls-reference/README.md` for the vendored reference data these
-scripts read from. After running all four, re-run `renormalize-charges.py`
+scripts read from. After running all five, re-run `renormalize-charges.py`
 per monomer as the final safety net (residual is normally <0.1 e, from the
 one or two roles where no exactly-neutral tabulated charge was available),
 then regenerate the link file (step 6 below).
@@ -305,10 +308,10 @@ Add both atom names to the `Calpha` and `Cbeta` dicts in
 
 Add `NEWMON`'s `(Calpha, Cbeta)` to the `MONOMERS` dict in each of
 `fix_backbone_hybridization.py`, `fix_calpha_substituent_bonds.py`,
-`assign_library_charges.py`, and `retype_alkyl_tail_lopls.py`, then run
-all four in that order (see "Backbone hybridization fix + OPLS-AA/L-OPLS
-re-parametrization" above), followed by `renormalize-charges.py` as the
-final safety net.
+`fix_calpha_region_residual_terms.py`, `assign_library_charges.py`, and
+`retype_alkyl_tail_lopls.py`, then run all five in that order (see
+"Backbone hybridization fix + OPLS-AA/L-OPLS re-parametrization" above),
+followed by `renormalize-charges.py` as the final safety net.
 
 ### 6. Regenerate backbone links
 
