@@ -80,6 +80,80 @@ backbone_hydrocarbons = {
     'beta': Cbeta
 }
 
+# %% [markdown]
+# ### Identify ester carbonyl/ester-oxygen roles
+#
+# A naive classification of bonded-term "type" by the first letter of the
+# atom name (as used below) conflates the ester carbonyl carbon/oxygen
+# (OPLS classes `C_2`/`O_2`) with plain backbone carbons/oxygens (`CT`/
+# `OS`). Those are NOT numerically interchangeable for several angles and
+# dihedrals in stock OPLS-AA (see etc/report.md) -- any link term that
+# reaches as far as the carbonyl carbon or either of its oxygens (always
+# within 2 bonds of Calpha, since Calpha's non-backbone substituents are
+# exactly {alpha-methyl C, carbonyl C}, and the carbonyl C's substituents
+# are exactly {carbonyl O, ester O}) needs the correct class.
+
+# %%
+def identify_ester_roles(mol, calpha_name, cbeta_name):
+    calpha = find_atom_index(mol, calpha_name)
+    cbeta = find_atom_index(mol, cbeta_name)
+
+    def is_h(idx):
+        return mol.nodes[idx]['atomname'].startswith('H')
+
+    heavy_neighbors = [n for n in mol.neighbors(calpha) if not is_h(n)]
+    others = [n for n in heavy_neighbors if n != cbeta]
+
+    def oxygen_count(idx):
+        return sum(1 for m in mol.neighbors(idx) if mol.nodes[m]['atomname'].startswith('O'))
+
+    carbonyl_c, alpha_methyl_c = (
+        others if oxygen_count(others[0]) > oxygen_count(others[1]) else others[::-1]
+    )
+    carbonyl_oxygens = [n for n in mol.neighbors(carbonyl_c) if mol.nodes[n]['atomname'].startswith('O')]
+    ester_o, carbonyl_o = (
+        carbonyl_oxygens
+        if len([m for m in mol.neighbors(carbonyl_oxygens[0]) if not is_h(m)]) == 2
+        else carbonyl_oxygens[::-1]
+    )
+    return {
+        'carbonyl_c': mol.nodes[carbonyl_c]['atomname'],
+        'alpha_methyl_c': mol.nodes[alpha_methyl_c]['atomname'],
+        'carbonyl_o': mol.nodes[carbonyl_o]['atomname'],
+        'ester_o': mol.nodes[ester_o]['atomname'],
+    }
+
+# %%
+ester_roles = {
+    monomer_name: identify_ester_roles(mol, Calpha[monomer_name], Cbeta[monomer_name])
+    for monomer_name, mol in monomer_molecule_dict.items()
+}
+ester_roles
+
+# %% [markdown]
+# ### Per-(residue, atom name) OPLS bonded-term class
+#
+# Replaces the old `atom_name[0]` shortcut everywhere below.
+
+# %%
+def atom_class(atom_name, roles):
+    if atom_name.startswith('H'):
+        return 'HC'
+    if atom_name == roles['carbonyl_c']:
+        return 'C_2'
+    if atom_name == roles['carbonyl_o']:
+        return 'O_2'
+    if atom_name == roles['ester_o']:
+        return 'OS'
+    return 'CT'
+
+# %%
+atom_class_dict = {}
+for monomer_name, mol in monomer_molecule_dict.items():
+    roles = ester_roles[monomer_name]
+    for idx, atom in mol.nodes(data=True):
+        atom_class_dict[(monomer_name, atom['atomname'])] = atom_class(atom['atomname'], roles)
+
 # %%
 terminal_set = ('CH3','CH3n')
 
@@ -91,6 +165,13 @@ terminal_pdb_dict = {
 
 # %%
 terminal_molecule_dict = {terminal: read_pdb(filename)[0] for terminal, filename in terminal_pdb_dict.items()}
+
+# %%
+# terminals (CH3 cap) have no ester group -- plain CT/HC by element
+for terminal_name, mol in terminal_molecule_dict.items():
+    for idx, atom in mol.nodes(data=True):
+        name = atom['atomname']
+        atom_class_dict[(terminal_name, name)] = 'HC' if name.startswith('H') else 'CT'
 
 # %%
 Cterminal = {
@@ -119,7 +200,7 @@ default_bond_func_type = 1  # harmonic bond
 default_bond_b_0 = 0.15290  # b_0 (nm)
 default_bond_k_b = 224262.4 # k_b (kJ mol^-1 nm^-2)
 
-bond_type_parameter_dict[('C','C')] = {
+bond_type_parameter_dict[('CT','CT')] = {
     'func_type': default_bond_func_type,
     'b_0': default_bond_b_0,
     'k_0': default_bond_k_b,
@@ -142,7 +223,7 @@ default_angle_func_type = 1  # harmonic angle
 default_angle_theta_0 = 112.700 # theta_0 (deg)
 default_angle_k_theta = 488.273 # k_theta (kJ mol^-1 rad^-2)
 
-angle_type_parameter_dict[('C','C','C')] = {
+angle_type_parameter_dict[('CT','CT','CT')] = {
     'func_type': default_angle_func_type,
     'theta_0': default_angle_theta_0,
     'k_theta': default_angle_k_theta,
@@ -152,11 +233,25 @@ angle_type_parameter_dict[('C','C','C')] = {
 # %%
 # default CT-CT-HC angle from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 881
 #    881	  CT     CT     HC      1   110.700    313.800   ; CHARMM 22 parameter file
-angle_type_parameter_dict[('C','C','H')] = {
+angle_type_parameter_dict[('CT','CT','HC')] = {
     'func_type': 1,
     'theta_0': 110.700,
     'k_theta': 313.800,
     'comment': "CT-CT-HC angle from 'oplsaa.ff/ffbonded.itp', line 881"
+}
+
+# %%
+# CT-CT-C_2 angle (ester carbonyl carbon as the outer atom), from
+# 'oplsaa.ff/ffbonded.itp', line ~830 (also duplicated under the generic
+# "C" label at the same value, so this is correct regardless of which
+# class the carbonyl carbon is read under -- but C_2 is the class
+# opls_465 actually carries)
+#   C_2    CT     CT      1   111.100    527.184   ; AA
+angle_type_parameter_dict[('CT','CT','C_2')] = {
+    'func_type': 1,
+    'theta_0': 111.100,
+    'k_theta': 527.184,
+    'comment': "CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)"
 }
 
 # %% [markdown]
@@ -177,25 +272,16 @@ dihedral_type_parameter_dict = {}
 default_dihedral_func_type = 3  # Ryckaert-Bellemans dihedral
 default_dihedral_C = [2.92880, -1.46440, 0.20920, -1.67360, 0.00000, 0.00000] # C_n (kJ mol^-1)
 
-dihedral_type_parameter_dict[('C','C','C','C')] = {
+dihedral_type_parameter_dict[('CT','CT','CT','CT')] = {
     'func_type': default_dihedral_func_type,
     'C': default_dihedral_C,
     'comment': "CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596"
 }
 
 # %%
-# CT-CT-CT-OS dihedral from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 1608
-#  1608	  CT     CT     CT     OS      3      2.87441   0.58158   2.09200  -5.54799   0.00000   0.00000 ; alcohols, ethers AA
-dihedral_type_parameter_dict[('C','C','C','O')] = {
-    'func_type': 3,
-    'C': [2.87441, 0.58158, 2.09200, -5.54799, 0.00000, 0.00000],
-    'comment': "CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608"
-}
-
-# %%
 # CT-CT-CT-HC dihedral from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 1599
 #  1599	  CT     CT     CT     HC      3      0.62760   1.88280   0.00000  -2.51040   0.00000   0.00000 ; hydrocarbon all-atom
-dihedral_type_parameter_dict[('C','C','C','H')] = {
+dihedral_type_parameter_dict[('CT','CT','CT','HC')] = {
     'func_type': 3,
     'C': [0.62760, 1.88280, 0.00000, -2.51040, 0.00000, 0.00000],
     'comment': "CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599"
@@ -204,10 +290,58 @@ dihedral_type_parameter_dict[('C','C','C','H')] = {
 # %%
 # HC-CT-CT-HC dihedral from CHARMM 22 parameter file in 'oplsaa.ff/ffbonded.itp', line 1824
 #  1824	  HC     CT     CT     HC      3      0.62760   1.88280   0.00000  -2.51040   0.00000   0.00000 ; hydrocarbon *new* 11/99
-dihedral_type_parameter_dict[('H','C','C','H')] = {
+dihedral_type_parameter_dict[('HC','CT','CT','HC')] = {
     'func_type': 3,
     'C': [0.62760, 1.88280, 0.00000, -2.51040, 0.00000, 0.00000],
     'comment': "HC-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1824"
+}
+
+# %% [markdown]
+# The four dihedrals below are the ones that reach as far as the ester
+# carbonyl carbon/oxygen (always at most 2 bonds from Calpha/Cbeta, since
+# Calpha's non-backbone substituents are {alpha-methyl C, carbonyl C} and
+# the carbonyl C's substituents are {carbonyl O, ester O} -- there is no
+# ether/alcohol oxygen within reach of Calpha/Cbeta in these monomers, so
+# the old generic CT-CT-CT-OS "alcohols, ethers AA" entry above never
+# actually applied to a real ether oxygen and has been removed). Values
+# taken from the 'C_2'/'O_2'-tagged rows in 'oplsaa.ff/ffbonded.itp'
+# (stock, #ifndef LOPLS branch), since opls_465/466 are tagged C_2/O_2.
+
+# %%
+# CT-CT-CT-C_2 dihedral ("aldehyde & ketone"), stock OPLS-AA
+#   C_2    CT     CT     CT      3     -4.23421   7.22159   1.90790  -4.89528   0.00000   0.00000
+dihedral_type_parameter_dict[('CT','CT','CT','C_2')] = {
+    'func_type': 3,
+    'C': [-4.23421, 7.22159, 1.90790, -4.89528, 0.00000, 0.00000],
+    'comment': "CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)"
+}
+
+# %%
+# C_2-CT-CT-HC dihedral ("aldehyde & ketone"), stock OPLS-AA
+#   C_2    CT     CT     HC      3     -0.15899  -0.47698   0.00000   0.63596   0.00000   0.00000
+dihedral_type_parameter_dict[('C_2','CT','CT','HC')] = {
+    'func_type': 3,
+    'C': [-0.15899, -0.47698, 0.00000, 0.63596, 0.00000, 0.00000],
+    'comment': "C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)"
+}
+
+# %%
+# CT-CT-C_2-O_2 dihedral ("aldehyde & ketone"), stock OPLS-AA
+#   CT     CT     C_2    O_2     3      3.10662  -3.77606  -5.13795   5.80739   0.00000   0.00000
+dihedral_type_parameter_dict[('CT','CT','C_2','O_2')] = {
+    'func_type': 3,
+    'C': [3.10662, -3.77606, -5.13795, 5.80739, 0.00000, 0.00000],
+    'comment': "CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)"
+}
+
+# %%
+# CT-CT-C_2-OS dihedral ("esters"), stock OPLS-AA -- identical to the
+# generic-class "esters" row at the same role, kept for completeness
+#   CT     CT     C_2    OS      3     -1.15688  -3.47063   0.00000   4.62750   0.00000   0.00000
+dihedral_type_parameter_dict[('CT','CT','C_2','OS')] = {
+    'func_type': 3,
+    'C': [-1.15688, -3.47063, 0.00000, 4.62750, 0.00000, 0.00000],
+    'comment': "CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)"
 }
 
 # %%
@@ -464,8 +598,8 @@ bond_type_set = set()
 bond_type_count = {}
 
 for bond_tuple in bond_tuple_list:
-    bond_type = (bond_tuple[0][0][0], bond_tuple[1][0][0])
-    
+    bond_type = tuple(atom_class_dict[(atom_tuple[1], atom_tuple[0])] for atom_tuple in bond_tuple)
+
     # canonical ordering, reverse if necessary
     if bond_type[0] > bond_type[1]:
         bond_type = (bond_type[1], bond_type[0])
@@ -673,8 +807,8 @@ angle_type_set = set()
 angle_type_count = {}
 
 for angle_tuple in angle_tuple_list:
-    angle_type = (angle_tuple[0][0][0], angle_tuple[1][0][0], angle_tuple[2][0][0])
-    
+    angle_type = tuple(atom_class_dict[(atom_tuple[1], atom_tuple[0])] for atom_tuple in angle_tuple)
+
     # canonical ordering, reverse if necessary
     if angle_type[0] > angle_type[2]:
         angle_type = (angle_type[2], angle_type[1], angle_type[0])
@@ -1093,8 +1227,8 @@ dihedral_type_set = set()
 dihedral_type_count = {}
 
 for dihedral_tuple in dihedral_tuple_list:
-    dihedral_type = (dihedral_tuple[0][0][0], dihedral_tuple[1][0][0], dihedral_tuple[2][0][0], dihedral_tuple[3][0][0])
-    
+    dihedral_type = tuple(atom_class_dict[(atom_tuple[1], atom_tuple[0])] for atom_tuple in dihedral_tuple)
+
     # canonical ordering, reverse if necessary
     if dihedral_type[0] > dihedral_type[3]:
         dihedral_type = (dihedral_type[3], dihedral_type[2], dihedral_type[1], dihedral_type[0])

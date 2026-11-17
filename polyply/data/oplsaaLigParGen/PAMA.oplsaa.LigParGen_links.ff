@@ -686,7 +686,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "EH"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "EH"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -698,11 +698,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -722,7 +722,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -734,11 +734,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "EH"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "EH"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -758,7 +758,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -770,11 +770,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -794,7 +794,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -806,11 +806,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "LA"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "LA"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -830,7 +830,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -842,11 +842,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -866,7 +866,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -878,11 +878,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C08 {"resname": "MMA"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C08 {"resname": "MMA"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -902,7 +902,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -914,11 +914,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -938,7 +938,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -950,11 +950,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C01 {"resname": "OC"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C01 {"resname": "OC"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -974,7 +974,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -986,11 +986,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1010,7 +1010,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1022,11 +1022,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "ST"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "ST"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1046,7 +1046,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C19 {"resname": "TD"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C19 {"resname": "TD"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1058,11 +1058,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C19 {"resname": "TD"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C19 {"resname": "TD"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C19 {"resname": "TD"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C19 {"resname": "TD"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1082,7 +1082,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C19 {"resname": "TD"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C19 {"resname": "TD"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1094,11 +1094,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C19 {"resname": "TD"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C19 {"resname": "TD"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C19 {"resname": "TD"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C19 {"resname": "TD"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1262,7 +1262,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1274,11 +1274,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1298,7 +1298,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1310,11 +1310,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1334,7 +1334,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3n"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3n"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1346,11 +1346,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3n"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3n"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3n"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3n"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1370,7 +1370,7 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3n"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3n"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1382,11 +1382,11 @@
 
 [ link ]
 [ angles ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3n"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3n"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3n"} 1 112.700000 488.273000 ; CT-CT-CT angle from 'oplsaa.ff/ffbonded.itp', line 873
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3n"} 1 111.100000 527.184000 ; CT-CT-C_2 angle from 'oplsaa.ff/ffbonded.itp' (carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ angles ]
@@ -1713,15 +1713,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "EH"} C04 {"resname": "EH"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "EH"} C04 {"resname": "EH"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "EH"} H06 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "EH"} H06 {"resname": "EH"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "EH"} H07 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "EH"} H07 {"resname": "EH"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -1749,27 +1749,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} C04 {"resname": "EH"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} C04 {"resname": "EH"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} H06 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} H06 {"resname": "EH"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} H07 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} H07 {"resname": "EH"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} C04 {"resname": "EH"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} C04 {"resname": "EH"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} H06 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} H06 {"resname": "EH"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} H07 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} H07 {"resname": "EH"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -1821,15 +1821,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} C04 {"resname": "EH"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} C04 {"resname": "EH"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} H06 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} H06 {"resname": "EH"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} H07 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} H07 {"resname": "EH"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -1857,27 +1857,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} C04 {"resname": "EH"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} C04 {"resname": "EH"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} H06 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} H06 {"resname": "EH"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} H07 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} H07 {"resname": "EH"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "EH"} C04 {"resname": "EH"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "EH"} C04 {"resname": "EH"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "EH"} H06 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "EH"} H06 {"resname": "EH"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "EH"} H07 {"resname": "EH"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "EH"} H07 {"resname": "EH"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -1929,15 +1929,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} C04 {"resname": "LA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} C04 {"resname": "LA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} H06 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} H06 {"resname": "LA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} H07 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} H07 {"resname": "LA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -1965,27 +1965,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} C04 {"resname": "LA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} C04 {"resname": "LA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} H06 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} H06 {"resname": "LA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} H07 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} H07 {"resname": "LA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} C04 {"resname": "LA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} C04 {"resname": "LA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} H06 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} H06 {"resname": "LA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} H07 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} H07 {"resname": "LA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2037,15 +2037,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} C04 {"resname": "LA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} C04 {"resname": "LA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} H06 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} H06 {"resname": "LA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} H07 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} H07 {"resname": "LA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2073,27 +2073,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} C04 {"resname": "LA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} C04 {"resname": "LA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} H06 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} H06 {"resname": "LA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} H07 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} H07 {"resname": "LA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "LA"} C04 {"resname": "LA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "LA"} C04 {"resname": "LA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "LA"} H06 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "LA"} H06 {"resname": "LA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "LA"} H07 {"resname": "LA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "LA"} H07 {"resname": "LA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2145,15 +2145,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} H09 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} H09 {"resname": "MMA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} H0A {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} H0A {"resname": "MMA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2181,27 +2181,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} H09 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} H09 {"resname": "MMA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} H0A {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} H0A {"resname": "MMA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} H09 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} H09 {"resname": "MMA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} H0A {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} H0A {"resname": "MMA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2253,15 +2253,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} H09 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} H09 {"resname": "MMA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} H0A {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} H0A {"resname": "MMA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2289,27 +2289,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} H09 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} H09 {"resname": "MMA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} H0A {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} H0A {"resname": "MMA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C08 {"resname": "MMA"} H09 {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C08 {"resname": "MMA"} H09 {"resname": "MMA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C08 {"resname": "MMA"} H0A {"resname": "MMA"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C08 {"resname": "MMA"} H0A {"resname": "MMA"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2361,15 +2361,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} H00 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} H00 {"resname": "OC"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} H02 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} H02 {"resname": "OC"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} C03 {"resname": "OC"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} C03 {"resname": "OC"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2397,27 +2397,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} H00 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} H00 {"resname": "OC"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} H02 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} H02 {"resname": "OC"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} C03 {"resname": "OC"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} C03 {"resname": "OC"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} H00 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} H00 {"resname": "OC"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} H02 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} H02 {"resname": "OC"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} C03 {"resname": "OC"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} C03 {"resname": "OC"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2469,15 +2469,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} H00 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} H00 {"resname": "OC"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} H02 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} H02 {"resname": "OC"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} C03 {"resname": "OC"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} C03 {"resname": "OC"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2505,27 +2505,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} H00 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} H00 {"resname": "OC"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} H02 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} H02 {"resname": "OC"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} C03 {"resname": "OC"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} C03 {"resname": "OC"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C01 {"resname": "OC"} H00 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C01 {"resname": "OC"} H00 {"resname": "OC"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C01 {"resname": "OC"} H02 {"resname": "OC"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C01 {"resname": "OC"} H02 {"resname": "OC"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C01 {"resname": "OC"} C03 {"resname": "OC"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C01 {"resname": "OC"} C03 {"resname": "OC"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2577,15 +2577,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} C04 {"resname": "ST"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} C04 {"resname": "ST"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} H06 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} H06 {"resname": "ST"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} H07 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} H07 {"resname": "ST"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2613,27 +2613,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} C04 {"resname": "ST"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} C04 {"resname": "ST"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} H06 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} H06 {"resname": "ST"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} H07 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} H07 {"resname": "ST"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} C04 {"resname": "ST"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} C04 {"resname": "ST"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} H06 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} H06 {"resname": "ST"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} H07 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} H07 {"resname": "ST"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2685,15 +2685,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} C04 {"resname": "ST"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} C04 {"resname": "ST"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} H06 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} H06 {"resname": "ST"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} H07 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} H07 {"resname": "ST"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2721,27 +2721,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} C04 {"resname": "ST"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} C04 {"resname": "ST"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} H06 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} H06 {"resname": "ST"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} H07 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} H07 {"resname": "ST"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "ST"} C04 {"resname": "ST"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "ST"} C04 {"resname": "ST"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "ST"} H06 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "ST"} H06 {"resname": "ST"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "ST"} H07 {"resname": "ST"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "ST"} H07 {"resname": "ST"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2793,15 +2793,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C19 {"resname": "TD"} C18 {"resname": "TD"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C19 {"resname": "TD"} C18 {"resname": "TD"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C19 {"resname": "TD"} H1A {"resname": "TD"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C19 {"resname": "TD"} H1A {"resname": "TD"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C19 {"resname": "TD"} H1B {"resname": "TD"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C19 {"resname": "TD"} H1B {"resname": "TD"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2829,27 +2829,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C19 {"resname": "TD"} C18 {"resname": "TD"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C19 {"resname": "TD"} C18 {"resname": "TD"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C19 {"resname": "TD"} H1A {"resname": "TD"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C19 {"resname": "TD"} H1A {"resname": "TD"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C19 {"resname": "TD"} H1B {"resname": "TD"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C19 {"resname": "TD"} H1B {"resname": "TD"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C19 {"resname": "TD"} C18 {"resname": "TD"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C19 {"resname": "TD"} C18 {"resname": "TD"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C19 {"resname": "TD"} H1A {"resname": "TD"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C19 {"resname": "TD"} H1A {"resname": "TD"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C19 {"resname": "TD"} H1B {"resname": "TD"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C19 {"resname": "TD"} H1B {"resname": "TD"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2901,15 +2901,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C19 {"resname": "TD"} C18 {"resname": "TD"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C19 {"resname": "TD"} C18 {"resname": "TD"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C19 {"resname": "TD"} H1A {"resname": "TD"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C19 {"resname": "TD"} H1A {"resname": "TD"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C19 {"resname": "TD"} H1B {"resname": "TD"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C19 {"resname": "TD"} H1B {"resname": "TD"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -2937,27 +2937,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C19 {"resname": "TD"} C18 {"resname": "TD"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C19 {"resname": "TD"} C18 {"resname": "TD"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C19 {"resname": "TD"} H1A {"resname": "TD"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C19 {"resname": "TD"} H1A {"resname": "TD"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C19 {"resname": "TD"} H1B {"resname": "TD"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C19 {"resname": "TD"} H1B {"resname": "TD"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C19 {"resname": "TD"} C18 {"resname": "TD"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C19 {"resname": "TD"} C18 {"resname": "TD"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C19 {"resname": "TD"} H1A {"resname": "TD"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C19 {"resname": "TD"} H1A {"resname": "TD"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C19 {"resname": "TD"} H1B {"resname": "TD"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C19 {"resname": "TD"} H1B {"resname": "TD"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -3005,11 +3005,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "EH"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "EH"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -3033,19 +3033,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "EH"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "EH"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -3089,11 +3089,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "EH"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -3117,19 +3117,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "EH"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "EH"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "EH"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "EH"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -3173,11 +3173,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "LA"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -3201,19 +3201,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "LA"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "LA"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -3257,11 +3257,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "LA"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -3285,19 +3285,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "LA"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "LA"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "LA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "LA"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -3341,11 +3341,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C08 {"resname": "MMA"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -3369,19 +3369,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C08 {"resname": "MMA"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C08 {"resname": "MMA"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -3425,11 +3425,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C08 {"resname": "MMA"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -3453,19 +3453,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C08 {"resname": "MMA"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C08 {"resname": "MMA"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C08 {"resname": "MMA"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C08 {"resname": "MMA"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -3509,11 +3509,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C01 {"resname": "OC"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -3537,19 +3537,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C01 {"resname": "OC"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C01 {"resname": "OC"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -3593,11 +3593,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C01 {"resname": "OC"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -3621,19 +3621,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C01 {"resname": "OC"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C01 {"resname": "OC"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C01 {"resname": "OC"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C01 {"resname": "OC"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -3677,11 +3677,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C05 {"resname": "ST"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -3705,19 +3705,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C05 {"resname": "ST"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C05 {"resname": "ST"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -3761,11 +3761,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C05 {"resname": "ST"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -3789,19 +3789,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C05 {"resname": "ST"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "ST"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "ST"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C05 {"resname": "ST"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -3845,11 +3845,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C19 {"resname": "TD"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C19 {"resname": "TD"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C19 {"resname": "TD"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C19 {"resname": "TD"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -3873,19 +3873,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C19 {"resname": "TD"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C19 {"resname": "TD"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C19 {"resname": "TD"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C19 {"resname": "TD"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C19 {"resname": "TD"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C19 {"resname": "TD"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C19 {"resname": "TD"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C19 {"resname": "TD"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -3929,11 +3929,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C19 {"resname": "TD"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C19 {"resname": "TD"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C19 {"resname": "TD"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C19 {"resname": "TD"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -3957,19 +3957,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C19 {"resname": "TD"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C19 {"resname": "TD"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C19 {"resname": "TD"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C19 {"resname": "TD"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C19 {"resname": "TD"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C19 {"resname": "TD"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C19 {"resname": "TD"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C19 {"resname": "TD"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -3997,7 +3997,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "EH"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "EH"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4005,7 +4005,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "LA"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "LA"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4013,7 +4013,7 @@
 
 [ link ]
 [ dihedrals ]
-+C07 {"resname": "MMA"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C07 {"resname": "MMA"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4021,7 +4021,7 @@
 
 [ link ]
 [ dihedrals ]
-+C03 {"resname": "OC"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C03 {"resname": "OC"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4029,7 +4029,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "ST"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "ST"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4037,7 +4037,7 @@
 
 [ link ]
 [ dihedrals ]
-+C18 {"resname": "TD"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C18 {"resname": "TD"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4045,7 +4045,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "EH"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "EH"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4053,7 +4053,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "LA"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "LA"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4061,7 +4061,7 @@
 
 [ link ]
 [ dihedrals ]
-+C07 {"resname": "MMA"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C07 {"resname": "MMA"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4069,7 +4069,7 @@
 
 [ link ]
 [ dihedrals ]
-+C03 {"resname": "OC"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C03 {"resname": "OC"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4077,7 +4077,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "ST"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "ST"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4085,11 +4085,11 @@
 
 [ link ]
 [ dihedrals ]
-+C18 {"resname": "TD"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C18 {"resname": "TD"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "EH"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "EH"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4097,7 +4097,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "LA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "LA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4105,7 +4105,7 @@
 
 [ link ]
 [ dihedrals ]
-+C07 {"resname": "MMA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C07 {"resname": "MMA"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4113,7 +4113,7 @@
 
 [ link ]
 [ dihedrals ]
-+C03 {"resname": "OC"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C03 {"resname": "OC"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4121,7 +4121,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "ST"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "ST"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4129,7 +4129,7 @@
 
 [ link ]
 [ dihedrals ]
-+C18 {"resname": "TD"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C18 {"resname": "TD"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4141,7 +4141,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "EH"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "EH"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4149,7 +4149,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "LA"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "LA"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4157,7 +4157,7 @@
 
 [ link ]
 [ dihedrals ]
-+C07 {"resname": "MMA"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C07 {"resname": "MMA"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4165,7 +4165,7 @@
 
 [ link ]
 [ dihedrals ]
-+C03 {"resname": "OC"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C03 {"resname": "OC"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4173,7 +4173,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "ST"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "ST"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4181,7 +4181,7 @@
 
 [ link ]
 [ dihedrals ]
-+C18 {"resname": "TD"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C18 {"resname": "TD"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4189,7 +4189,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "EH"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "EH"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4197,7 +4197,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "LA"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "LA"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4205,7 +4205,7 @@
 
 [ link ]
 [ dihedrals ]
-+C07 {"resname": "MMA"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C07 {"resname": "MMA"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4213,7 +4213,7 @@
 
 [ link ]
 [ dihedrals ]
-+C03 {"resname": "OC"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C03 {"resname": "OC"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4221,7 +4221,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "ST"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "ST"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4229,11 +4229,11 @@
 
 [ link ]
 [ dihedrals ]
-+C18 {"resname": "TD"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C18 {"resname": "TD"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "EH"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "EH"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4241,7 +4241,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "LA"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "LA"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4249,7 +4249,7 @@
 
 [ link ]
 [ dihedrals ]
-+C07 {"resname": "MMA"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C07 {"resname": "MMA"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4257,7 +4257,7 @@
 
 [ link ]
 [ dihedrals ]
-+C03 {"resname": "OC"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C03 {"resname": "OC"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4265,7 +4265,7 @@
 
 [ link ]
 [ dihedrals ]
-+C04 {"resname": "ST"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C04 {"resname": "ST"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -4273,7 +4273,7 @@
 
 [ link ]
 [ dihedrals ]
-+C18 {"resname": "TD"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C18 {"resname": "TD"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -5169,15 +5169,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3"} H2 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3"} H2 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3"} H3 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3"} H3 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3"} H4 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3"} H4 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -5205,27 +5205,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3"} H2 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3"} H2 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3"} H3 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3"} H3 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3"} H4 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3"} H4 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3"} H2 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3"} H2 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3"} H3 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3"} H3 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3"} H4 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3"} H4 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -5277,15 +5277,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3"} H2 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3"} H2 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3"} H3 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3"} H3 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3"} H4 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3"} H4 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -5313,27 +5313,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3"} H2 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3"} H2 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3"} H3 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3"} H3 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3"} H4 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3"} H4 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3"} H2 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3"} H2 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3"} H3 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3"} H3 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3"} H4 {"resname": "CH3"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3"} H4 {"resname": "CH3"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -5385,15 +5385,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3n"} H2 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3n"} H2 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3n"} H3 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3n"} H3 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3n"} H4 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3n"} H4 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -5421,27 +5421,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3n"} H2 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3n"} H2 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3n"} H3 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3n"} H3 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3n"} H4 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3n"} H4 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3n"} H2 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3n"} H2 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3n"} H3 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3n"} H3 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3n"} H4 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3n"} H4 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -5493,15 +5493,15 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3n"} H2 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3n"} H2 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3n"} H3 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3n"} H3 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3n"} H4 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3n"} H4 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -5529,27 +5529,27 @@
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3n"} H2 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3n"} H2 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3n"} H3 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3n"} H3 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3n"} H4 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3n"} H4 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3n"} H2 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3n"} H2 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3n"} H3 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3n"} H3 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3n"} H4 {"resname": "CH3n"} 3 0.627600 1.882800 0.000000 -2.510400 0.000000 0.000000 ; CT-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp', line 1599
++C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3n"} H4 {"resname": "CH3n"} 3 -0.158990 -0.476980 0.000000 0.635960 0.000000 0.000000 ; C_2-CT-CT-HC dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -5597,11 +5597,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -5625,19 +5625,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -5681,11 +5681,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -5709,19 +5709,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -5765,11 +5765,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3n"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3n"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3n"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "EH"} +C08 {"resname": "EH"} +C04 {"resname": "EH"} C1 {"resname": "CH3n"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -5793,19 +5793,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3n"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3n"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3n"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "LA"} +C08 {"resname": "LA"} +C04 {"resname": "LA"} C1 {"resname": "CH3n"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3n"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O04 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3n"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3n"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O06 {"resname": "MMA"} +C05 {"resname": "MMA"} +C07 {"resname": "MMA"} C1 {"resname": "CH3n"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -5849,11 +5849,11 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3n"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3n"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3n"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "OC"} +C08 {"resname": "OC"} +C03 {"resname": "OC"} C1 {"resname": "CH3n"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
@@ -5877,19 +5877,19 @@
 
 [ link ]
 [ dihedrals ]
-+O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3n"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O09 {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3n"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
-+O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3n"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O0A {"resname": "ST"} +C08 {"resname": "ST"} +C04 {"resname": "ST"} C1 {"resname": "CH3n"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3n"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O15 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3n"} 3 -1.156880 -3.470630 0.000000 4.627500 0.000000 0.000000 ; CT-CT-C_2-OS dihedral from 'oplsaa.ff/ffbonded.itp' (esters; carbonyl C is opls_465/C_2 class, ester O is OS)
 
 [ link ]
 [ dihedrals ]
-+O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3n"} 3 2.874410 0.581580 2.092000 -5.547990 0.000000 0.000000 ; CT-CT-CT-OS dihedral from 'oplsaa.ff/ffbonded.itp', line 1608
++O17 {"resname": "TD"} +C16 {"resname": "TD"} +C18 {"resname": "TD"} C1 {"resname": "CH3n"} 3 3.106620 -3.776060 -5.137950 5.807390 0.000000 0.000000 ; CT-CT-C_2-O_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C/O are opls_465/466, C_2/O_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -6637,7 +6637,7 @@
 
 [ link ]
 [ dihedrals ]
-+C1 {"resname": "CH3"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C1 {"resname": "CH3"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -6645,11 +6645,11 @@
 
 [ link ]
 [ dihedrals ]
-+C1 {"resname": "CH3"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C1 {"resname": "CH3"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C1 {"resname": "CH3"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C1 {"resname": "CH3"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -6661,7 +6661,7 @@
 
 [ link ]
 [ dihedrals ]
-+C1 {"resname": "CH3"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C1 {"resname": "CH3"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -6669,11 +6669,11 @@
 
 [ link ]
 [ dihedrals ]
-+C1 {"resname": "CH3"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C1 {"resname": "CH3"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C1 {"resname": "CH3"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C1 {"resname": "CH3"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -6685,7 +6685,7 @@
 
 [ link ]
 [ dihedrals ]
-+C1 {"resname": "CH3n"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C1 {"resname": "CH3n"} C05 {"resname": "EH"} C04 {"resname": "EH"} C08 {"resname": "EH"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -6693,11 +6693,11 @@
 
 [ link ]
 [ dihedrals ]
-+C1 {"resname": "CH3n"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C1 {"resname": "CH3n"} C05 {"resname": "LA"} C04 {"resname": "LA"} C08 {"resname": "LA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C1 {"resname": "CH3n"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C1 {"resname": "CH3n"} C08 {"resname": "MMA"} C07 {"resname": "MMA"} C05 {"resname": "MMA"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -6709,7 +6709,7 @@
 
 [ link ]
 [ dihedrals ]
-+C1 {"resname": "CH3n"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C1 {"resname": "CH3n"} C01 {"resname": "OC"} C03 {"resname": "OC"} C08 {"resname": "OC"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
@@ -6717,11 +6717,11 @@
 
 [ link ]
 [ dihedrals ]
-+C1 {"resname": "CH3n"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C1 {"resname": "CH3n"} C05 {"resname": "ST"} C04 {"resname": "ST"} C08 {"resname": "ST"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]
-+C1 {"resname": "CH3n"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 2.928800 -1.464400 0.209200 -1.673600 0.000000 0.000000 ; CT-CT-CT-CT dihedral from 'oplsaa.ff/ffbonded.itp', line 1596
++C1 {"resname": "CH3n"} C19 {"resname": "TD"} C18 {"resname": "TD"} C16 {"resname": "TD"} 3 -4.234210 7.221590 1.907900 -4.895280 0.000000 0.000000 ; CT-CT-CT-C_2 dihedral from 'oplsaa.ff/ffbonded.itp' (aldehyde & ketone; carbonyl C is opls_465/C_2 class)
 
 [ link ]
 [ dihedrals ]

@@ -45,3 +45,16 @@ parameters currently shipped in this directory.
 - K. Pluhackova et al., *J. Phys. Chem. B* (2015).
   https://doi.org/10.1021/acs.jpcb.5b08569
 
+## 2026-11-17 carbonyl C/O OPLS class fix (within-monomer + backbone links)
+
+The ester carbonyl carbon/oxygen (`opls_465`/`opls_466`) are tagged OPLS
+bond-type `C_2`/`O_2` in stock OPLS-AA, not the generic `C`/`O` used by
+earlier fixes in this directory's history. For 3 dihedral role-patterns
+this is numerically significant (different RB coefficients, not just a
+different label). `etc/fix_carbonyl_opls_class.py` corrected all 6
+monomer `.ff` files; `etc/generate_pama_links.py` was made carbonyl-aware
+(it previously classified every atom by the first letter of its PDB
+name, with no concept of a carbonyl carbon at all) and
+`PAMA.oplsaa.LigParGen_links.ff` was regenerated and redeployed. See
+`etc/report.md` §11 for the full investigation, exact values, and
+term-count verification.

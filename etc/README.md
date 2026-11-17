@@ -148,7 +148,15 @@ caps).  Inter-monomer parameters default to standard OPLS-AA values for
 CT–CT bonds, angles, and torsions.
 
 The script reads the monomer PDB files from `PAMA-monomers/` to identify
-connectivity around the backbone attachment atoms.
+connectivity around the backbone attachment atoms. For each monomer it
+also identifies the ester carbonyl carbon/oxygen and ester oxygen
+(`identify_ester_roles`, always within 2 bonds of Calpha) and classifies
+them as OPLS classes `C_2`/`O_2`/`OS` rather than the generic `CT`/`C`/`O`
+a naive first-letter-of-the-atom-name classification would give — see
+`report.md` section 11. **Do not revert this to first-letter
+classification**: it causes link-crossing angle/dihedral terms that reach
+the carbonyl carbon or its oxygens to silently pick up the wrong OPLS-AA
+table row (confirmed to differ numerically for several role-tuples).
 
 **Run from this directory (`etc/`):**
 ```bash
@@ -205,6 +213,7 @@ python etc/fix_calpha_region_residual_terms.py  # sp2 -> sp3 fix for Cbeta-H bon
 python etc/assign_library_charges.py            # OPLS-AA library charges, backbone/ester
 python etc/revert_alkyl_tail_to_oplsaa.py       # OPLS-AA charges/LJ/dihedrals, alkyl tail
 python etc/fix_remaining_opls_residuals.py      # remaining whole-molecule LJ/angle/dihedral residuals
+python etc/fix_carbonyl_opls_class.py           # carbonyl C/O dihedrals: C_2/O_2 class, not generic C/O (see report.md 11)
 ```
 
 `fix_backbone_hybridization.py` only rewrites the bond/angle/dihedral/
@@ -342,10 +351,10 @@ Add both atom names to the `Calpha` and `Cbeta` dicts in
 Add `NEWMON`'s `(Calpha, Cbeta)` to the `MONOMERS` dict in each of
 `fix_backbone_hybridization.py`, `fix_calpha_substituent_bonds.py`,
 `fix_calpha_region_residual_terms.py`, `assign_library_charges.py`,
-`revert_alkyl_tail_to_oplsaa.py`, and `fix_remaining_opls_residuals.py`,
-then run all six in that order (see "Backbone hybridization fix + OPLS-AA
-re-parametrization" above), followed by `renormalize-charges.py` as the
-final safety net.
+`revert_alkyl_tail_to_oplsaa.py`, `fix_remaining_opls_residuals.py`, and
+`fix_carbonyl_opls_class.py`, then run all seven in that order (see
+"Backbone hybridization fix + OPLS-AA re-parametrization" above),
+followed by `renormalize-charges.py` as the final safety net.
 
 ### 6. Regenerate backbone links
 
