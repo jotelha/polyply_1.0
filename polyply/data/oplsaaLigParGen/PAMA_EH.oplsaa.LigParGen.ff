@@ -156,11 +156,11 @@ EH                   3
 [ dihedrals ]
 ; PROPER DIHEDRAL ANGLES
 ;  ai    aj    ak    al funct            c0            c1            c2            c3            c4            c5
-     9     5     6     8     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; corrected C-CT-CT-HC (was blanket CT-CT-CT-HC backbone fix)
-     9     5     6     7     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; corrected C-CT-CT-HC (was blanket CT-CT-CT-HC backbone fix)
-     9     5     2     4     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
-     9     5     2     1     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
-     9     5     2     3     3   -0.209200   -0.627600    0.000000    0.836800    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
+     9     5     6     8     3   -0.158990   -0.476980    0.000000    0.635960    0.000000    0.000000  ; corrected to C_2-CT-CT-HC (carbonyl C is opls_465/C_2 class)
+     9     5     6     7     3   -0.158990   -0.476980    0.000000    0.635960    0.000000    0.000000  ; corrected to C_2-CT-CT-HC (carbonyl C is opls_465/C_2 class)
+     9     5     2     4     3   -0.158990   -0.476980    0.000000    0.635960    0.000000    0.000000  ; corrected to C_2-CT-CT-HC (carbonyl C is opls_465/C_2 class)
+     9     5     2     1     3   -0.158990   -0.476980    0.000000    0.635960    0.000000    0.000000  ; corrected to C_2-CT-CT-HC (carbonyl C is opls_465/C_2 class)
+     9     5     2     3     3   -0.158990   -0.476980    0.000000    0.635960    0.000000    0.000000  ; corrected to C_2-CT-CT-HC (carbonyl C is opls_465/C_2 class)
      6     5     2     1     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
      6     5     2     3     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
      6     5     2     4     3    0.627600    1.882800    0.000000   -2.510400    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
@@ -186,7 +186,7 @@ EH                   3
    24   15   12   11        3       2.874   0.582   2.092  -5.548  -0.000   0.000
    15   12   11    9        3      -2.197   5.201   0.527  -3.531  -0.000   0.000
    12   11    9    5        3      31.206  -9.768  -21.439  -0.000  -0.000   0.000
-    12    11     9    10     3   20.920000    0.000000  -20.920000    0.000000    0.000000    0.000000  ; corrected CT-OS-C-O (was raw LigParGen fit)
+    12    11     9    10     3   21.438810    0.000000  -21.438810    0.000000    0.000000    0.000000  ; corrected to CT-OS-C_2-O_2 (carbonyl C/O are opls_465/466, C_2/O_2 class)
      8     6     5     2     3      0.6276      1.8828      0.0000     -2.5104      0.0000      0.0000  ; sp3 backbone fix (was C=C no-rotation)
      7     6     5     2     3      0.6276      1.8828      0.0000     -2.5104      0.0000      0.0000  ; sp3 backbone fix (was C=C no-rotation)
    26   24   15   17        3       0.628   1.883   0.000  -2.510  -0.000   0.000
@@ -234,8 +234,8 @@ EH                   3
    16   15   12   11        3       0.979   2.937   0.000  -3.916  -0.000   0.000
    14   12   11    9        3       0.414   1.243   0.000  -1.657  -0.000   0.000
    13   12   11    9        3       0.414   1.243   0.000  -1.657  -0.000   0.000
-    10     9     5     6     3    4.878550    0.000000   -4.878550    0.000000    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
-    10     9     5     2     3    4.878550    0.000000   -4.878550    0.000000    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
+    10     9     5     6     3    3.106620   -3.776060   -5.137950    5.807390    0.000000    0.000000  ; corrected to CT-CT-C_2-O_2 (carbonyl C/O are opls_465/466, C_2/O_2 class)
+    10     9     5     2     3    3.106620   -3.776060   -5.137950    5.807390    0.000000    0.000000  ; corrected to CT-CT-C_2-O_2 (carbonyl C/O are opls_465/466, C_2/O_2 class)
     11     9     5     6     3   -1.156880   -3.470630    0.000000    4.627500    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
     11     9     5     2     3   -1.156880   -3.470630    0.000000    4.627500    0.000000    0.000000  ; sp3 backbone fix (was LigParGen vinyl-conjugated fit)
 
